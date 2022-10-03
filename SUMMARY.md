@@ -9,4 +9,6 @@
 ***
 
 * [Demand](demand.md)
+* [Discovery](discovery.md)
+* [Delivery](delivery.md)
 * [Technical Architecture](technical-architecture.md)

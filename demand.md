@@ -4,7 +4,7 @@ description: Contains capabilities around the Need that are required to be fulfi
 
 # Demand
 
-_**Personas Involved for this capability:**_
+_**Personas Involved in this capability:**_
 
 * **Super Admin:** An actor who sets up and configures the initial parameters of the System, including nAdmin and vAdmin.&#x20;
 * _**n**_**Admin**: An actor who owns, decides and manages a set of Needs and nCoordinators.&#x20;

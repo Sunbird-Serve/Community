@@ -4,7 +4,7 @@ description: Contains capabilities around Volunteers as Serve entities to be man
 
 # Supply
 
-_**Personas Involved for this capability:**_
+_**Personas Involved in this capability:**_
 
 * **Super Admin:** An actor who sets up and configures the initial parameters of the System, including nAdmin and vAdmin.&#x20;
 * **Volunteer:** An actor who participates to volunteer by nominating and fulfilling the demand.&#x20;
