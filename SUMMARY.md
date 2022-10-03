@@ -9,3 +9,4 @@
 ***
 
 * [Demand](demand.md)
+* [Technical Architecture](technical-architecture.md)
