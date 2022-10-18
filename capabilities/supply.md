@@ -2,7 +2,7 @@
 description: Contains capabilities around Volunteers as Serve entities to be managed
 ---
 
-# Volunteer Management
+# Supply
 
 _**Personas Involved in this capability:**_
 

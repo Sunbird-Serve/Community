@@ -15,6 +15,7 @@
   * [Solution Architecture](explore/architecture/solution-architecture.md)
   * [Technical Architecture](architecture/technical-architecture.md)
 * [DEMO SANDBOX](explore/demo-sandbox.md)
+* [Product & Developer Guide](explore/product-and-developer-guide.md)
 
 ## Adopt
 

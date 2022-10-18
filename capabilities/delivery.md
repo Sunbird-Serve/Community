@@ -2,7 +2,7 @@
 description: Contains capabilities of delivering the need.
 ---
 
-# Manage Need Delivery
+# Delivery
 
 _**Personas Involved in this capability:**_
 

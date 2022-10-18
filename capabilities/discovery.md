@@ -2,7 +2,7 @@
 description: Contains capabilities in discovering a need and nominating the need.
 ---
 
-# Discovery and Fulfill
+# Discovery
 
 _**Personas Involved in this capability:**_
 
