@@ -1,21 +1,31 @@
 # Table of contents
 
+## Explore
+
 * [Overview](README.md)
-* [Personas](personas/README.md)
-  * [Volunteer](personas/volunteer.md)
-  * [vCoordinator](personas/vcoordinator.md)
-  * [nCoordinator](personas/ncoordinator.md)
-  * [Administrator](personas/administrator.md)
+* [CAPABILITIES](explore/capabilities/README.md)
+  * [Volunteer Management](explore/capabilities/volunteer-management.md)
+  * [Need Management](explore/capabilities/need-management.md)
+  * [Discovery and Fulfill](explore/capabilities/discovery-and-fulfill.md)
+  * [Manage Need Delivery](explore/capabilities/manage-need-delivery.md)
+  * [Volunteer Credentials](explore/capabilities/volunteer-credentials.md)
+  * [Promote](explore/capabilities/promote.md)
+* [ARCHITECTURE](explore/architecture/README.md)
+  * [Workflow](explore/architecture/workflow.md)
+  * [Solution Architecture](explore/architecture/solution-architecture.md)
+  * [Technical Architecture](explore/architecture/technical-architecture.md)
+* [Demo Sandbox](explore/demo-sandbox.md)
 
-## Capabilities
+## Adopt
 
-* [Supply](capabilities/supply.md)
-* [Demand](capabilities/demand.md)
-* [Discovery](capabilities/discovery.md)
-* [Delivery](capabilities/delivery.md)
+* [Adopters](adopt/adopters.md)
 
-## Architecture
+## Contribute
 
-* [System Architecture](architecture/system-architecture.md)
-* [Technical Architecture](architecture/technical-architecture.md)
-* [Solution Architecture](architecture/solution-architecture.md)
+* [Contributors](contribute/contributors.md)
+* [Feature Idea](contribute/feature-idea.md)
+* [Feature Development](contribute/feature-development.md)
+
+## Use
+
+* [Installation Guide](use/installation-guide.md)
