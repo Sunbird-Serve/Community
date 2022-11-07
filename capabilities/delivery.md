@@ -21,7 +21,7 @@ _**Actions Performed by Various Personas for this Capability:**_
 | --------- | ------------ | ---------------------------------------- |
 | M1        | Volunteer    | Volunteer views need plan                |
 |           | Volunteer    | Volunteer delivers the need              |
-|           | Volunteer    | Volunteer rates devliverables            |
+|           | Volunteer    | Volunteer rates deliverables             |
 |           | nCoordinator | nCoordinator plans the need deliverable  |
 |           | nCoordinator | nCoordinator tracks the need deliverable |
 |           | nCoordinator | nCoordinator acknowledge deliverable     |
