@@ -30,3 +30,9 @@
 ## Use
 
 * [Installation Guide](use/installation-guide.md)
+
+## API Reference
+
+* [Define a Need](api-reference/define-a-need.md)
+* [Discover Need](api-reference/discover-need.md)
+* [Nominate Need](api-reference/nominate-need.md)
