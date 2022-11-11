@@ -1,9 +1,9 @@
-# Define a Need
+# Create a Need
 
 ## Request
 
 ```
-POST /api/vNeed/v1/define
+POST /api/vNeed/v1/{entity_type}/need
 ```
 
 #### Request Header
