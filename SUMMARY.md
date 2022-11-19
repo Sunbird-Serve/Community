@@ -41,6 +41,6 @@
 ## Community
 
 * [Discussions](community/discussions.md)
-* [Source Code](https://github.com/Sunbird-Serve/serve-beta.git)
+* [Source Code (Beta Version)](https://github.com/Sunbird-Serve/serve-beta.git)
 * [Issue Tracker](https://project-sunbird.atlassian.net/jira/software/c/projects/SV/issues%E2%80%8B)
 * [Sunbird Community Practices](https://community.sunbird.org)
