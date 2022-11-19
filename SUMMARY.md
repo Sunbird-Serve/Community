@@ -42,5 +42,5 @@
 
 * [Discussions](community/discussions.md)
 * [Source Code (Beta Version)](https://github.com/Sunbird-Serve/serve-beta.git)
-* [Issue Tracker](https://project-sunbird.atlassian.net/jira/software/c/projects/SV/boards/113)
+* [Issue Tracker](https://project-sunbird.atlassian.net/jira/software/c/projects/SV/boards/113/backlog?selectedIssue=SV-34\&issueLimit=100)
 * [Sunbird Community Practices](https://community.sunbird.org)
