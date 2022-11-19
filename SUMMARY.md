@@ -33,6 +33,14 @@
 
 ## API Reference
 
+* [Define Need](api-reference/define-need.md)
 * [Create a Need](api-reference/create-a-need.md)
 * [Discover Need](api-reference/discover-need.md)
 * [Nominate Need](api-reference/nominate-need.md)
+
+## Community
+
+* [Discussions](community/discussions.md)
+* [Source Code](https://github.com/Sunbird-Serve/serve-beta.git)
+* [Issue Tracker](https://project-sunbird.atlassian.net/jira/software/c/projects/SV/issues%E2%80%8B)
+* [Sunbird Community Practices](https://community.sunbird.org)
