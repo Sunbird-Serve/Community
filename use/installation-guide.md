@@ -1,5 +1,7 @@
 # Installation Guide
 
+### Prerequisite
+
 > This is an installation guide for serve beta version.&#x20;
 >
 > **Versions**: Python Version - 2.7.18
@@ -9,6 +11,30 @@
 > Don't copy-paste the `$` signs, they indicate that what follows is a terminal command
 
 **Initial Installation and Code Setup**
+
+#### Linux
+
+Check python version
+
+Python -
+
+If python2.7 is not installed, install python2.7 version
+
+```
+$ sudo apt install python2.7
+
+Since the default python version is 3, change the default python version priority by following
+
+$ sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 1 
+$ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 2
+$ sudo update-alternatives –config python
+```
+
+Clone the git repo
+
+“Clone Repository” and provide the git repo url mentioned [here](https://github.com/Sunbird-Serve/serve-beta.git).&#x20;
+
+#### Windows:
 
 * Download and Install Visual Studio Code or any code editor **** from [here ](https://code.visualstudio.com/download)
 *   Clone the git repo directly to VS code editor.
@@ -20,7 +46,7 @@
 
 \====================================================================
 
-**Creating and Setting up of Virtual environment**
+**Creating and Setting up of Virtual environment**&#x20;
 
 Create virtual environment to install all the necessary applications and dependent libraries within the virtual environment.&#x20;
 
@@ -30,7 +56,8 @@ Open the terminal in VS Code
 $ pip install virtualenv
 $ virtualenv env --python=python2.7
 $ cd env
-$ \Scripts\activate
+$ \Scripts\activate (Windows)
+$ source bin/activate (linux)
 
 //The virtual environment is now activated. 
 ```
