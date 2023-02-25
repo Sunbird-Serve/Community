@@ -15,9 +15,9 @@ Link for the serve-beta instance: [https://serve.evidyaloka.org](https://serve.e
 
 Credentials:
 
-Admin Access: userid: admin6
-
-&#x20;                         password: test12345
+Partner: [evplusdemopa@evidyaloka.org](mailto:evplusdemopa@evidyaloka.org) / evl123\
+Coordinator : [evplusdemoco@evidyaloka.org](mailto:evplusdemoco@evidyaloka.org) /evl123\
+Teacher : [demotestev@gmail.com](mailto:demotestev@gmail.com) / evl123
 
 &#x20;
 
