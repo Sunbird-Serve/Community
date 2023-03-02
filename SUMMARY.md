@@ -30,7 +30,10 @@
 ## Use
 
 * [Source Code](use/source-code.md)
-* [Installation Guide](use/installation-guide.md)
+* [Installing Serve Beta Platform](use/installing-serve-beta-platform/README.md)
+  * [Prerequisites](use/installing-serve-beta-platform/prerequisites.md)
+  * [Serve Beta on Windows](use/installing-serve-beta-platform/serve-beta-on-windows.md)
+  * [Serve Beta on Ubuntu](use/installing-serve-beta-platform/serve-beta-on-ubuntu.md)
 
 ## API Reference
 

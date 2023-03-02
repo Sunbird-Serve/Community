@@ -1,38 +1,4 @@
-# Installation Guide
-
-### Prerequisite
-
-> This is an installation guide for serve beta version.&#x20;
->
-> **Versions**: Python Version - 2.7.18
->
-> &#x20;                pip version - 20.3.4
->
-> Don't copy-paste the `$` signs, they indicate that what follows is a terminal command
-
-**Initial Installation and Code Setup**
-
-#### Linux
-
-Check python version
-
-Python -
-
-If python2.7 is not installed, install python2.7 version
-
-```
-$ sudo apt install python2.7
-
-Since the default python version is 3, change the default python version priority by following
-
-$ sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 1 
-$ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 2
-$ sudo update-alternatives –config python
-```
-
-Clone the git repo
-
-“Clone Repository” and provide the git repo url mentioned [here](https://github.com/Sunbird-Serve/serve-beta.git).&#x20;
+# Serve Beta on Windows
 
 #### Windows:
 
@@ -56,8 +22,7 @@ Open the terminal in VS Code
 $ pip install virtualenv
 $ virtualenv env --python=python2.7
 $ cd env
-$ \Scripts\activate (Windows)
-$ source bin/activate (linux)
+$ \Scripts\activate
 
 //The virtual environment is now activated. 
 ```
@@ -109,7 +74,7 @@ $ pip install django-cors-headers==0.11 pyfcm openpyxl redis
 
 **Database Setup**
 
-Download mysql package and install [here](../capabilities/demand.md).&#x20;
+Download mysql package and install [here](../../capabilities/demand.md).&#x20;
 
 start mysql server and connect to localhost instance - Mysql@localhost:3306
 
@@ -131,7 +96,7 @@ Install python packages to mysql
 $ pip install mysqlclient mysql-connector-python pymysql
 ```
 
-### Code Modification is the env folder
+### Code Modification in the env folder
 
 1\)      Navigate to the file - env/lib/python2.7/site-packages/notification/view.py
 
