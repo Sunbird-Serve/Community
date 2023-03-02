@@ -109,7 +109,7 @@ $ pip install django-cors-headers==0.11 pyfcm openpyxl redis
 
 **Database Setup**
 
-Download mysql package and install [here](../../capabilities/demand.md).&#x20;
+Download mysql package and install [here](../capabilities/demand.md).&#x20;
 
 start mysql server and connect to localhost instance - Mysql@localhost:3306
 

@@ -30,10 +30,15 @@
 ## Use
 
 * [Source Code](use/source-code.md)
-* [Installing Serve Beta Platform](use/installing-serve-beta-platform/README.md)
+* [Installing Serve Beta Platform](use/installation-guide.md)
   * [Prerequisites](use/installing-serve-beta-platform/prerequisites.md)
   * [Serve Beta on Windows](use/installing-serve-beta-platform/serve-beta-on-windows.md)
-  * [Serve Beta on Ubuntu](use/installing-serve-beta-platform/serve-beta-on-ubuntu.md)
+  * [Serve Beta on Ubuntu](use/installing-serve-beta-platform/serve-beta-on-ubuntu/README.md)
+    * [Python Installation](use/installing-serve-beta-platform/serve-beta-on-ubuntu/python-installation.md)
+    * [Django Setup](use/installing-serve-beta-platform/serve-beta-on-ubuntu/django-setup.md)
+    * [Backend Setup](use/installing-serve-beta-platform/serve-beta-on-ubuntu/backend-setup.md)
+    * [Nginx and Interface Setup](use/installing-serve-beta-platform/serve-beta-on-ubuntu/nginx-and-interface-setup.md)
+    * [Post Install Steps](use/installing-serve-beta-platform/serve-beta-on-ubuntu/post-install-steps.md)
 
 ## API Reference
 
