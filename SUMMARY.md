@@ -29,6 +29,7 @@
 
 ## Use
 
+* [Source Code](use/source-code.md)
 * [Installation Guide](use/installation-guide.md)
 
 ## API Reference
