@@ -1,4 +1,5 @@
 ---
+cover: ../../../.gitbook/assets/ubuntu.png
 coverY: 0
 ---
 
