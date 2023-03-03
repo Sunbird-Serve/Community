@@ -20,7 +20,10 @@ _**Actions Performed by Various Personas for Demand Capability:**_
 
 
 
-| Milestone | Persona      | Usecase                             |
-| --------- | ------------ | ----------------------------------- |
-| M1        | nCoordinator | nCoordinator raise the needs        |
-|           | nCoordinator | nCoordinator views the raised needs |
+| Milestone | Persona      | Usecase                                            |
+| --------- | ------------ | -------------------------------------------------- |
+| M1        | nCoordinator | nCoordinator logs in                               |
+|           | nCoordinator | nCoordinator creates entity                        |
+|           | nCoordinator | nCoordinator creates need type for the entity      |
+|           | nCoordinator | nCoordinator raise the needs with need type        |
+|           | nCoordinator | nCoordinator views the raised needs for the entity |

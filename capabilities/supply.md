@@ -25,9 +25,9 @@ _**Actions Performed by Various Personas for Supply Capability:**_
 | Milestone  | Persona      | Usecase                                          |
 | ---------- | ------------ | ------------------------------------------------ |
 | M1         | Volunteer    | Volunteer register                               |
-|            | Volunteer    | Volunteer undergoes onboarding process           |
-|            | nCoordinator | nCoordinator logs in                             |
 |            | vCoordinator | vCoordinator views all volunteers registered     |
 |            | vCoordinator | vCoordinator manages onboarding of volunteer     |
+|            | Volunteer    | Volunteer undergoes onboarding process           |
+|            | Volunteer    | Nominates a need                                 |
 |            | vCoordinator | vCoordinator tracks volunteer nominations        |
 |            | System       | Notifies volunteer on the nomination from nCoord |
