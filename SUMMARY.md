@@ -41,6 +41,7 @@
 
 ## API Reference
 
+* [API Design](api-reference/api-design.md)
 * [Define Need](api-reference/define-need.md)
 * [Create a Need](api-reference/create-a-need.md)
 * [Discover Need](api-reference/discover-need.md)
