@@ -8,7 +8,7 @@
   * [Need Management](capabilities/demand.md)
   * [Discovery and Fulfill](capabilities/discovery.md)
   * [Manage Need Delivery](capabilities/delivery.md)
-  * [Rate and Promote](explore/capabilities/rate-and-promote.md)
+  * [Rate and Promote](explore/capabilities/promote.md)
 * [ARCHITECTURE](explore/architecture/README.md)
   * [Workflow](explore/architecture/workflow.md)
   * [Solution Architecture](explore/architecture/solution-architecture.md)
