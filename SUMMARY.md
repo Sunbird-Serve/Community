@@ -42,10 +42,7 @@
 ## API Reference
 
 * [API Design](api-reference/api-design.md)
-* [Raise Need Entity](api-reference/raise-need-entity.md)
-* [Create a Need](api-reference/create-a-need.md)
-* [Discover Need](api-reference/discover-need.md)
-* [Nominate Need](api-reference/nominate-need.md)
+* [Raise Need Entity](api-reference/define-need.md)
 
 ## Community
 

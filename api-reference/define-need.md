@@ -65,28 +65,40 @@ status of the need entity
 }
 ```
 {% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="" %}
-```javascript
-{
-    // Response
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="401: Unauthorized" description="" %}
-```javascript
-{
-    // Response
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="500: Internal Server Error" description="" %}
-```javascript
-{
-    // Response
-}
-```
-{% endswagger-response %}
 {% endswagger %}
+
+Payload - Sample request to raise a need entity
+
+```
+"request": {
+        "need-entity": {
+             "title": "Govt School"
+             "description": "Karwar Govt School"
+             "need-type":"Education"
+             "location":"Karwar, Dakshin Kannada, Karnataka"
+             "status":"Active"
+        }
+}
+```
+
+Sample Response when success with Status code 200
+
+```
+{
+  "id": "serve.need-entity.create",
+  "ver": "1.0",
+  "params": {
+    "resmsgid": "",
+    "msgid": "861533da-d815-4809-97c3",
+    "err": "",
+    "status": "SUCCESSFUL",
+    "errmsg": ""
+  },
+  "responseCode": "OK",
+  "result": {
+    "needEntity": {
+      "id": "1-d6844c76-b128-43cc-bbba"
+    }
+  }
+}
+```
