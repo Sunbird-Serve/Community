@@ -6,10 +6,10 @@ This instance of Serve-Beta version is created to demonstrate the some capabilit
 * Enrolling need entities
 * Creating courses and managing offerings
 * Manage Need Deliverables
-* Enroll Students and manage student data
+* Enrol Students and manage student data
 * Access different types of contents
 
-Link for the serve-beta instance: [https://serve.evidyaloka.org](https://serve.evidyaloka.org)
+Link for the serve-beta instance: [https://serve.evean.net/](https://serve.evean.net/)
 
 
 
