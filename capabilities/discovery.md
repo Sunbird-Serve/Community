@@ -16,9 +16,13 @@ _**Actions Performed by Various Personas for this Capability:**_
 
 <figure><img src="https://lh4.googleusercontent.com/E6vqCpp8P1bsM7fbc_-EAEsxC0G5F0Isd0bzsJuLz_wDio73pTZ4XFDgydf2VSUqEg3IMBPP1R0YGafvggij_lEuxd5sY0n7NDHZs2YE_C2x1__CmOGzdFkpC1Ai1sSJkCmmuGcgTYHwiMLgrDZNGqVcEvx6Tzl9AT4nFH-fiPr4zcRWLypaByCk" alt=""><figcaption></figcaption></figure>
 
-| Milestone | Persona      | Usecase                                                 |
-| --------- | ------------ | ------------------------------------------------------- |
-| M1        | Volunteer    | Volunteer explores the needs                            |
-|           | Volunteer    | Volunteer nominate for a need                           |
-|           | Volunteer    | Volunteer confirms nomination                           |
-|           | nCoordinator | nCoordinator review the nominations raised by volunteer |
+| Milestone | Persona      | Usecase               |
+| --------- | ------------ | --------------------- |
+| M1        | Volunteer    | Explore Need Type     |
+|           | Volunteer    | View Needs            |
+|           | Volunteer    | View Need details     |
+|           | Volunteer    | Nominate Need         |
+|           | Volunteer    | View My Needs         |
+|           | nCoordinator | View Nominations      |
+|           | nCoordinator | Approve Nominations   |
+| M2        | Volunteer    | Onboard for Need Type |
