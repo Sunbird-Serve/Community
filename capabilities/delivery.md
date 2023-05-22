@@ -17,11 +17,12 @@ _**Actions Performed by Various Personas for this Capability:**_
 
 <figure><img src="https://lh4.googleusercontent.com/ZU9e9c80crRE-Prk68-lI8cub5XDDIabCRoJJG7QvpH_nDProrFIUSoluf33G4AleX57E4K_x8f6Xgv3Wot1Ous99X6oHSwnYSTzKrzGFDs_FfTAX4hAUfx8RQr3Tv1mt6PQwqY2xUCgJjlcNe6bHh9MEYtOqUjUhFBvmr1KXRtPKZAgrhheDVnu" alt=""><figcaption></figcaption></figure>
 
-| Milestone | Persona      | Usecase                                  |
-| --------- | ------------ | ---------------------------------------- |
-| M1        | Volunteer    | Volunteer views need plan                |
-|           | Volunteer    | Volunteer delivers the need              |
-|           | Volunteer    | Volunteer rates deliverables             |
-|           | nCoordinator | nCoordinator plans the need deliverable  |
-|           | nCoordinator | nCoordinator tracks the need deliverable |
-|           | nCoordinator | nCoordinator acknowledge deliverable     |
+| Milestone | Persona      | Usecase                            |
+| --------- | ------------ | ---------------------------------- |
+| M1        | Volunteer    | View Need Plan                     |
+|           | Volunteer    | Deliver Need                       |
+|           | Volunteer    | Update the Deliverable status      |
+|           | Volunteer    | Update details of need deliverable |
+|           | nCoordinator | View Need Plan                     |
+|           | nCoordinator | Track Need Deliverable             |
+| M2        | nCoordinator | Acknowledge Need Deliverables      |
