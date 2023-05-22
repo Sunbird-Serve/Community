@@ -6,14 +6,14 @@ description: Contains capabilities around Volunteers as Serve entities to be man
 
 _**Personas Involved in this capability:**_
 
-* **Super Admin:** An actor who sets up and configures the initial parameters of the System, including nAdmin and vAdmin.&#x20;
+* **System Admin:** An actor who sets up and configures the initial parameters of the System, including nAdmin and vAdmin.&#x20;
 * **Volunteer:** An actor who participates to volunteer by nominating and fulfilling the demand.&#x20;
 * **vAdmin**: An actor who owns, decides and manages a set of Volunteers and vCoordinators.&#x20;
 * **vCoordinator**: An actor who manages the Volunteer’s life cycle.&#x20;
 
 _**Actions Performed by Various Personas for Supply Capability:**_
 
-* Super Admin attests the volunteer agency and authorize vAdmin.&#x20;
+* vAdmin attests the volunteer agency and authorize vAdmin.&#x20;
 * Volunteer Registers self via vRC component.&#x20;
 * vAdmin registers the Volunteer Agency and assigns vCoordinators.&#x20;
 * vCoordinators registers self and attest Volunteers.&#x20;
@@ -22,12 +22,15 @@ _**Actions Performed by Various Personas for Supply Capability:**_
 
 
 
-| Milestone  | Persona      | Usecase                                          |
-| ---------- | ------------ | ------------------------------------------------ |
-| M1         | Volunteer    | Volunteer register                               |
-|            | vCoordinator | vCoordinator views all volunteers registered     |
-|            | vCoordinator | vCoordinator manages onboarding of volunteer     |
-|            | Volunteer    | Volunteer undergoes onboarding process           |
-|            | Volunteer    | Nominates a need                                 |
-|            | vCoordinator | vCoordinator tracks volunteer nominations        |
-|            | System       | Notifies volunteer on the nomination from nCoord |
+| Milestone  | Persona      | Usecase                     |
+| ---------- | ------------ | --------------------------- |
+| M1         | vCoordinator | Login                       |
+|            | vCoordinator | view registered volunteers  |
+|            | Volunteer    | Login                       |
+|            | Volunteer    | Register                    |
+| M2         | vCoordinator | Check onboard status        |
+|            | vCoordinator | Complete onboarding process |
+|            | vCoordinator | Update the status           |
+|            | vCoordinator | Onboard Refresh             |
+|            | vCoordinator | Receiving Notification      |
+| M1         | System       | Notification                |
