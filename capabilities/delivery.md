@@ -17,12 +17,4 @@ _**Actions Performed by Various Personas for this Capability:**_
 
 <figure><img src="https://lh4.googleusercontent.com/ZU9e9c80crRE-Prk68-lI8cub5XDDIabCRoJJG7QvpH_nDProrFIUSoluf33G4AleX57E4K_x8f6Xgv3Wot1Ous99X6oHSwnYSTzKrzGFDs_FfTAX4hAUfx8RQr3Tv1mt6PQwqY2xUCgJjlcNe6bHh9MEYtOqUjUhFBvmr1KXRtPKZAgrhheDVnu" alt=""><figcaption></figcaption></figure>
 
-| Milestone | Persona      | Usecase                            |
-| --------- | ------------ | ---------------------------------- |
-| M1        | Volunteer    | View Need Plan                     |
-|           | Volunteer    | Deliver Need                       |
-|           | Volunteer    | Update the Deliverable status      |
-|           | Volunteer    | Update details of need deliverable |
-|           | nCoordinator | View Need Plan                     |
-|           | nCoordinator | Track Need Deliverable             |
-| M2        | nCoordinator | Acknowledge Need Deliverables      |
+<table><thead><tr><th width="110.33333333333334">Milestone</th><th width="177">Persona</th><th>Usecase</th></tr></thead><tbody><tr><td>M1</td><td>Volunteer</td><td>View Need Plan</td></tr><tr><td></td><td>Volunteer</td><td>Deliver Need</td></tr><tr><td></td><td>Volunteer</td><td>Update the Deliverable status</td></tr><tr><td></td><td>Volunteer</td><td>Update details of need deliverable</td></tr><tr><td></td><td>nCoordinator</td><td>View Need Plan</td></tr><tr><td></td><td>nCoordinator</td><td>Track Need Deliverable</td></tr><tr><td>M2</td><td>nCoordinator</td><td>Acknowledge Need Deliverables</td></tr></tbody></table>

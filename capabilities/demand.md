@@ -20,21 +20,4 @@ _**Actions Performed by Various Personas for Demand Capability:**_
 
 
 
-| Milestone | Persona      | Usecase                         |
-| --------- | ------------ | ------------------------------- |
-| M1        | nCoordinator | logs in                         |
-|           | nCoordinator | View Needs                      |
-|           | nCoordinator | View Approved needs             |
-|           | nCoordinator | View unapproved needs           |
-|           | nCoordinator | Raise Needs                     |
-|           | nCoordinator | View Need Types                 |
-|           | nCoordinator | Receiving Notification          |
-| M2        | Volunteer    | Mark interested needs           |
-|           | nCoordinator | Edit Need details               |
-|           | nCoordinator | Raise request for New Need Type |
-|           | nAdmin       | logs in                         |
-|           | nAdmin       | Create users                    |
-|           | nAdmin       | Create Need Type                |
-|           | nAdmin       | View Needs                      |
-|           | nAdmin       | Approve Needs                   |
-|           | nAdmin       | Receiving Notification          |
+<table><thead><tr><th width="124.33333333333334">Milestone</th><th width="151">Persona</th><th>Usecase</th></tr></thead><tbody><tr><td>M1</td><td>nCoordinator</td><td>logs in</td></tr><tr><td></td><td>nCoordinator</td><td>View Needs</td></tr><tr><td></td><td>nCoordinator</td><td>View Approved needs</td></tr><tr><td></td><td>nCoordinator</td><td>View unapproved needs</td></tr><tr><td></td><td>nCoordinator</td><td>Raise Needs</td></tr><tr><td></td><td>nCoordinator</td><td>View Need Types</td></tr><tr><td></td><td>nCoordinator</td><td>Receiving Notification</td></tr><tr><td>M2</td><td>Volunteer</td><td>Mark interested needs</td></tr><tr><td></td><td>nCoordinator</td><td>Edit Need details</td></tr><tr><td></td><td>nCoordinator</td><td>Raise request for New Need Type</td></tr><tr><td></td><td>nAdmin</td><td>logs in</td></tr><tr><td></td><td>nAdmin</td><td>Create users</td></tr><tr><td></td><td>nAdmin</td><td>Create Need Type</td></tr><tr><td></td><td>nAdmin</td><td>View Needs</td></tr><tr><td></td><td>nAdmin</td><td>Approve Needs</td></tr><tr><td></td><td>nAdmin</td><td>Receiving Notification</td></tr></tbody></table>

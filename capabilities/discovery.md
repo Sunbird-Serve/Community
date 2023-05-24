@@ -16,13 +16,4 @@ _**Actions Performed by Various Personas for this Capability:**_
 
 <figure><img src="https://lh4.googleusercontent.com/E6vqCpp8P1bsM7fbc_-EAEsxC0G5F0Isd0bzsJuLz_wDio73pTZ4XFDgydf2VSUqEg3IMBPP1R0YGafvggij_lEuxd5sY0n7NDHZs2YE_C2x1__CmOGzdFkpC1Ai1sSJkCmmuGcgTYHwiMLgrDZNGqVcEvx6Tzl9AT4nFH-fiPr4zcRWLypaByCk" alt=""><figcaption></figcaption></figure>
 
-| Milestone | Persona      | Usecase               |
-| --------- | ------------ | --------------------- |
-| M1        | Volunteer    | Explore Need Type     |
-|           | Volunteer    | View Needs            |
-|           | Volunteer    | View Need details     |
-|           | Volunteer    | Nominate Need         |
-|           | Volunteer    | View My Needs         |
-|           | nCoordinator | View Nominations      |
-|           | nCoordinator | Approve Nominations   |
-| M2        | Volunteer    | Onboard for Need Type |
+<table><thead><tr><th width="124.33333333333334">Milestone</th><th width="147">Persona</th><th>Usecase</th></tr></thead><tbody><tr><td>M1</td><td>Volunteer</td><td>Explore Need Type</td></tr><tr><td></td><td>Volunteer</td><td>View Needs</td></tr><tr><td></td><td>Volunteer</td><td>View Need details</td></tr><tr><td></td><td>Volunteer</td><td>Nominate Need</td></tr><tr><td></td><td>Volunteer</td><td>View My Needs</td></tr><tr><td></td><td>nCoordinator</td><td>View Nominations</td></tr><tr><td></td><td>nCoordinator</td><td>Approve Nominations</td></tr><tr><td>M2</td><td>Volunteer</td><td>Onboard for Need Type</td></tr></tbody></table>

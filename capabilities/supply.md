@@ -22,15 +22,4 @@ _**Actions Performed by Various Personas for Supply Capability:**_
 
 
 
-| Milestone  | Persona      | Usecase                     |
-| ---------- | ------------ | --------------------------- |
-| M1         | vCoordinator | Login                       |
-|            | vCoordinator | view registered volunteers  |
-|            | Volunteer    | Login                       |
-|            | Volunteer    | Register                    |
-| M2         | vCoordinator | Check onboard status        |
-|            | vCoordinator | Complete onboarding process |
-|            | vCoordinator | Update the status           |
-|            | vCoordinator | Onboard Refresh             |
-|            | vCoordinator | Receiving Notification      |
-| M1         | System       | Notification                |
+<table><thead><tr><th width="110.33333333333334">Milestone </th><th width="141">Persona</th><th>Usecase</th></tr></thead><tbody><tr><td>M1</td><td>vCoordinator</td><td>Login</td></tr><tr><td></td><td>vCoordinator</td><td>view registered volunteers</td></tr><tr><td></td><td>Volunteer</td><td>Login</td></tr><tr><td></td><td>Volunteer</td><td>Register</td></tr><tr><td>M2</td><td>vCoordinator</td><td>Check onboard status</td></tr><tr><td></td><td>vCoordinator</td><td>Complete onboarding process</td></tr><tr><td></td><td>vCoordinator</td><td>Update the status</td></tr><tr><td></td><td>vCoordinator</td><td>Onboard Refresh</td></tr><tr><td></td><td>vCoordinator</td><td>Receiving Notification</td></tr><tr><td>M1</td><td>System</td><td>Notification</td></tr></tbody></table>
