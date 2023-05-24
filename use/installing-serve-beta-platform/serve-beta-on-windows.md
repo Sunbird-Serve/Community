@@ -2,7 +2,7 @@
 
 #### Windows:
 
-* Download and Install Visual Studio Code or any code editor **** from [here ](https://code.visualstudio.com/download)
+* Download and Install Visual Studio Code or any code editor from [here ](https://code.visualstudio.com/download)
 *   Clone the git repo directly to VS code editor.
 
     Open VS code editor window, select the source control from the left hand side corner.
