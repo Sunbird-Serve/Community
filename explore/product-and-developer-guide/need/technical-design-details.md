@@ -12,7 +12,7 @@ In a software system that manages the creation, tracking, and delivery of variou
 
 #### 1) Search & Discovery Service
 
-Responsible for allowing users to search for and discover relevant information about different types of needs. This service provides a user-friendly interface that enables users to easily navigate and find the specific needs they are looking for.
+Responsible for allowing users to search for and discover relevant information about different types of needs. This service enables users to easily navigate and find the specific needs they are looking for.
 
 #### 2) Need Service
 
@@ -42,7 +42,7 @@ The microservice exposes a RESTful API that allows other components and services
 
 The microservice integrates with a dedicated database or a portion of the larger database system. It utilizes a database management system, such as MongoDB, to store and retrieve need-related data efficiently. The schema design is optimized to support the specific requirements of need types, plans, deliverables, and associated metadata.
 
-All the transactional data will be saved in the serve db (mysql). \
+All the transactional data will be saved in the serve db. \
 
 
 **Authentication and Authorization**
@@ -55,4 +55,4 @@ The Need Management microservice embraces an event-driven architecture to facili
 
 **Monitoring and Logging**
 
-The microservice implements comprehensive monitoring and logging mechanisms to track its performance and detect anomalies. For monitoring Grafana will be used which enables real-time visibility into the microservice's health, resource usage, and request metrics.
+The microservice implements comprehensive monitoring and logging mechanisms to track its performance and detect anomalies.&#x20;
