@@ -5,7 +5,7 @@ description: >-
   system that is responsible for handling the fun
 ---
 
-# vNeed
+# Need
 
 
 
@@ -21,6 +21,6 @@ description: >-
 [technical-sequence.md](technical-sequence.md)
 {% endcontent-ref %}
 
-{% content-ref url="schema-design.md" %}
-[schema-design.md](schema-design.md)
+{% content-ref url="../schema-design.md" %}
+[schema-design.md](../schema-design.md)
 {% endcontent-ref %}

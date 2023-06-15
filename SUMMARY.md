@@ -19,9 +19,9 @@
     * [Technical Design Details](explore/product-and-developer-guide/need/technical-design-details.md)
     * [API Specification](explore/product-and-developer-guide/need/api-specification.md)
     * [Technical Sequence](explore/product-and-developer-guide/need/technical-sequence.md)
-    * [Schema Design](explore/product-and-developer-guide/need/schema-design.md)
   * [Volunteering](explore/product-and-developer-guide/volunteering.md)
   * [Fulfill](explore/product-and-developer-guide/fulfill.md)
+  * [Schema Design](explore/product-and-developer-guide/schema-design.md)
 
 ## Adopt
 
