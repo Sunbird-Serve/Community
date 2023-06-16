@@ -30,4 +30,4 @@ Volunteer and Volunteer Profile Registry - [Link](https://github.com/Sunbird-Ser
 
 Agency and Users Registry - [Link](https://github.com/Sunbird-Serve/sunbird-serve-volunteering/tree/main/schema/registry)
 
-<figure><img src="../../.gitbook/assets/vol_users.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/volflow.png" alt=""><figcaption></figcaption></figure>
