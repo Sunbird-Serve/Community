@@ -47,7 +47,7 @@ All the transactional data will be saved in the serve db. \
 
 **Authentication and Authorization**
 
-The microservice incorporates authentication and authorization mechanisms to ensure secure access and protect sensitive data. It integrates with the authorization server mentioned earlier to enforce access control policies and authenticate incoming requests. Keycloak is used for Authentication and Authorization.&#x20;
+The microservice incorporates Keycloak for authentication and authorization. Keycloak handles user authentication using various mechanisms and issues access tokens upon successful authentication. The microservice enforces access control based on assigned roles and permissions defined in Keycloak. Token management, including validation and expiration, is implemented to ensure secure communication. By integrating Keycloak, the microservice ensures secure access control, protects sensitive data, and enforces authorization policies.
 
 **Event-Driven Architecture**
 

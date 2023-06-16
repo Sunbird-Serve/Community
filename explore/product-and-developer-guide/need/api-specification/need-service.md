@@ -23,7 +23,7 @@ The request payload includes the following information:
 
 #### cURL
 
-```
+```json
   curl -X POST \
   -H "Content-Type: application/json" \
   -d '{
@@ -56,7 +56,7 @@ The request payload includes the following information:
 
 #### Example Response
 
-```
+```json
 {
   "id": "api.serve-need.need.create",
   "ver": "v1",
