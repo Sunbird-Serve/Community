@@ -13,8 +13,8 @@ description: >-
 [technical-design-details.md](technical-design-details.md)
 {% endcontent-ref %}
 
-{% content-ref url="api-specification.md" %}
-[api-specification.md](api-specification.md)
+{% content-ref url="api-specification/" %}
+[api-specification](api-specification/)
 {% endcontent-ref %}
 
 {% content-ref url="technical-sequence.md" %}
