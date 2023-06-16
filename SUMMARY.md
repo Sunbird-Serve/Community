@@ -23,6 +23,8 @@
     * [Technical Sequence](explore/product-and-developer-guide/need/technical-sequence.md)
   * [Volunteering](explore/product-and-developer-guide/volunteering/README.md)
     * [Technical Design Details](explore/product-and-developer-guide/volunteering/technical-design-details.md)
+    * [API Specification](explore/product-and-developer-guide/volunteering/api-specification/README.md)
+      * [Volunteer Management](explore/product-and-developer-guide/volunteering/api-specification/volunteer-management.md)
   * [Fulfill](explore/product-and-developer-guide/fulfill.md)
   * [Schema Design](explore/product-and-developer-guide/schema-design.md)
 
