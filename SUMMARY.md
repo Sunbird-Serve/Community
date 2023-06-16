@@ -21,7 +21,8 @@
       * [Need Service](explore/product-and-developer-guide/need/api-specification/need-service.md)
       * [Search & Discovery](explore/product-and-developer-guide/need/api-specification/search-and-discovery.md)
     * [Technical Sequence](explore/product-and-developer-guide/need/technical-sequence.md)
-  * [Volunteering](explore/product-and-developer-guide/volunteering.md)
+  * [Volunteering](explore/product-and-developer-guide/volunteering/README.md)
+    * [Technical Design Details](explore/product-and-developer-guide/volunteering/technical-design-details.md)
   * [Fulfill](explore/product-and-developer-guide/fulfill.md)
   * [Schema Design](explore/product-and-developer-guide/schema-design.md)
 
