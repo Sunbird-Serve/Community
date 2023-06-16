@@ -18,6 +18,7 @@
   * [Need](explore/product-and-developer-guide/need/README.md)
     * [Technical Design Details](explore/product-and-developer-guide/need/technical-design-details.md)
     * [API Specification](explore/product-and-developer-guide/need/api-specification/README.md)
+      * [Need Service](explore/product-and-developer-guide/need/api-specification/need-service.md)
       * [Search & Discovery](explore/product-and-developer-guide/need/api-specification/search-and-discovery.md)
     * [Technical Sequence](explore/product-and-developer-guide/need/technical-sequence.md)
   * [Volunteering](explore/product-and-developer-guide/volunteering.md)
