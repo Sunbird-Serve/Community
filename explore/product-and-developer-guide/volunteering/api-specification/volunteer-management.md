@@ -12,6 +12,18 @@ This API call allows you to create a new volunteer. The API call expects a JSON 
 
 The request payload includes the following information:
 
+Request:
+
+Method: `POST`
+
+Endpoint: `https://localhost:port/api/serve-volunteer/volunteer/v1/create`
+
+Headers:
+
+`Content-Type: application/json`
+
+Body:
+
 * "Volunteer": An object containing the volunteer details.
   * "identityDetails": An object containing the identity details of the volunteer, such as their full name, gender, date of birth, and nationality.
   * "contactDetails": An object containing the contact details of the volunteer, including their email address, mobile number, and address.
@@ -28,7 +40,7 @@ The API call will create a new volunteer with the provided details and return a 
   curl -X POST \
   -H "Content-Type: application/json" \
   -d '{
-    "id": "api.serve-need.need.create",
+    "id": "api.serve-volunteer.volunteer.create",
     "ver": "v1",
     "ets": 0,
     "request": {
@@ -140,26 +152,11 @@ curl -X PUT \
       "volunteerId": "volunteer123",
       "Volunteer": {
         "identityDetails": {
-          "fullname": "Updated Name",
-          "gender": "Male",
-          "dob": "1995-06-10",
-          "Nationality": "Indian"
+          "fullname": "Updated Name"
         },
         "contactDetails": {
-          "email": "updated_email@example.com",
-          "mobile": "9876543210",
-          "address": {
-            "plot": "25",
-            "street": "Updated Street",
-            "landmark": "City Center",
-            "locality": "Saket",
-            "state": "Delhi",
-            "district": "South Delhi",
-            "village": "New Delhi",
-            "pincode": "110001"
-          }
-        },
-        "status": "Active"
+          "email": "updated_email@example.com"
+        }
       }
     }
   }' \
