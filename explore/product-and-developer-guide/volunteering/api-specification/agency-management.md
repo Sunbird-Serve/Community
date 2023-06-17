@@ -1,6 +1,6 @@
 # Agency Management
 
-To facilitate seamless integration and efficient communication, we have curated a comprehensive collection of APIs for Volunteer Management Service.&#x20;
+To facilitate seamless integration and efficient communication, we have curated a comprehensive collection of APIs for Agency Management Service.&#x20;
 
 ### Create Agency
 
@@ -73,6 +73,7 @@ curl -X POST \
   "responseCode": "OK",
   "result": {
     "Agency": {
+        "id":"guidag67"
         "name": "Example Agency",
         "description": "This is an example agency.",
         "establishedDate": "2023-06-16",

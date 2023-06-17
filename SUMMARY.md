@@ -26,6 +26,7 @@
     * [API Specification](explore/product-and-developer-guide/volunteering/api-specification/README.md)
       * [Volunteer Management](explore/product-and-developer-guide/volunteering/api-specification/volunteer-management.md)
       * [Agency Management](explore/product-and-developer-guide/volunteering/api-specification/agency-management.md)
+      * [User Management](explore/product-and-developer-guide/volunteering/api-specification/user-management.md)
   * [Fulfill](explore/product-and-developer-guide/fulfill.md)
   * [Schema Design](explore/product-and-developer-guide/schema-design.md)
 
