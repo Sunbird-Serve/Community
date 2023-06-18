@@ -7,7 +7,7 @@ To facilitate seamless integration and efficient communication, we have curated 
 * This API is used to create an agency profile by providing the necessary details about the agency, including its name, description, established date, contact details, agency type, and website.
 * Request:
   * Method: `POST`
-  * Endpoint: `https://localhost:port/api/serve-volunteer/agency/v1/create`
+  * Endpoint: `https://domain:port/api/serve-volunteer/agency/v1/create`
   * Headers:
     * `Content-Type: application/json`
   * Body:
@@ -52,7 +52,7 @@ curl -X POST \
       }
     }
   }' \
-  https://localhost:port/api/serve-agency/agency/v1/create
+  https://domain:port/api/serve-agency/agency/v1/create
 
 ```
 
@@ -103,7 +103,7 @@ curl -X POST \
 ```json
 curl -X GET \
   -H "Content-Type: application/json" \
-  https://localhost:port/api/serve-volunteer/agency/v1/{agencyId}
+  https://domain:port/api/serve-volunteer/agency/v1/{agencyId}
 ```
 
 ### Update Agency
@@ -122,5 +122,5 @@ curl -X PUT \
       }
     }
   }' \
-  https://localhost:port/api/serve-volunteer/agency/v1/update
+  https://domain:port/api/serve-volunteer/agency/v1/update
 ```

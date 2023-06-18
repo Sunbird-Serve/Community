@@ -44,7 +44,7 @@ The request payload includes the following information:
             }
         }
      }' \
-     https://localhost:port/api/serve-need/need/v1/read
+     https://domain:port/api/serve-need/need/v1/read
 
 ```
 
@@ -117,7 +117,7 @@ The request payload includes the following information:
             }
         }
      }' \
-     https://localhost:port/api/serve-need/need-type/v1/read
+     https://domain:port/api/serve-need/need-type/v1/read
 
 ```
 
@@ -175,7 +175,7 @@ To fetch list of all active entity.&#x20;
              }
          }
      }' \
-     https://localhost:port/api/serve-need/entity/v1/read
+     https://domain:port/api/serve-need/entity/v1/read
 
 ```
 

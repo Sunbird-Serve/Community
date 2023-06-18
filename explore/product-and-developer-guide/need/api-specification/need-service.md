@@ -50,7 +50,7 @@ The request payload includes the following information:
       }
     }
   }' \
-     https://localhost:port/api/serve-need/need/v1/create
+     https://domain:port/api/serve-need/need/v1/create
 
 ```
 
@@ -89,6 +89,47 @@ The request payload includes the following information:
         }
       }
   }
+}
+```
+
+### Update Need
+
+#### cURL
+
+```json
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{
+    "id": "api.serve-need.need.update",
+    "ver": "v1",
+    "ets": 0,
+    "request": {
+      "Need": {
+        "id":"guidnd02"
+        "status": "Approved",
+        "userId": "guidus01"
+      }
+    }
+  }' \
+     https://domain:port/api/serve-need/need/v1/update
+
+```
+
+#### Example Response
+
+```json
+{
+  "id": "api.serve-need.need.update",
+  "ver": "v1",
+  "ets": 1623867200000,
+  "params": {
+    "resmsgid": "c1d09b7a-1234-5678-90ab-cd1234567890",
+    "msgid": null,
+    "status": "successful",
+    "err": null,
+    "errmsg": null
+  },
+  "responseCode": "OK",
 }
 ```
 
@@ -165,4 +206,45 @@ The request payload includes the following information:
   }
 }
 
+```
+
+### Update Need Type
+
+#### cURL
+
+```json
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{
+    "id": "api.serve-need.need-type.update",
+    "ver": "v1",
+    "ets": 0,
+    "request": {
+      "NeedType": {
+        "id":"guidnt04"
+        "status": "Approved",
+        "userId": "guidus07"
+      }
+    }
+  }' \
+     https://domain:port/api/serve-need/need-type/v1/update
+
+```
+
+#### Example Response
+
+```json
+{
+  "id": "api.serve-need.need-type.update",
+  "ver": "v1",
+  "ets": 1623867200000,
+  "params": {
+    "resmsgid": "c1d09b7a-1234-5678-90ab-cd1234567890",
+    "msgid": null,
+    "status": "successful",
+    "err": null,
+    "errmsg": null
+  },
+  "responseCode": "OK",
+}
 ```
