@@ -24,10 +24,10 @@ Nomination and Fulfillment Details - [Link](https://github.com/Sunbird-Serve/sun
 
 ### Volunteering
 
-Please find below a visual representation of the Volunteer, Agency and Users Registry Schema details. To access the JSON files, please click below links.
+Please find below a visual representation of the Users, User Profile and Agency Registry Schema details. To access the JSON files, please click below links.
 
-Volunteer and Volunteer Profile Registry - [Link](https://github.com/Sunbird-Serve/sunbird-serve-volunteering/tree/main/schema/registry)
+User and User Profile Registry - [Link](https://github.com/Sunbird-Serve/sunbird-serve-volunteering/tree/main/schema/registry)
 
-Agency and Users Registry - [Link](https://github.com/Sunbird-Serve/sunbird-serve-volunteering/tree/main/schema/registry)
+Agency and Reference Channel Registry - [Link](https://github.com/Sunbird-Serve/sunbird-serve-volunteering/tree/main/schema/registry)
 
 <figure><img src="../../.gitbook/assets/volflow.png" alt=""><figcaption></figcaption></figure>
