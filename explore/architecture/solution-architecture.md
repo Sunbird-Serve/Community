@@ -6,4 +6,4 @@ Leveraging some of Sunbird building blocks like Sunbird RC to include next gener
 
 To facilitate reliable communication and asynchronous processing, a message broker is integrated, enabling the seamless exchange of messages and event-driven workflows. Lastly, an API gateway acts as a centralized entry point, offering a unified interface and enforcing consistent governance and security policies. Together, these components create a robust and flexible solution architecture that can cater to the evolving demands of the application while ensuring optimal performance and maintainability.
 
-<figure><img src="../../.gitbook/assets/Sunbird-Serve-Arch (1).png" alt=""><figcaption><p>Solution Architecture</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/solution_arch.png" alt=""><figcaption></figcaption></figure>

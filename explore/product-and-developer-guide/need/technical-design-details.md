@@ -40,7 +40,7 @@ The microservice exposes a RESTful API that allows other components and services
 
 **Database Integration**
 
-The microservice integrates with a dedicated database or a portion of the larger database system. It utilizes a database management system, such as MongoDB, to store and retrieve need-related data efficiently. The schema design is optimized to support the specific requirements of need types, plans, deliverables, and associated metadata.
+Need Registry, Need Type and Entity Registry are created in the postgres db of RC instance. The microservice also integrates with a dedicated database or a portion of the larger database system. It utilizes a database management system, such as MongoDB. The schema design is optimized to support the specific requirements of need types, plans, deliverables, and associated metadata.
 
 All the transactional data will be saved in the serve db. \
 
@@ -55,4 +55,4 @@ The Need Management microservice embraces an event-driven architecture to facili
 
 **Monitoring and Logging**
 
-The microservice implements comprehensive monitoring and logging mechanisms to track its performance and detect anomalies.&#x20;
+The microservice implements comprehensive monitoring and logging mechanisms to track its performance and detect anomalies through Sunbird Telemetry.&#x20;
