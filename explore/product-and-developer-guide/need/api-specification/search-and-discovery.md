@@ -24,6 +24,7 @@ The request payload includes the following information:
 ```json
   curl -X GET \
      -H "Content-Type: application/json" \
+     -H "authorization: bearer {access-token}" \
      -d '{
         "id": "api.vneed.need.read",
         "ver": "v1",
@@ -98,6 +99,7 @@ The request payload includes the following information:
 ```json
   curl -X GET \
      -H "Content-Type: application/json" \
+     -H "authorization: bearer {access-token}" \
      -d '{
         "id": "api.serve-need.need-type.read",
         "ver": "v1",
@@ -157,6 +159,7 @@ To fetch list of all active entity.&#x20;
 ```json
   curl -X GET \
      -H "Content-Type: application/json" \
+     -H "authorization: bearer {access-token}" \
      -d '{
          "id": "api.serve-need.entity.read",
          "ver": "v1",

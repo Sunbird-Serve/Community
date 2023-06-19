@@ -26,6 +26,7 @@ The request payload includes the following information:
 ```json
   curl -X POST \
   -H "Content-Type: application/json" \
+  -H "authorization: bearer {access-token}" \
   -d '{
     "id": "api.serve-need.need.create",
     "ver": "v1",
@@ -99,6 +100,7 @@ The request payload includes the following information:
 ```json
 curl -X POST \
   -H "Content-Type: application/json" \
+  -H "authorization: bearer {access-token}" \
   -d '{
     "id": "api.serve-need.need.update",
     "ver": "v1",
@@ -152,6 +154,7 @@ The request payload includes the following information:
 ```json
   curl -X POST \
   -H "Content-Type: application/json" \
+  -H "authorization: bearer {access-token}" \
   -d '{
     "id": "api.serve-need.need-type.create",
     "ver": "v1",
@@ -171,7 +174,7 @@ The request payload includes the following information:
        }
       }
   }' \
-     https://localhost:port/api/serve-need/need-type/v1/create
+     https://domain:port/api/serve-need/need-type/v1/create
 ```
 
 #### Example Response
@@ -215,6 +218,7 @@ The request payload includes the following information:
 ```json
 curl -X POST \
   -H "Content-Type: application/json" \
+  -H "authorization: bearer {access-token}" \
   -d '{
     "id": "api.serve-need.need-type.update",
     "ver": "v1",
