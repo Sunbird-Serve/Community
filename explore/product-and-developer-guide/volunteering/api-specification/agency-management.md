@@ -24,6 +24,7 @@ To facilitate seamless integration and efficient communication, we have curated 
 ```json
 curl -X POST \
   -H "Content-Type: application/json" \
+  -H "authorization: bearer {access-token}" \
   -d '{
     "id": "api.serve-volunteer.agency.create",
     "ver": "v1",
@@ -103,6 +104,7 @@ curl -X POST \
 ```json
 curl -X GET \
   -H "Content-Type: application/json" \
+  -H "authorization: bearer {access-token}" \
   https://domain:port/api/serve-volunteer/agency/v1/{agencyId}
 ```
 
@@ -111,6 +113,7 @@ curl -X GET \
 ```json
 curl -X PUT \
   -H "Content-Type: application/json" \
+  -H "authorization: bearer {access-token}" \
   -d '{
     "id": "api.serve-volunteer.agency.update",
     "ver": "v1",

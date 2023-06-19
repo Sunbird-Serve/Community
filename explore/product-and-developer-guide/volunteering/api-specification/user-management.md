@@ -128,6 +128,7 @@ The API call will create a new user with the provided details and return a respo
 ```json
 curl -X GET \
   -H "Content-Type: application/json" \
+  -H "authorization: bearer {access-token}" \
   -d '{
     "id": "api.serve-volunteer.users.read",
     "ver": "v1",
@@ -148,6 +149,7 @@ curl -X GET \
 ```json
 curl -X PUT \
   -H "Content-Type: application/json" \
+  -H "authorization: bearer {access-token}" \
   -d '{
     "id": "api.serve-volunteer.users.update",
     "ver": "v1",
