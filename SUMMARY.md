@@ -35,7 +35,7 @@
 
 ## Contribute
 
-* [Contributors](contribute/contributors.md)
+* [Coding Standards](https://docs.google.com/document/d/1aoj6cSgQ5uziLqsvG4oGzh3bhNHh5khe4pk\_lGh10BU/edit?usp=sharing)
 * [Feature Idea](contribute/feature-idea.md)
 * [Feature Development](contribute/feature-development.md)
 
