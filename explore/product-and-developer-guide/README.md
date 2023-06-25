@@ -11,3 +11,7 @@
 {% content-ref url="fulfill.md" %}
 [fulfill.md](fulfill.md)
 {% endcontent-ref %}
+
+{% content-ref url="schema-design.md" %}
+[schema-design.md](schema-design.md)
+{% endcontent-ref %}

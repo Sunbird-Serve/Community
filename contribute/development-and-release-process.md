@@ -62,3 +62,46 @@ When a defect is identified during the release testing, the QA community will ma
 
 
 
+## Release Process
+
+Kindly go through [Sunbird Community Contribution Practice Ver1.0](https://docs.google.com/document/d/1ulBgZW-UthdK75BssIfKCUNk3tyv5NeSRUxRO7hZ-qY/edit) document's Release Practice section for detailed release process followed.&#x20;
+
+#### Release Naming Convention&#x20;
+
+Sunbird Serve building block follows a 4 digit release naming convention i.e. A.B.C.D
+
+A -> number denoting the major release
+
+B -> number denoting the stable release on the major release
+
+C -> number denoting the intermediate release on the stable release
+
+D -> number denoting the hotfix on the intermediate release
+
+A release number 4.10.1.2 denotes, 4th Major Release, 10th Stable release,1st intermediate release on 10th Stable release and 2nd hotfix release on the intermediate release.
+
+#### Release Activities
+
+Below diagram will give a overview of the different release activities and their sequence\
+
+
+<figure><img src="https://lh4.googleusercontent.com/l_4b84PRB0e-etVMGRY5eLc9GRPfDL9xhmRZtBb3DGtNYi8tDn-jq0vh25mYZQhFzAhGp8eSUQRO5YiB88HRQy7ChuWsrXwnOfjbBWVdr1V8E5S8n_h90b7iQN7vSnSDStQgts1eGZ4_QmQgX_EW84I" alt=""><figcaption></figcaption></figure>
+
+Intermediate Release Activities :-
+
+\
+
+
+<figure><img src="https://lh3.googleusercontent.com/cbz-4WHvZ9Ew3Wu0H4eFxsES8pAi-qERw0kRACx9B40PP4bOifJSOuZLIYR3ZIB0S0_2EinwK1joAgj0xjfK_sRDRTqT_kGR1FOBGd_FaJ8Xh6om-Snyj0slZxhdwuuncaPw1qd2YlT_I3d5juVstBo" alt=""><figcaption></figcaption></figure>
+
+\
+
+
+Stable Release Activities :-
+
+\
+
+
+<figure><img src="https://lh6.googleusercontent.com/YcBvxATARyzOCqHJIxetqLi69-av9nYt-mUsNrXvlQf6Rif-C7KXNmdHoaF-__HiPuWPpBNO0pYATsA0wxlpW5N9zGcS_pk1MLE0Y9ovHSzEpVIfsrdhLMyq7IG8khZ2PNedYaVfrP95Ny96QteE54E" alt=""><figcaption></figcaption></figure>
+
+\
