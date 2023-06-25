@@ -87,7 +87,7 @@ The request payload includes the following information:
 #### cURL
 
 ```json
-curl -X POST \
+curl -X PUT \
   -H "Content-Type: application/json" \
   -H "authorization: bearer {access-token}" \
   -d '{
@@ -96,7 +96,7 @@ curl -X POST \
     "ets": 0,
     "request": {
       "NeedPlan": {
-        "id":"guidnd02",
+        "id":"guidnp02",
         "userId": "guidus01",
         "occurrenceDetails": {
           "frequency": "Weekly",
@@ -130,3 +130,72 @@ curl -X POST \
 }
 ```
 
+### Fetch Need Plan
+
+"filters": An object containing filter criteria to narrow down the search results. In this example, the filters include:
+
+* "needId": The identifier of the need to fetch need plan.
+* "pagination": An object specifying the page number and limit for pagination. In this example, the page number is 1, and the limit is 10. This means the API will return the first 10 need plan from the result set.
+* "sort": An object specifying the field and order for sorting the needs. In this example, the need plans will be sorted based on the "osCreatedAt" field in descending order.
+
+#### cURL
+
+```json
+  curl -X GET \
+     -H "Content-Type: application/json" \
+     -H "authorization: bearer {access-token}" \
+     -d '{
+        "id": "api.serve-need.need-plan.read",
+        "ver": "v1",
+        "ets": 0,
+        "request": {
+            "filters": {
+                "needId": "guidn01"
+            },
+            "pagination": {
+                "page": 1,
+                "limit": 10
+            },
+            "sort": {
+                "field": "osCreatedAt"
+            }
+        }
+     }' \
+     https://domain:port/api/serve-need/need-plan/v1/read
+
+```
+
+#### Example Response
+
+```json
+{
+    "id": "api.serve-need.need-plan.read",
+    "params": {
+        "status": "successful"
+    },
+    "responseCode": "OK",
+    "result": {
+         "NeedPlan": {
+              "id":"guidnp01",
+              "name": "Plan - Science Grade 5",
+              "needId": "guidn01",
+              "assignedUserId": "guidfd01",
+              "status": "Approved",
+              "occurrenceDetails": {
+                  "frequency": "Weekly",
+                  "startDate": "2023-07-01",
+                  "endDate": "2023-12-31",
+                  "timeSlot": "10:00 AM - 11:00 AM",
+                  "days": ["Monday", "Wednesday", "Friday"]
+               }
+          },
+    "ts": "2023-05-23T12:34:56Z",
+    "ver": "1.0"
+}
+```
+
+
+
+### Track Need Deliverables
+
+Coming Soon

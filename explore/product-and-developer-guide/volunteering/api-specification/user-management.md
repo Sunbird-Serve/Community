@@ -123,7 +123,7 @@ The API call will create a new user with the provided details and return a respo
 }
 ```
 
-### Retrieve Volunteer
+### Retrieve Users
 
 ```json
 curl -X GET \
@@ -144,7 +144,7 @@ curl -X GET \
 
 ```
 
-### Update Volunteer
+### Update Users
 
 ```json
 curl -X PUT \

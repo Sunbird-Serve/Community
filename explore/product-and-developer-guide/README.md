@@ -8,8 +8,8 @@
 [volunteering](volunteering/)
 {% endcontent-ref %}
 
-{% content-ref url="fulfill.md" %}
-[fulfill.md](fulfill.md)
+{% content-ref url="fulfill/" %}
+[fulfill](fulfill/)
 {% endcontent-ref %}
 
 {% content-ref url="schema-design.md" %}
