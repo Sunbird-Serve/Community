@@ -20,6 +20,7 @@
     * [API Specification](explore/product-and-developer-guide/need/api-specification/README.md)
       * [Need Service](explore/product-and-developer-guide/need/api-specification/need-service.md)
       * [Search & Discovery](explore/product-and-developer-guide/need/api-specification/search-and-discovery.md)
+      * [Deliverable Service](explore/product-and-developer-guide/need/api-specification/deliverable-service.md)
     * [Technical Sequence](explore/product-and-developer-guide/need/technical-sequence.md)
   * [Volunteering](explore/product-and-developer-guide/volunteering/README.md)
     * [Technical Design Details](explore/product-and-developer-guide/volunteering/technical-design-details.md)
@@ -36,9 +37,9 @@
 ## Contribute
 
 * [Coding Standards](https://docs.google.com/document/d/1aoj6cSgQ5uziLqsvG4oGzh3bhNHh5khe4pk\_lGh10BU/edit?usp=sharing)
-* [Feature Idea](contribute/feature-idea.md)
 * [Development & Release Process](contribute/development-and-release-process.md)
 * [Release Plan](contribute/release-plan.md)
+* [Feature Idea](contribute/feature-idea.md)
 
 ## Use
 
