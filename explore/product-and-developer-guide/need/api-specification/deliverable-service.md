@@ -196,6 +196,68 @@ curl -X PUT \
 
 
 
-### Track Need Deliverables
+### Need Deliverable Generation
 
-Coming Soon
+The "Need Deliverable" API is designed to manage and handle the generation of need deliverables like Sessions, Tasks or Events.&#x20;
+
+This API is called when a need plan is generated and approved. Need deliverable is generated with relevant details such as taskType which could be either Sessions, Events or Tasks, the ID of the fulfillment details, the status of the deliverable(Not Started, In Progress, Reopen, Completed, Closed), and session numbers.
+
+The request payload includes the following information:
+
+* "needPlanId": An identifier for the need plan.
+* "taskType": Deliverable type - Session, Event or Tasks
+* "status": The status of the need deliverable, which would be updated by the nCoordinator.&#x20;
+* "fulfillmentDetailsId": The identifier of the fulfillment details for the need.
+* "sessionNumber": Number of planned sessions for the need
+
+#### cURL
+
+```json
+  curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "authorization: bearer {access-token}" \
+  -d '{
+    "id": "api.serve-need.need-deliverable.create",
+    "ver": "v1",
+    "ets": 0,
+    "request": {
+      "NeedDeliverable": {
+      "needPlanId": "guidnp01",
+      "taskType": "Sessions",
+      "fulfillmentDetailsId": "guidfd01",
+      "sessionNumber": "205",
+      "status":"In progress"
+      }
+    }
+  }' \
+     https://domain:port/api/serve-need/need-deliverable/v1/create
+
+```
+
+#### Example Response
+
+```json
+{
+  "id": "api.serve-need.need-deliverable.create",
+  "ver": "v1",
+  "ets": 1623867200000,
+  "params": {
+    "resmsgid": "c1d09b7a-1234-5678-90ab-cd1234567890",
+    "msgid": null,
+    "status": "successful",
+    "err": null,
+    "errmsg": null
+  },
+  "responseCode": "OK",
+  "result": {
+   "NeedDeliverable": {
+        "id": "guidnd01",
+        "needPlanId": "guidnp01",
+        "fulfillmentDetailsId": "guidfd01",
+        "status": "In progress"
+      }
+  }
+}
+```
+
+###
