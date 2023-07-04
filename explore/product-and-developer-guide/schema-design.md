@@ -8,7 +8,7 @@ Need Registry, NeedType Registry and Entity Registry - [Link](https://github.com
 
 Taxonomy, Onboarding Steps and Need Requirement - [Link](https://github.com/Sunbird-Serve/sunbird-serve-need/tree/main/schemas/serve)
 
-<figure><img src="../../.gitbook/assets/needschema (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### Need Plan, Need Deliverable and Fulfillment Flow
 

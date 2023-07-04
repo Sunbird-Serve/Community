@@ -12,7 +12,7 @@ Kindly go through [Sunbird Community Contribution Practice Ver1.0](https://docs.
 
 Design artifacts play a crucial role in visualizing the system architecture, defining service contracts and APIs, and designing database schemas. Functional design involves creating use case diagrams, sequence diagrams, and domain models to outline the interactions, behavior, and data structures of microservices. Technical artifacts include individual code repositories, API gateway configurations, deployment scripts, message formats, service discovery mechanisms, containerization files, and infrastructure requirements. These artifacts serve as documentation and references for development teams, ensuring consistency, facilitating collaboration, and guiding the implementation of microservices. Kindly check the [Product & Developer Guide](../explore/product-and-developer-guide/) to access all the required artifacts.&#x20;
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Step 2: Code, Merge and Test Process**
 
