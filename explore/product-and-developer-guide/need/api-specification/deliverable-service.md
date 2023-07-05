@@ -12,7 +12,7 @@ The "Need Plan" API is designed to manage and handle the generation of need plan
 
 This API is called when a nominated need is approved by the nCoordinator. Need plan is generated with relevant details such as the name of the plan, a unique identifier (needId), the ID of the user assigned to the plan, the status of the plan (e.g., New, Proposed, Approved, Withdrawn), and occurrence details including the frequency, start date, end date, time slot, and days of occurrence.
 
-Additionally, the API supports including proposed details for the need plan, such as an alternative time slot, specific days, and any additional comments. This feature is not included in the present MVP, hence the status would by default be "Approved".&#x20;
+Additionally, the API supports including proposed details for the need plan, such as an alternative time slot, specific days, and any additional comments. This feature is not included in the MVP, hence the status would by default be "Approved".&#x20;
 
 Upon successful creation of a need plan, the API will return a response with the created plan's details, including a plan ID, the provided information, timestamps for creation and updates, and the respective users who performed those actions.
 
@@ -198,14 +198,14 @@ curl -X PUT \
 
 ### Need Deliverable Generation
 
-The "Need Deliverable" API is designed to manage and handle the generation of need deliverables like Sessions, Tasks or Events.&#x20;
+The "Need Deliverable" API is designed to manage and handle the generation of need deliverables based on the deliverable type like Sessions, Tasks or Events.&#x20;
 
-This API is called when a need plan is generated and approved. Need deliverable is generated with relevant details such as taskType which could be either Sessions, Events or Tasks, the ID of the fulfillment details, the status of the deliverable(Not Started, In Progress, Reopen, Completed, Closed), and session numbers.
+This API is called when a need plan is generated and approved. Need deliverable is generated with relevant details such as deliverableType which could be either Sessions, Events or Tasks, the ID of the fulfillment details, the status of the deliverable(Not Started, In Progress, Reopen, Completed, Closed), and session numbers.
 
 The request payload includes the following information:
 
 * "needPlanId": An identifier for the need plan.
-* "taskType": Deliverable type - Session, Event or Tasks
+* "deliverableType": Deliverable type - Session, Event or Tasks
 * "status": The status of the need deliverable, which would be updated by the nCoordinator.&#x20;
 * "fulfillmentDetailsId": The identifier of the fulfillment details for the need.
 * "sessionNumber": Number of planned sessions for the need
@@ -223,7 +223,7 @@ The request payload includes the following information:
     "request": {
       "NeedDeliverable": {
       "needPlanId": "guidnp01",
-      "taskType": "Sessions",
+      "deliverableType": "Sessions",
       "fulfillmentDetailsId": "guidfd01",
       "sessionNumber": "205",
       "status":"In progress"
