@@ -147,6 +147,7 @@ The request payload includes the following information:
 * "userId": The identifier of the user who raised the need type.
 * "taskType": Additional details related to the type of task associated with the need type, including an identifier and a task detail. The task detail can be one of the following: "Session", "Event", or "Task".
 * "taxonomyId": The identifier of the taxonomy associated with the need type.
+* "requirementId": The identifier of the requirement associated with the need.
 * "onboardingStepsId": The identifier of the onboarding steps associated with the need type.
 
 #### cURL
@@ -170,6 +171,7 @@ The request payload includes the following information:
             "taskDetail": "Session"
             },
           "taxonomyId": "guidtx02",
+          "requirementId": "guidnr02",
           "onboardingStepsId": "guidob01"
        }
       }
@@ -204,6 +206,7 @@ The request payload includes the following information:
         "taskDetail": "Session"
       },
       "taxonomyId": "guidtx02",
+      "requirementId": "guidnr02",
       "onboardingStepsId": "guidob01"
     }
   }
