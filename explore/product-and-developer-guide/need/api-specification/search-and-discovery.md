@@ -141,8 +141,8 @@ The request payload includes the following information:
       "userId": "guidncd08"
       "taskTypeId": "guidtt01",
       "taxonomyId": "guidtx01",
-      "onboardingStepsId": "guidob01",
-      "requirement_id": 5
+      "requirementId":"guidnr01",
+      "onboardingStepsId": "guidob01"
     }
   },
   "ts": "2023-05-23T12:34:56Z",
