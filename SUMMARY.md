@@ -30,6 +30,7 @@
   * [Fulfill](explore/product-and-developer-guide/fulfill/README.md)
     * [API Specification](explore/product-and-developer-guide/fulfill/api-specification/README.md)
       * [Requests & Nominations](explore/product-and-developer-guide/fulfill/api-specification/requests-and-nominations.md)
+    * [Technical Sequence](explore/product-and-developer-guide/fulfill/technical-sequence.md)
   * [Schema Design](explore/product-and-developer-guide/schema-design.md)
 
 ## Adopt
