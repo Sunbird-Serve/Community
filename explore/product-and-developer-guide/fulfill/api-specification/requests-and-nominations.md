@@ -92,3 +92,47 @@ curl -X POST \
   }' \
   https://domain:port/api/serve-fulfill/nomination/v1/update
 ```
+
+## Fetch Nominations
+
+This API is called when list of nominations need to be retrieved for a need&#x20;
+
+*   Request:
+
+    * Method: `GET`
+    * Endpoint: `https://domain:port/api/serve-fulfill/nomination/v1/read`
+    * Headers:
+      * `Content-Type: application/json`
+
+    The request payload includes the following information:
+
+    * "filters": An object containing filter criteria to narrow down the search results. In this example, the filters include:
+      * "needId": The identifier of the need to filter by.
+      * "nominatedUserId": The identifier of the user associated with the nominations to filter by.
+      * "nominationStatus": The status of the nominations to filter by, such as "new", "approved".
+    * "sort": An object specifying the field and order for sorting the needs. In this example, the needs will be sorted based on the "osCreatedAt" field in descending order.
+
+#### cURL
+
+```json
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "authorization: bearer {access-token}" \
+  -d '{
+        "id": "api.serve-fulfill.nomination.read",
+        "ver": "v1",
+        "ets": 0,
+        "request": {
+            "filters": {
+                "needId": 123,
+                "nominatedUserId":"userId",
+                "nominationStatus": "new"
+            },
+            "sort": {
+                "field": "osCreatedAt",
+                "order": "desc"
+            }
+        }
+     }' \
+  https://domain:port/api/serve-fulfill/nomination/v1/read
+```
