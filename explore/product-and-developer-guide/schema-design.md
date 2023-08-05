@@ -34,6 +34,6 @@ User and User Profile Registry - [Link](https://github.com/Sunbird-Serve/sunbird
 
 Agency and Reference Channel Registry - [Link](https://github.com/Sunbird-Serve/sunbird-serve-volunteering/tree/main/schema/registry)
 
-db diagram - [Link](https://dbdiagram.io/d/6482c917722eb77494abbbee)
+db diagram - [Link](https://dbdiagram.io/d/648d60bc02bd1c4a5ea1fe4f)
 
 <figure><img src="../../.gitbook/assets/volflow.png" alt=""><figcaption></figcaption></figure>
