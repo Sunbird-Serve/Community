@@ -22,7 +22,7 @@ Need Deliverables - [Link](https://github.com/Sunbird-Serve/sunbird-serve-need/t
 
 Nomination and Fulfillment Details - [Link](https://github.com/Sunbird-Serve/sunbird-serve-fulfill/tree/main/schema/serve)
 
-db diagram - [Link](https://dbdiagram.io/d/6488798b722eb77494e3bee0)
+db diagram - [Link](./)
 
 <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
