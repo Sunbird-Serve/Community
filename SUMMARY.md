@@ -41,6 +41,7 @@
 
 * [Coding Standards](https://docs.google.com/document/d/1aoj6cSgQ5uziLqsvG4oGzh3bhNHh5khe4pk\_lGh10BU/edit?usp=sharing)
 * [Development & Release Process](contribute/development-and-release-process.md)
+* [Adopter's Version Control Guidelines](contribute/adopters-version-control-guidelines.md)
 * [Release Plan](contribute/release-plan.md)
 * [Feature Idea](contribute/feature-idea.md)
 
