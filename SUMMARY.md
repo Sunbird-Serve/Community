@@ -47,6 +47,9 @@
 
 ## Use
 
+* [Solution Architecture - Serve V0](use/solution-architecture-serve-v0.md)
+* [Technical Architecture - Serve V0](use/technical-architecture-serve-v0.md)
+* [Data Security and Privacy](use/data-security-and-privacy.md)
 * [Source Code](use/source-code.md)
 * [Installing Serve Beta Platform](use/installation-guide.md)
   * [Prerequisites](use/installing-serve-beta-platform/prerequisites.md)
