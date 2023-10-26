@@ -32,6 +32,7 @@
       * [Requests & Nominations](explore/product-and-developer-guide/fulfill/api-specification/requests-and-nominations.md)
     * [Technical Sequence](explore/product-and-developer-guide/fulfill/technical-sequence.md)
   * [Schema Design](explore/product-and-developer-guide/schema-design.md)
+  * [Telemetry Events](explore/product-and-developer-guide/telemetry-events.md)
 
 ## Adopt
 
