@@ -62,3 +62,72 @@ In this use case, the event is triggered when a user visits explore need page on
 
 By customizing this event with the user's ID, user interactions can be tracked with different pages on the platform, gain insights into which pages are most frequently visited, and understand how users navigate through the platform. This data can be valuable for optimizing the user experience.
 
+### **Interact** - This API is used to log telemetry of user interactions on the page. For example, search, click, preview, move, resize, configure
+
+**Serve** - This API is used to log telemetry of user interactions - nominate a need, search a need or need type, preview the need details.&#x20;
+
+**Use Case 1: Logging Telemetry for Nominating a Need**
+
+**Description**: Captures telemetry when a user interacts with the platform to nominate a need.
+
+**Request Arguments**:
+
+* **data**: An object containing the following information:
+  * **type**: "ACTIVATE" (as the user is activating the action).
+  * **id**: The unique identifier of the element or button used to nominate a need.
+  * **pageid**: The ID of the page or stage where the interaction takes place.
+
+**Customization**:
+
+* **User ID**: Ensure that the user's ID is associated with this interaction to track which users are nominating needs.
+
+**Explanation**:
+
+In this use case, the event is triggered when a user activates the action of nominating a need. The "type" is set to "ACTIVATE" to indicate the activation of this action.
+
+The "id" represents the unique identifier of the element or button used for nominating a need, and the "pageid" is the ID of the page where the interaction occurred.
+
+**Use Case 2: Logging Telemetry for Searching a Need or Need Type**
+
+**Description**: Captures telemetry when a user interacts with the platform to search for a specific need or need type.
+
+**Request Arguments**:
+
+* **data**: An object containing the following information:
+  * **type**: "SEARCH" (as the user is initiating a search action).
+  * **id**: The unique identifier of the search input field or button.
+  * **pageid**: The ID of the page where the search interaction occurs.
+
+**Customization**:
+
+* **User ID**: Include the user's ID to track which users are performing searches.
+
+**Explanation**:
+
+In this use case, the event is used to log telemetry when a user initiates a search action. The "type" is set to "SEARCH" to signify the search action.
+
+The "id" is the unique identifier of the search input field or button used by the user, and the "pageid" represents the ID of the page where the search action takes place.
+
+**Use Case 3: Logging Telemetry for Previewing Need Details**
+
+**Description**: Captures telemetry when a user interacts with the platform to preview the details of a specific need.
+
+**Request Arguments**:
+
+* **data**: An object containing the following information:
+  * **type**: "PREVIEW" (as the user is initiating a preview action).
+  * **id**: The unique identifier of the element or button used to preview the need details.
+  * **pageid**: The ID of the page or stage where the preview interaction takes place.
+
+**Customization**:
+
+* **User ID**: Ensure the user's ID is associated with this interaction to track which users are previewing need details.
+
+**Explanation**:
+
+In this use case, the event is triggered when a user initiates the action of previewing the details of a specific need. The "type" is set to "PREVIEW" to indicate the preview action.
+
+The "id" is the unique identifier of the element or button used for previewing need details, and the "pageid" represents the ID of the page or stage where the interaction occurs.
+
+By customizing the "Interact" event for these specific use cases, you can track and analyze how users are engaging with the Serve platform when nominating needs, searching for needs or need types, and previewing need details. This data can provide insights to enhance the user experience and make improvements as needed.
+
