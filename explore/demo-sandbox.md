@@ -1,17 +1,23 @@
 # DEMO SANDBOX
 
-This instance of Serve-Beta version is created to demonstrate the some capabilities the platform has to offer.&#x20;
+This instance of Serve-Beta version is created to demonstrate some capabilities the platform has to offer.&#x20;
 
 * Registration of Volunteers, Teachers and Coordinators.&#x20;
 * Enrolling need entities
-* Creating courses and managing offerings
+* Raise Need
 * Manage Need Deliverables
-* Enrol Students and manage student data
-* Access different types of contents
 
-Link for the serve-beta instance: [https://serve.evean.net/](https://serve.evean.net/)
+### Link for the SERVE-Vriddhi version: [https://serve-v1.evean.net/](https://serve-v1.evean.net/)
+
+Credentials:&#x20;
+
+nCoordinator: max.code@gmail.com / maxcode@123
+
+volunteer: ava.bytefield@gmail.com / avabyte@123
 
 
+
+### Link for the SERVE-v0 instance: [https://serve.evean.net/](https://serve.evean.net/)
 
 Credentials:
 
