@@ -46,6 +46,7 @@
 * [Development & Release Process](contribute/development-and-release-process.md)
 * [Release Plan](contribute/release-plan.md)
 * [Feature Idea](contribute/feature-idea.md)
+* [Backlog](contribute/backlog.md)
 
 ## Use
 
