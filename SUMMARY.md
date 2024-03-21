@@ -33,6 +33,9 @@
     * [Technical Sequence](explore/product-and-developer-guide/fulfill/technical-sequence.md)
   * [Schema Design](explore/product-and-developer-guide/schema-design.md)
   * [Telemetry Events](explore/product-and-developer-guide/telemetry-events.md)
+* [Installing Serve-Vriddhi](explore/installing-serve-vriddhi/README.md)
+  * [SERVE-Vriddhi Frontend](explore/installing-serve-vriddhi/serve-vriddhi-frontend.md)
+  * [SERVE-Vriddhi Backend](explore/installing-serve-vriddhi/serve-vriddhi-backend.md)
 
 ## Adopt
 
@@ -54,9 +57,6 @@
 * [Technical Architecture - Serve V0](use/technical-architecture-serve-v0.md)
 * [Data Security and Privacy](use/data-security-and-privacy.md)
 * [Source Code](use/source-code.md)
-* [Installing Serve-Vriddhi](use/installing-serve-vriddhi/README.md)
-  * [SERVE-Vriddhi Frontend](use/installing-serve-vriddhi/serve-vriddhi-frontend.md)
-  * [SERVE-Vriddhi Backend](use/installing-serve-vriddhi/serve-vriddhi-backend.md)
 * [Installing Serve V0 Platform](use/installing-serve-v0-platform/README.md)
   * [Prerequisites](use/installing-serve-v0-platform/prerequisites.md)
   * [Serve Beta on Windows](use/installing-serve-v0-platform/serve-beta-on-windows.md)
