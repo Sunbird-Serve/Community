@@ -36,6 +36,7 @@
 * [Installing Serve-Vriddhi](explore/installing-serve-vriddhi/README.md)
   * [SERVE-Vriddhi Frontend](explore/installing-serve-vriddhi/serve-vriddhi-frontend.md)
   * [SERVE-Vriddhi Backend](explore/installing-serve-vriddhi/serve-vriddhi-backend.md)
+* [Starter Pack](explore/starter-pack.md)
 
 ## Adopt
 
@@ -69,7 +70,7 @@
 
 ## API Reference
 
-* [API Design](api-reference/api-design.md)
+* [Swagger Links](api-reference/swagger-links.md)
 
 ## Community
 
