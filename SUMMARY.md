@@ -9,6 +9,7 @@
   * [Discovery and Fulfill](capabilities/discovery.md)
   * [Manage Need Delivery](capabilities/delivery.md)
   * [Rate and Promote](explore/capabilities/promote.md)
+  * [Core Verbs](explore/capabilities/core-verbs.md)
 * [ARCHITECTURE](explore/architecture/README.md)
   * [Workflow](explore/architecture/workflow.md)
   * [Solution Architecture](explore/architecture/solution-architecture.md)
@@ -46,7 +47,7 @@
 ## Contribute
 
 * [Starter Pack](contribute/starter-pack.md)
-* [Coding Standards](https://docs.google.com/document/d/1aoj6cSgQ5uziLqsvG4oGzh3bhNHh5khe4pk\_lGh10BU/edit?usp=sharing)
+* [Coding Standards](https://docs.google.com/document/d/1aoj6cSgQ5uziLqsvG4oGzh3bhNHh5khe4pk_lGh10BU/edit?usp=sharing)
 * [Development & Release Process](contribute/development-and-release-process.md)
 * [Release Plan](contribute/release-plan.md)
 * [Feature Idea](contribute/feature-idea.md)
