@@ -44,12 +44,13 @@
 ## For Adopters
 
 * [Why Adopt SERVE?](for-adopters/why-adopt-serve.md)
-* [Adopters](for-adopters/adopters.md)
-* [Adopter's Version Control Guidelines](for-adopters/adopters-version-control-guidelines.md)
-* [Resources](for-adopters/resources.md)
 * [Deployment Guide](for-adopters/deployment-guide.md)
 * [Customization & Integration](for-adopters/customization-and-integration.md)
+* [Technical Requirements](for-adopters/technical-requirements.md)
 * [Case Studies](for-adopters/case-studies.md)
+* [Resources](for-adopters/resources.md)
+* [Adopters](for-adopters/adopters.md)
+* [Adopter's Version Control Guidelines](for-adopters/adopters-version-control-guidelines.md)
 
 ## Contribute
 
