@@ -34,9 +34,6 @@
     * [Technical Sequence](explore/product-and-developer-guide/fulfill/technical-sequence.md)
   * [Schema Design](explore/product-and-developer-guide/schema-design.md)
   * [Telemetry Events](explore/product-and-developer-guide/telemetry-events.md)
-* [Installing Serve-Vriddhi](explore/installing-serve-vriddhi/README.md)
-  * [SERVE-Vriddhi Frontend](explore/installing-serve-vriddhi/serve-vriddhi-frontend.md)
-  * [SERVE-Vriddhi Backend](explore/installing-serve-vriddhi/serve-vriddhi-backend.md)
 * [Starter Pack](explore/starter-pack.md)
 * [NDEAR Compliance](explore/ndear-compliance.md)
 * [Digital Public Good (DPG) Principles](explore/digital-public-good-dpg-principles.md)
@@ -55,6 +52,9 @@
 ## Contribute
 
 * [Starter Pack](contribute/starter-pack.md)
+* [Installing Serve-Vriddhi](contribute/installing-serve-vriddhi/README.md)
+  * [SERVE-Vriddhi Frontend](contribute/installing-serve-vriddhi/serve-vriddhi-frontend.md)
+  * [SERVE-Vriddhi Backend](contribute/installing-serve-vriddhi/serve-vriddhi-backend.md)
 * [Coding Standards](https://docs.google.com/document/d/1aoj6cSgQ5uziLqsvG4oGzh3bhNHh5khe4pk_lGh10BU/edit?usp=sharing)
 * [Development & Release Process](contribute/development-and-release-process.md)
 * [Release Plan](contribute/release-plan.md)
@@ -63,6 +63,9 @@
 
 ## Use
 
+* [Installing Serve-Vriddhi](use/installing-serve-vriddhi/README.md)
+  * [SERVE-Vriddhi Frontend](use/installing-serve-vriddhi/serve-vriddhi-frontend.md)
+  * [SERVE-Vriddhi Backend](use/installing-serve-vriddhi/serve-vriddhi-backend.md)
 * [Solution Architecture - Serve V0](use/solution-architecture-serve-v0.md)
 * [Technical Architecture - Serve V0](use/technical-architecture-serve-v0.md)
 * [Data Security and Privacy](use/data-security-and-privacy.md)
