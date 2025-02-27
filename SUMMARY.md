@@ -38,11 +38,18 @@
   * [SERVE-Vriddhi Frontend](explore/installing-serve-vriddhi/serve-vriddhi-frontend.md)
   * [SERVE-Vriddhi Backend](explore/installing-serve-vriddhi/serve-vriddhi-backend.md)
 * [Starter Pack](explore/starter-pack.md)
+* [NDEAR Compliance](explore/ndear-compliance.md)
+* [Digital Public Good (DPG) Principles](explore/digital-public-good-dpg-principles.md)
 
-## Adopt
+## For Adopters
 
-* [Adopters](adopt/adopters.md)
-* [Adopter's Version Control Guidelines](adopt/adopters-version-control-guidelines.md)
+* [Why Adopt SERVE?](for-adopters/why-adopt-serve.md)
+* [Adopters](for-adopters/adopters.md)
+* [Adopter's Version Control Guidelines](for-adopters/adopters-version-control-guidelines.md)
+* [Resources](for-adopters/resources.md)
+* [Deployment Guide](for-adopters/deployment-guide.md)
+* [Customization & Integration](for-adopters/customization-and-integration.md)
+* [Case Studies](for-adopters/case-studies.md)
 
 ## Contribute
 
