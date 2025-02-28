@@ -42,7 +42,7 @@
 
 * [Why Adopt SERVE?](for-adopters/why-adopt-serve.md)
 * [Deployment Guide](for-adopters/deployment-guide.md)
-* [Customization & Integration](for-adopters/customization-and-integration.md)
+* [Configuration for Various Use Case](for-adopters/configuration-for-various-use-case.md)
 * [Technical Requirements](for-adopters/technical-requirements.md)
 * [Case Studies](for-adopters/case-studies.md)
 * [Resources](for-adopters/resources.md)
