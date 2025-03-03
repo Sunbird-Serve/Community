@@ -3,6 +3,7 @@
 ## Explore
 
 * [OVERVIEW](README.md)
+* [STARTER PACK FOR ADOPTERS](explore/starter-pack-for-adopters.md)
 * [CAPABILITIES](explore/capabilities/README.md)
   * [Volunteer Management](capabilities/supply.md)
   * [Need Management](capabilities/demand.md)
@@ -11,9 +12,10 @@
   * [Rate and Promote](explore/capabilities/promote.md)
   * [Core Verbs](explore/capabilities/core-verbs.md)
 * [ARCHITECTURE](explore/architecture/README.md)
-  * [Workflow](explore/architecture/workflow.md)
   * [Solution Architecture](explore/architecture/solution-architecture.md)
   * [Technical Architecture](architecture/technical-architecture.md)
+  * [Key Technical Aspects](explore/architecture/key-technical-aspects.md)
+  * [Workflow](explore/architecture/workflow.md)
 * [DEMO SANDBOX](explore/demo-sandbox.md)
 * [Product & Developer Guide](explore/product-and-developer-guide/README.md)
   * [Need](explore/product-and-developer-guide/need/README.md)
@@ -41,6 +43,7 @@
 ## For Adopters
 
 * [Why Adopt SERVE?](for-adopters/why-adopt-serve.md)
+* [Scaling & Customization](for-adopters/scaling-and-customization.md)
 * [Configuration for Various Use Case](for-adopters/configuration-for-various-use-case.md)
 * [Technical Requirements](for-adopters/technical-requirements.md)
 * [Deployment Guide](for-adopters/deployment-guide.md)
