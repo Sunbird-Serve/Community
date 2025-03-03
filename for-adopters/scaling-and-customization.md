@@ -14,5 +14,4 @@ Sunbird SERVE is designed to be flexible, scalable, and interoperable, ensuring 
 * **Configurable Taxonomies** – Define categories, hierarchies, and metadata based on your domain.
 * **Role-Based Access Control (RBAC)** – Customize user roles and permissions.
 * **Custom Workflows** – Modify workflows to fit your operational processes.
-* **Localization & Multilingual Support** – Adapt SERVE to different languages and regions.
-* **API-Driven Extensibility** – Integrate with existing tools like LMS, CRM, and reporting systems.
+* **API-Driven Extensibility** – Integrate with existing tools like CMS and reporting systems.

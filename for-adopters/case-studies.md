@@ -4,7 +4,7 @@
 
 **Background**
 
-The Government of Uttar Pradesh, through its education department, aimed to leverage volunteer-driven digital learning to improve educational outcomes in rural and semi-urban schools. Given the scale of UP, with **over 1.5 lakh schools**, a **scalable, technology-driven volunteer engagement platform** was needed.
+The Government of Uttar Pradesh, through its education department, aimed to leverage volunteer-driven digital learning to improve educational outcomes in rural and semi-urban schools. Given the vast scale of UP’s education system, a **scalable, technology-driven volunteer engagement platform** was needed.
 
 **How Sunbird SERVE Helped**
 
@@ -37,14 +37,14 @@ eVidyaloka, a non-profit focused on rural education, wanted to connect **profess
 
 **How Sunbird SERVE Helped**
 
-✅ **Automated Demand-Supply Matching:**
+✅ **Customizable Volunteer Engagement:**
 
 * Need type: **"Online Teaching", "Facilitated Teaching", "Content Development"** configured for **subject-specific volunteer matching**.
 
 ✅ **Flexible Taxonomy & Input Parameters:**
 
 * Configured **taxonomy of subjects & grades** to allow volunteers to register based on their expertise.
-* Input parameters included **session timings, content availability, and student preferences**.
+* Input parameters included **session timings, and volunteer preferences**.
 
 ✅ **Impact**
 
@@ -68,8 +68,8 @@ APSWREIS runs **residential schools for underprivileged children** in Andhra Pra
 
 ✅ **Registry Integration & Secure Access**
 
-* Integrated **student, teacher, and volunteer databases** to ensure a **secure and authenticated system**.
-* Volunteers could only access **assigned schools & subjects**.
+* Integrated **Entity**, **school staff, and volunteer databases** to ensure a **secure and authenticated system**.
+* Volunteers could only access **assigned schools & needs**.
 
 ✅ **Outcomes**
 

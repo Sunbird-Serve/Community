@@ -6,8 +6,8 @@ description: SERVE Vriddhi
 
 1. **Understanding SERVE**
    * Unlocking the Power of SERVE _-_ [Why Adopt SERVE](../for-adopters/why-adopt-serve.md)
-   * Mastering SERVE's Core Verbs _-_ [Core Verbs](capabilities/core-verbs.md)
    * Deep Dive into SERVE - [Capabilities](capabilities/)
+   * Mastering SERVE's Core Verbs _-_ [Core Verbs](capabilities/core-verbs.md)
    * Real Impact, Real Stories - [Case Studies](../for-adopters/case-studies.md)
 2. **Scaling & Customization**
    * From Pilot to Impact - [Scaling SERVE Seamlessly](../for-adopters/scaling-and-customization.md)

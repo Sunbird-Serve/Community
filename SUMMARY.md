@@ -43,11 +43,11 @@
 ## For Adopters
 
 * [Why Adopt SERVE?](for-adopters/why-adopt-serve.md)
+* [Case Studies](for-adopters/case-studies.md)
 * [Scaling & Customization](for-adopters/scaling-and-customization.md)
 * [Configuration for Various Use Case](for-adopters/configuration-for-various-use-case.md)
 * [Technical Requirements](for-adopters/technical-requirements.md)
 * [Deployment Guide](for-adopters/deployment-guide.md)
-* [Case Studies](for-adopters/case-studies.md)
 * [Adopter's Version Control Guidelines](for-adopters/adopters-version-control-guidelines.md)
 
 ## Contribute

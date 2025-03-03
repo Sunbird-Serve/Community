@@ -31,7 +31,6 @@ It has or it can integrate seamlessly with:&#x20;
 * **Moodle / Open edX / SWAYAM** – For online course management.
 * **DIKSHA Platform** – Enabling access to high-quality educational content and training materials.
 * **jCMS (Your Custom Content Management System)** – For managing and distributing volunteer-driven educational content.
-* **DigiLocker** – For document verification and digital credential storage.
 * **Telemetry Dashboards** – Sunbird Serve natively supports telemetry to analyze participation trends.
 
 #### **7. Cost-Effective & Community-Driven**
@@ -40,7 +39,7 @@ Since it is open-source, it reduces the cost of adoption while benefiting from a
 
 #### **8. Aligned with National and Global Priorities**
 
-Designed for **governments, NGOs, and large institutions**, it aligns with **Digital Public Infrastructure (DPI) principles** and supports Sustainable Development Goals (SDGs).
+Designed for **governments, NGOs, and large institutions**, it aligns with **Digital Public Good(DPG) principles** and supports Sustainable Development Goals (SDGs).
 
 Read More about SERVE NDEAR Compliance [here](../explore/ndear-compliance.md)
 

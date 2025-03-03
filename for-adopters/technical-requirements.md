@@ -13,7 +13,7 @@
 | **Reverse Proxy & Load Balancing**        | Nginx (for HTTPS termination & routing).                                                         |
 | **Storage Requirements**                  | Minimum **100GB SSD** for logs, media files, and database storage.                               |
 | **Message Queuing (Optional)**            | Kafka or RabbitMQ (For event-driven workflows).                                                  |
-| **Authentication & Security**             | Firebase/Auth0/Keycloak for user authentication. TLS encryption for secure communication.        |
+| **Authentication & Security**             | Firebase/Keycloak for user authentication. TLS encryption for secure communication.              |
 
 ***
 
@@ -29,7 +29,6 @@ Sunbird SERVE is designed to scale efficiently based on usage demands. Consider 
 * **Medium Deployments (10,000 users):**
   * **Separate DB instance** to handle transaction loads.
   * Multiple application instances with **horizontal scaling** using a load balancer.
-  * **Cache Layer (Redis)** for faster response times.
 * **Large Deployments (100,000+ users):**
   * **Microservices on separate servers/containers**.
   * **Auto-scaling groups** for API services using Kubernetes.
@@ -43,13 +42,7 @@ Sunbird SERVE is designed to scale efficiently based on usage demands. Consider 
 
 **🔹 API Rate Limiting**
 
-* Implement **throttling mechanisms** to prevent misuse (e.g., 100 API calls per minute per user).
 * Use **API Gateway (Kong, AWS API Gateway)** to enforce rate limits.
-
-**🔹 Logging & Monitoring**
-
-* Use **ELK Stack (Elasticsearch, Logstash, Kibana)** for centralized logging.
-* Set up **Prometheus + Grafana** for real-time performance monitoring.
 
 **🔹 High Availability & Disaster Recovery**
 

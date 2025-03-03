@@ -2,7 +2,7 @@
 
 * **Need Type:** Defines the type of the need being fulfilled (e.g., **Online Teaching** or **Disaster Relief Support**).
 * **Volunteer Skills:** Determines the required capabilities of volunteers.
-* **Taxonomy:** Defines how tasks or content are categorized.
+* **Taxonomy:** Defines how tasks and requirements of the need are categorized.
 * **Input Parameters:** Custom fields needed for each scenario.
 
 ***
@@ -16,7 +16,7 @@
 Modify `needType.json`:
 
 ```json
-jsonCopyEdit{
+{
   "needType": "ONLINE TEACHING",
   "description": "Conduct live teaching sessions for students in rural schools"
 }
@@ -29,10 +29,11 @@ jsonCopyEdit{
 Modify `volunteerSkills.json`:
 
 ```json
-jsonCopyEdit{
+{
   "needType": "ONLINE TEACHING",
   "skills": ["Mathematics", "Science", "English", "Coding"],
-  "experienceLevel": ["Beginner", "Intermediate", "Expert"]
+  "experienceLevel": ["Beginner", "Intermediate", "Expert"],
+  "languagePreference": "type": "dropdown", "values": ["English", "Hindi", "Kannada"]
 }
 ```
 
@@ -43,7 +44,7 @@ jsonCopyEdit{
 Modify `taxonomy.json`:
 
 ```json
-jsonCopyEdit{
+{
   "needType": "ONLINE TEACHING",
   "taxonomy": {
     "grade": ["1st", "2nd", "3rd", "4th"],
@@ -60,13 +61,13 @@ jsonCopyEdit{
 Modify `inputParameters.json`:
 
 ```json
-jsonCopyEdit{
+{
   "needType": "ONLINE TEACHING",
   "parameters": [
-    { "name": "sessionMode", "type": "dropdown", "values": ["Zoom", "Google Meet"] },
-    { "name": "sessionDuration", "type": "number", "unit": "minutes" },
-    { "name": "preferredTimings", "type": "timeslot", "format": "HH:mm - HH:mm" },
-    { "name": "languagePreference", "type": "dropdown", "values": ["English", "Hindi", "Kannada"] }
+    { "name": "taskType", "type": "dropdown", "values": ["Sessions", "Events", "Tasks"] },
+    { "name": "inputURL", "type": "input" },
+    { "name": "startTime", "type": "timeslot", "format": "HH:mm - HH:mm" },
+    { "name": "endTime", "type": "timeslot", "format": "HH:mm - HH:mm" }
   ]
 }
 ```
@@ -87,7 +88,7 @@ jsonCopyEdit{
 Modify `needType.json`:
 
 ```json
-jsonCopyEdit{
+{
   "needType": "DISASTER_RELIEF",
   "description": "Assign volunteers to provide relief during floods, earthquakes, etc."
 }
@@ -100,7 +101,7 @@ jsonCopyEdit{
 Modify `volunteerSkills.json`:
 
 ```json
-jsonCopyEdit{
+{
   "needType": "DISASTER_RELIEF",
   "skills": ["First Aid", "Food Distribution", "Rescue Operations", "Logistics"],
   "experienceLevel": ["Beginner", "Trained", "Expert"]
@@ -114,7 +115,7 @@ jsonCopyEdit{
 Modify `taxonomy.json`:
 
 ```json
-jsonCopyEdit{
+{
   "needType": "DISASTER_RELIEF",
   "taxonomy": {
     "disasterType": ["Flood", "Earthquake", "Cyclone"],
@@ -131,7 +132,7 @@ jsonCopyEdit{
 Modify `inputParameters.json`:
 
 ```json
-jsonCopyEdit{
+{
   "needType": "DISASTER_RELIEF",
   "parameters": [
     { "name": "location", "type": "text" },
@@ -158,7 +159,7 @@ jsonCopyEdit{
 Modify `needType.json`:
 
 ```json
-jsonCopyEdit{
+{
   "needType": "IN_KIND_DONATION",
   "description": "Facilitate donation of goods such as books, clothes, food, and medical supplies."
 }
@@ -185,7 +186,7 @@ jsonCopyEdit{
 Modify `taxonomy.json`:
 
 ```json
-jsonCopyEdit{
+{
   "needType": "IN_KIND_DONATION",
   "taxonomy": {
     "donationCategory": ["Books", "Clothes", "Food", "Medical Supplies"],
@@ -202,7 +203,7 @@ jsonCopyEdit{
 Modify `inputParameters.json`:
 
 ```json
-jsonCopyEdit{
+{
   "needType": "IN_KIND_DONATION",
   "parameters": [
     { "name": "donorName", "type": "text" },
