@@ -42,6 +42,10 @@ Since it is open-source, it reduces the cost of adoption while benefiting from a
 
 Designed for **governments, NGOs, and large institutions**, it aligns with **Digital Public Infrastructure (DPI) principles** and supports Sustainable Development Goals (SDGs).
 
+Read More about SERVE NDEAR Compliance [here](../explore/ndear-compliance.md)
+
+Read More about SERVE adherence to DPG Principles [here](../explore/digital-public-good-dpg-principles.md)
+
 #### **Who Should Adopt It?**
 
 * **Governments** looking to scale volunteer-driven public service programs.

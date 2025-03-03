@@ -24,14 +24,14 @@ All services (backend, UI, database, and proxy) run on a **single EC2/VM instanc
 **Step 1: Install Dependencies**
 
 ```bash
-bashCopyEditsudo apt update && sudo apt upgrade -y
+sudo apt update && sudo apt upgrade -y
 sudo apt install -y openjdk-17-jdk postgresql nginx git curl
 ```
 
 **Step 2: Setup PostgreSQL Database**
 
 ```bash
-bashCopyEditsudo -i -u postgres
+sudo -i -u postgres
 psql
 CREATE DATABASE serve_db;
 CREATE USER serve_user WITH ENCRYPTED PASSWORD 'your_password';
@@ -43,8 +43,10 @@ exit
 **Step 3: Clone Sunbird Serve Repositories**
 
 ```bash
-bashCopyEditgit clone https://github.com/Sunbird-Serve/serve-backend.git
-git clone https://github.com/Sunbird-Serve/serve-ui.git
+git clone https://github.com/Sunbird-Serve/sunbird-serve-need.git
+git clone https://github.com/Sunbird-Serve/sunbird-serve-fulfill.git
+git clone https://github.com/Sunbird-Serve/sunbird-serve-volunteering.git
+git clone https://github.com/Sunbird-Serve/sunbird-serve-ui.git
 ```
 
 **Step 4: Configure Backend (Spring Boot Services)**
@@ -67,15 +69,15 @@ git clone https://github.com/Sunbird-Serve/serve-ui.git
 **Step 5: Deploy Frontend (React UI)**
 
 ```bash
-bashCopyEditcd serve-ui
+cd sunbird-serve-ui/src/main/frontend
 npm install
-npm run build
+npm start
 ```
 
 *   Configure Nginx to serve the UI:
 
     ```bash
-    bashCopyEditsudo nano /etc/nginx/sites-available/serve
+    sudo nano /etc/nginx/sites-available/serve
     ```
 
     Add the following:
@@ -99,7 +101,7 @@ npm run build
     ```
 
 ```bash
-bashCopyEditsudo ln -s /etc/nginx/sites-available/serve /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/serve /etc/nginx/sites-enabled/
 sudo systemctl restart nginx
 ```
 
@@ -130,7 +132,7 @@ sudo systemctl restart nginx
 **Step 3: Deploy Backend on Dedicated Server**
 
 ```bash
-bashCopyEditscp serve-backend.jar user@backend-server-ip:/home/user/
+scp serve-backend.jar user@backend-server-ip:/home/user/
 ssh user@backend-server-ip
 java -jar serve-backend.jar
 ```
@@ -230,7 +232,6 @@ bashCopyEditkubectl apply -f deployment.yaml
 
 ✅ **Testing API & UI**
 
-* Check API health: `curl http://backend-server-ip:8080/actuator/health`
 * Test UI: Open browser and access `http://yourdomain.com`
 
 ✅ **Monitor Performance**
