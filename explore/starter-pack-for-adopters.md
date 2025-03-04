@@ -9,6 +9,7 @@ description: SERVE Vriddhi
    * Deep Dive into SERVE - [Capabilities](capabilities/)
    * Mastering SERVE's Core Verbs _-_ [Core Verbs](capabilities/core-verbs.md)
    * Real Impact, Real Stories - [Case Studies](../for-adopters/case-studies.md)
+   * Product Roadmap - [Roadmap](../contribute/product-roadmap.md)
 2. **Scaling & Customization**
    * From Pilot to Impact - [Scaling SERVE Seamlessly](../for-adopters/scaling-and-customization.md)
    * Setting Up SERVE for Your Use Case - [Customizing for You](../for-adopters/configuration-for-various-use-case.md)
