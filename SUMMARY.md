@@ -4,6 +4,7 @@
 
 * [OVERVIEW](README.md)
 * [STARTER PACK FOR ADOPTERS](explore/starter-pack-for-adopters.md)
+* [STARTER PACK FOR CONTRIBUTORS](explore/starter-pack-for-contributors.md)
 * [CAPABILITIES](explore/capabilities/README.md)
   * [Volunteer Management](capabilities/supply.md)
   * [Need Management](capabilities/demand.md)
@@ -36,7 +37,6 @@
     * [Technical Sequence](explore/product-and-developer-guide/fulfill/technical-sequence.md)
   * [Schema Design](explore/product-and-developer-guide/schema-design.md)
   * [Telemetry Events](explore/product-and-developer-guide/telemetry-events.md)
-* [Starter Pack](explore/starter-pack.md)
 * [NDEAR Compliance](explore/ndear-compliance.md)
 * [Digital Public Good (DPG) Principles](explore/digital-public-good-dpg-principles.md)
 
