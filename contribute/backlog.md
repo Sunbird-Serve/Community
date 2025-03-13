@@ -6,13 +6,15 @@
 | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | --------------------- |
 | Registration Forms for nCoordinator and vCoordinator | [https://github.com/orgs/Sunbird-Serve/projects/15](https://github.com/orgs/Sunbird-Serve/projects/15/views/1) | Open for Contribution |
 | Registration prior to firebase authentication        | [https://github.com/orgs/Sunbird-Serve/projects/6](https://github.com/orgs/Sunbird-Serve/projects/6)           | Open for Contribution |
+| Onboard Entity and Authorise Need as nAdmin          | [https://github.com/orgs/Sunbird-Serve/projects/23](https://github.com/orgs/Sunbird-Serve/projects/23)         | Open for Contribution |
 
-### Enhancements
+### Next Best
 
-| Description                               | Project Link | Status                |
-| ----------------------------------------- | ------------ | --------------------- |
-| Splitting Code into Focused Microservices |              | Open for Contribution |
-| Analytics for nAdmin                      |              | Open for Contribution |
+| Description                   | Project Link                                                                                           | Status                |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------ | --------------------- |
+| Sunbird Telemetry Integration | [https://github.com/orgs/Sunbird-Serve/projects/16](https://github.com/orgs/Sunbird-Serve/projects/16) | Open for Contribution |
+| Analytics for nAdmin          | TBC                                                                                                    | Open for Contribution |
+| JWT Tokens                    | TBC                                                                                                    | Open for Contribution |
 
 ### Bugs
 
