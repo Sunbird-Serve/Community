@@ -20,8 +20,11 @@
 
 ### Vriddhi Release - Milestone 2
 
-| MicroService         | Release Branch Name          | Changes                          |
-| -------------------- | ---------------------------- | -------------------------------- |
-| SERVE - UI           | release-ui-3.1.0.0           | nAdmin, vAdmin feature inclusion |
-| SERVE - Need         | release-need-3.1.0.0         | nAdmin feature                   |
-| SERVE - Volunteering | release-volunteering-3.1.0.0 | vAdmin features                  |
+| Capabilities         | Persona                                                                                                                | Changes                                                                                                                                                                           | Release - Label              |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| Need Management      | <p></p><p>nCoordinator</p><p></p><p>nAdmin </p><p></p><p></p><p>Serve Admin</p>                                        | <p>Edit Need Details</p><p></p><p>Logs in</p><p>View Needs</p><p>View Entitites</p><p></p><p>Create Need Agency</p>                                                               | release-need-3.1.0.0         |
+| Need Management      | <p>nAdmin   </p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p>Serve Admin </p><p> </p><p></p><p>nCoordinator</p> | <p>Approve Needs</p><p>Add and Register Entity</p><p>Assign nCoordinators</p><p></p><p>Assign nAdmin to Agency</p><p>Add Entity and Assign Entity</p><p></p><p>Onboard Entity</p> | release-need-3.2.0.0         |
+| Volunteer Management | <p></p><p>Serve Admin</p><p></p>                                                                                       | vAdd Agency                                                                                                                                                                       | release-volunteering-3.1.0.0 |
+| Volunteer Management | <p>Serve Admin  </p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p>vAdmin</p>                                     | <p>Assign vAdmin to Agency</p><p></p><p>Logs in</p><p>View Volunteers and vCoordinators Registered within the Agency</p><p>Assign vCoordinators to the Agency</p>                 | release-volunteering-3.2.0.0 |
+| Need Delivery        | <p></p><p>nAdmin</p>                                                                                                   | Track Need Deliverables                                                                                                                                                           | release-need-3.1.0.0         |
+| Need Delivery        | <p>Volunteer  </p><p></p><p></p><p></p><p></p><p>nCoordinator</p>                                                      | <p>Requests for a Reschedule or Additional Deliverable</p><p></p><p></p><p>Reschedules or Adds the Deliverables</p>                                                               | release-need-3.2.0.0         |
