@@ -1,10 +1,24 @@
 # Release Plan
 
-Vriddhi Release - 1
+### Vriddhi Release - Milestone 1
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+| Capabilities          | Persona                                                           | Changes                                                                                                                                     | Release - Label              |
+| --------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| Need Management       | nCoordinator                                                      | <p>Logs in</p><p>View Needs</p><p>Raise Needs</p>                                                                                           | release-need-1.0.0.0         |
+| Need Management       | nCoordinator                                                      | <p>View Approved needs</p><p>View unapproved needs</p>                                                                                      | release-need-1.1.0.0         |
+| Need Management       | nCoordinator                                                      | View Need Types                                                                                                                             | release-need-1.2.0.0         |
+| Need Management       | nCoordinator                                                      | Receiving Notification (email)                                                                                                              | release-need-2.1.0.0         |
+| Volunteer Management  | <p>vCoordinator </p><p></p><p></p><p>Volunteer</p>                | <p>Login </p><p></p><p>Registration and Authentication</p>                                                                                  | release-volunteering-1.0.0.0 |
+| Volunteer Management  | vCoordinator                                                      | view registered volunteers                                                                                                                  | release-volunteering-1.2.0.0 |
+| Volunteer Management  | vCoordinator                                                      | <p>Recommend Volunteers</p><p>Receiving Notification (emails)</p>                                                                           | release-volunteering-2.1.0.0 |
+| Volunteer Management  | <p>Volunteer </p><p></p><p>System</p>                             | <p>Edit Profile </p><p></p><p>Update Volunteer Hours</p>                                                                                    | release-volunteering-2.2.0.0 |
+| Discovery and Fulfill | <p>Volunteer </p><p></p><p></p>                                   | <p>Explore Need Type</p><p>View Needs</p><p>View Need details</p>                                                                           | release-need-1.2.0.0         |
+| Discovery and Fulfill | <p>Volunteer</p><p></p><p>nCoordinator</p>                        | <p>Nominate Need View Nominations</p><p>Approve Nominations</p>                                                                             | release-fulfill-1.2.0.0      |
+| Need Delivery         | <p>Volunteer, nCoordinator</p><p></p><p>System</p><p></p>         | <p>View Need Plan</p><p></p><p></p><p>Generate Deliverables</p>                                                                             | release-need-1.2.0.0         |
+| Need Delivery         | nCoordinator                                                      | Track Need Deliverable                                                                                                                      | release-need-2.1.0.0         |
+| Need Delivery         | <p>Volunteer  </p><p></p><p></p><p></p><p></p><p>nCoordinator</p> | <p>Deliver Need</p><p>Update the Deliverable status</p><p>Update details of need deliverable</p><p></p><p>Add Deliverable Links (Input)</p> | release-need-2.2.0.0         |
 
-### Vriddhi Release - 2
+### Vriddhi Release - Milestone 2
 
 | MicroService         | Release Branch Name          | Changes                          |
 | -------------------- | ---------------------------- | -------------------------------- |
