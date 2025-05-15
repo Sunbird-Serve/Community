@@ -29,31 +29,9 @@ The Government of Uttar Pradesh, through its education department, aimed to leve
 
 ***
 
-#### **2. eVidyaloka Digital Learning Platform (**[**https://www.evidyaloka.org/**](https://www.evidyaloka.org/)**)**
-
-**Background**
-
-eVidyaloka, a non-profit focused on rural education, wanted to connect **professionals as volunteer teachers** to children in remote areas. The challenge was **managing the demand-supply of volunteers and sessions dynamically**.
-
-**How Sunbird SERVE Helped**
-
-✅ **Customizable Volunteer Engagement:**
-
-* Need type: **"Online Teaching", "Facilitated Teaching", "Content Development"** configured for **subject-specific volunteer matching**.
-
-✅ **Flexible Taxonomy & Input Parameters:**
-
-* Configured **taxonomy of subjects & grades** to allow volunteers to register based on their expertise.
-* Input parameters included **session timings, and volunteer preferences**.
-
-✅ **Impact**
-
-* Improved **volunteer retention and operational efficiency**.
-* **Scalability:** Expanded to **multiple states and languages**.
-
 ***
 
-#### **3. Andhra Pradesh Social Welfare Residential Educational Institutions Society (APSWREIS) (**[**https://apswreis.evidyaloka.org/**](https://apswreis.evidyaloka.org/)**)**
+#### **2. Andhra Pradesh Social Welfare Residential Educational Institutions Society (APSWREIS) (**[**https://apswreis.evidyaloka.org/**](https://apswreis.evidyaloka.org/)**)**
 
 **Background**
 
@@ -76,6 +54,32 @@ APSWREIS runs **residential schools for underprivileged children** in Andhra Pra
 * **Thousands of students benefited** from additional learning support.
 * **Sustained engagement with local & international volunteers**.
 * **Scalable model for adoption across all APSWREIS schools**.
+
+
+
+#### **3. eVidyaloka Technical Contribution Hub**
+
+[https://serve.evidyaloka.org](https://serve.evidyaloka.org)
+
+**Background**
+
+To strengthen and sustain both its educational platform and open-source Sunbird SERVE infrastructure, eVidyaloka required a structured way to engage skilled technical contributors. This led to the creation of a dedicated instance to raise, track, and fulfill technical needs across multiple areas—development, DevOps, UI/UX, QA, documentation, and more.
+
+**How Sunbird SERVE Helped**
+
+✅ **Need Type Configuration: "Technical Contribution"**\
+Enabled eVidyaloka to post platform-specific and open-source SERVE-related requirements—like feature enhancements, bug fixes, infra setup, and documentation.\
+Volunteers could discover needs and nominate based on skill and availability.
+
+✅ **Custom Workflow for Collaboration**\
+Provided a smooth tracking mechanism—from raising needs to fulfillment—with progress updates and acknowledgments.
+
+**Outcomes**
+
+* A vibrant, **community-driven development ecosystem** for Sunbird SERVE.
+* Enabled **sustained technical contributions** across multiple modules—from local customization to platform-level improvements.
+* Created a scalable, transparent way for **volunteers to meaningfully contribute to digital public infrastructure**.
+* Supported faster turnaround of platform needs while nurturing **open-source ownership and participation**.
 
 ***
 

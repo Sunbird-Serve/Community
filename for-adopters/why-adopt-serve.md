@@ -28,7 +28,6 @@ It has or it can integrate seamlessly with:&#x20;
 
 * **Sunbird RC -** For User Registry and Credentialing
 * **Sunbird ED** – For structured learning experiences.
-* **Moodle / Open edX / SWAYAM** – For online course management.
 * **DIKSHA Platform** – Enabling access to high-quality educational content and training materials.
 * **jCMS (Your Custom Content Management System)** – For managing and distributing volunteer-driven educational content.
 * **Telemetry Dashboards** – Sunbird Serve natively supports telemetry to analyze participation trends.
