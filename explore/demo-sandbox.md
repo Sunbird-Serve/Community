@@ -11,9 +11,13 @@ This instance of Serve-Vriddhi version is created to demonstrate some capabiliti
 
 Credentials:&#x20;
 
-nCoordinator: max.code@gmail.com / maxcode@123
+nCoordinator: [demo.ncoord@gmail.com](mailto:demo.ncoord@gmail.com) / demoncoord@123
 
-volunteer: ava.bytefield@gmail.com / avabyte@123
+nAdmin: [demoadmin.serve@gmail.com](mailto:demoadmin.serve@gmail.com) / demoadminserve@123
+
+vCoordinator: [demo.vcoord@gmail.com](mailto:demo.vcoord@gmail.com)/demovcoord@123
+
+volunteer: Kindly register yourself
 
 
 
