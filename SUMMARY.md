@@ -43,6 +43,7 @@
 ## SERVE Agentic AI
 
 * [SERVE Agentic AI – High-Level Architecture](serve-agentic-ai/serve-agentic-ai-high-level-architecture.md)
+* [Volunteer-Coordinator Agentic Orchestrator](serve-agentic-ai/volunteer-coordinator-agentic-orchestrator.md)
 
 ## For Adopters
 
