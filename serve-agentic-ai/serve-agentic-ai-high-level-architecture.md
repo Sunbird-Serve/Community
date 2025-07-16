@@ -1,6 +1,6 @@
 # SERVE Agentic AI – High-Level Architecture
 
-Sunbird SERVE’s Agentic AI architecture combines persona focused intelligence with a hardened tool-execution backbone: user prompts first reach dedicated “orchestrator” AIs (for Need-, Volunteer-coordinators and Volunteers) that understand intent, manage state‐machines and call specialised helper agents. Every real world action then flows through an MCP client/server pair that validates schema-based tool calls before touching SERVE micro-services, messaging, calendar or content systems.
+Sunbird SERVE’s Agentic AI architecture combines persona focused intelligence with a tool-execution backbone. User prompts first reach dedicated “orchestrator” AIs (for Need-, Volunteer-coordinators and Volunteers) that understand intent, manage state‐machines and call specialised helper agents. Every real world action then flows through an MCP client/server pair that validates schema-based tool calls before touching SERVE micro-services, messaging, calendar or content systems.
 
 <figure><img src="../.gitbook/assets/SERVE - Agentic AI.drawio (1).png" alt=""><figcaption></figcaption></figure>
 
