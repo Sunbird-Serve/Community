@@ -40,6 +40,10 @@
 * [NDEAR Compliance](explore/ndear-compliance.md)
 * [Digital Public Good (DPG) Principles](explore/digital-public-good-dpg-principles.md)
 
+## SERVE Agentic AI
+
+* [SERVE Agentic AI – High-Level Architecture](serve-agentic-ai/serve-agentic-ai-high-level-architecture.md)
+
 ## For Adopters
 
 * [Why Adopt SERVE?](for-adopters/why-adopt-serve.md)
