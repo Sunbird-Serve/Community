@@ -1,6 +1,6 @@
 # SERVE - Roadmap
 
-#### **Phase 1: Foundation & Core Capability (Release 1.x)**
+#### **Phase 1: Foundation & MVP Features (Release 1.x) - Vriddhi**
 
 **Timeline:** 2023\
 **Focus:** Build MVP with basic need and volunteer management features.
@@ -18,7 +18,7 @@
 
 | **Goals**                         | **Milestones**                                    | **Key Highlights**                                 |
 | --------------------------------- | ------------------------------------------------- | -------------------------------------------------- |
-| Content integration               | - CMS integration                                 | Rich content available for volunteer sessions      |
+| Content integration               | - CMS integration                                 | content available for volunteer sessions           |
 | Improve usability                 | - Mobile responsiveness                           | Device responsiveness made Serve usable on mobiles |
 | Enhance engagement metrics        | - Volunteering hours tracked                      | Foundation for volunteer contribution analytics    |
 | Ensure infrastructure reliability | -Dockerization, Backups, Nginx/SSL configurations | Secure, scalable infra ready for expansion         |
@@ -42,24 +42,48 @@
 **Timeline:** Early 2025 – Mid 2025\
 **Focus:** End-to-end UX polish, agency management, and analytics foundation
 
-| **Goals**                   | **Milestones**                                                                     | **Key Highlights**                                                 |
-| --------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| Seamless persona onboarding | <p>- Registration flows for vCoord/nCoord<br>- Entity assignment by nCoord</p>     | Personalized entry points, better data mapping                     |
-| UX and schema revamp        | <p>- Raise Need form redesign<br>- Volunteer profile and deliverables redesign</p> | Intuitive, mobile-optimized interface                              |
-| Foundational analytics      | <p>- nAdmin dashboards<br>- Track volunteer hours &#x26; engagement</p>            | Program-level visibility for ops & reporting                       |
-| Agency Management           | -Volunteer Agency Registration and Management                                      | Coordinators, Admins and Volunteers can register through an agency |
+| **Goals**              | **Milestones**                                                                     | **Key Highlights**                                                 |
+| ---------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| Persona onboarding     | <p>- Registration flows for vCoord/nCoord<br>- Entity assignment by nCoord</p>     | Personalized entry points, better data mapping                     |
+| UX and schema revamp   | <p>- Raise Need form redesign<br>- Volunteer profile and deliverables redesign</p> | Intuitive, mobile-optimized interface                              |
+| Foundational analytics | <p>- nAdmin dashboards<br>- Track volunteer hours &#x26; engagement</p>            | Program level visibility for ops & reporting                       |
+| Agency Management      | -Volunteer Agency Registration and Management                                      | Coordinators, Admins and Volunteers can register through an agency |
 
-#### **Phase 5: Intelligence, Federation & Automation**
+#### **Phase 5: Intelligence, SERVE-X(Exchange) & Automation**
 
 **Timeline:** 2025 Onward\
-**Focus:** Telemetry, Fulfillment Flexibility, Empower agents, federate deployments, and automate public service flows
+**Focus:** Telemetry, Fulfillment Flexibility, Empower agents, SERVE-X a beckn inspired protocol driven network, and automate public service flows
 
-| **Goals**                        | **Milestones**                                                                                                | **Key Highlights**                                                      |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| Agentic AI with MCP              | <p>- Need Coordinator Agentic AI<br>- Volunteer Assistant Agentic AI<br>- Volunteer Management Agentic AI</p> | Agent-led workflows reduce manual coordination effort                   |
-| AI-Powered Content Access        | - Llama 3 / AI4Bharat integration with CMS                                                                    | Volunteers get contextual content quickly using natural queries         |
-| Serve-X Federation Layer         | <p>- Beckn-inspired Need Publisher &#x26; Volunteer Supplier<br>- Instance registry</p>                       | Multi-instance Serve adoption with shared needs and volunteer pools     |
-| Flexibility in class fulfillment | - Reschedule / Add deliverables                                                                               | Volunteers and Coordinators collaborate                                 |
-| Telemetry                        | <p>- Telemetry integration<br>- Notification enhancements</p>                                                 | Early observability + real-time comms powered up                        |
-| Program Automation & Alerts      | <p>- Auto-generate agency codes<br>- Smarter notification engine</p>                                          | Reactive + proactive ops through intelligent automation                 |
-| Ecosystem Readiness              | <p>- Documented protocols<br>- Adopter onboarding toolkits</p>                                                | Ready for governments, NGOs, and public platforms to adopt and federate |
+### **Phase 5A: Telemetry, Automation & Ecosystem Readiness**
+
+**Timeline:** Mid 2025 onward\
+**Focus:** Enhance observability, automate ops, and enable mass adoption
+
+| **Goals**                                                                 | **Milestones**                                                                                                                                            | **Key Highlights**                                                                                                                                      |
+| ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Telemetry & Communication                                                 | <p>- Telemetry integration<br>- Notification enhancements</p>                                                                                             | Real-time monitoring and insights for system usage and performance                                                                                      |
+| SERVE - Flexible across domain, Drive custom workflows based on need type | - Abstract "Need Type" as a configurable entity in the system, Attach fulfillment rules, forms, and deliverables to each need type                        | One platform, infinite civic use cases - education, health, skilling, environment. Education needs → sessions, Health needs → visits, Mentoring → goals |
+| SERVE - Deployment Toolkit                                                | -Getting Started Guide (infra + deployment), Configuration templates                                                                                      | Ready for self-serve adoption                                                                                                                           |
+| Feature Refinements                                                       | -adding agency short code, revisit the vol registration form, display volunteer assignment info to need coordinator, rescheduling of sessions             | Product Enhancements                                                                                                                                    |
+| Security Hardening                                                        | <p>Audit trails for sensitive actions</p><p>Automated vulnerability scans</p><p>Token-based API access for Serve-X</p><p>SSH &#x26; secrets hardening</p> | Advanced Security Enhancements                                                                                                                          |
+
+### **Phase 5B: Agentic Intelligence & Personalization**
+
+**Timeline:** Mid 2025 onwards\
+**Focus:** Empower key personas with Agentic AI, and assist volunteers with smart content
+
+| **Goals**                     | **Milestones**                                                                                                   | **Key Highlights**                                                                  |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| Volunteer Management          | <p>- Deploy Volunteer Management Agentic AI<br>- Automate nomination reviews, assignments, and communication</p> | Replaces manual coordination by vCoordinator and vAdmin for volunteer-related tasks |
+| Support volunteers end-to-end | - Launch Volunteer Assistant Agent                                                                               | Guides volunteers till session completion with timely nudges and reminders          |
+| AI Tutor                      | - Integrate AI Tutor                                                                                             | Handles last minute volunteer unavailability to protect learner experience          |
+| Enable agent infrastructure   | - Establish orchestration layer using MCP                                                                        | Foundation to manage and extend AI agents across Serve workflows                    |
+
+### **Phase 5C: Serve-X - A Beckn Inspired decentralized network protocol**
+
+**Timeline:** Mid 2025 onwards\
+**Focus:** Federate Serve instances and improve cross-instance coordination
+
+| **Goals**              | **Milestones**                                                                       | **Key Highlights**                                   |
+| ---------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------- |
+| Serve-X Exchange Layer | <p>- Beckn-style Need Publisher &#x26; Volunteer Supplier<br>- Instance registry</p> | Enable decentralized adoption across NGOs and states |
