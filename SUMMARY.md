@@ -46,6 +46,7 @@
 * [SERVE Agentic AI – High-Level Architecture](serve-agentic-ai/serve-agentic-ai-high-level-architecture.md)
 * [Volunteer-Coordinator Agentic Orchestrator](serve-agentic-ai/volunteer-coordinator-agentic-orchestrator/README.md)
   * [Onboarding Agent](serve-agentic-ai/volunteer-coordinator-agentic-orchestrator/onboarding-agent.md)
+  * [Screening Agent](serve-agentic-ai/volunteer-coordinator-agentic-orchestrator/screening-agent.md)
 
 ## For Adopters
 
