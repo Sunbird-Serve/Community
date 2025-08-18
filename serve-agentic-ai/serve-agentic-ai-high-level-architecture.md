@@ -4,6 +4,8 @@ Sunbird SERVE’s Agentic AI architecture combines persona focused intelligence 
 
 <figure><img src="../.gitbook/assets/AI Agent - POC-Agentic AI.drawio (1).png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../.gitbook/assets/Architecture - Agentic AI _ Mermaid Chart-2025-08-18-051240.png" alt=""><figcaption></figcaption></figure>
+
 **UI Layer**
 
 _Single entry point for every persona_
