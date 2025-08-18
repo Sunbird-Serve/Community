@@ -29,7 +29,7 @@
 #### 2) MCP Layer (Protocol & Tool Invocation)
 
 * **MCP Client** :
-  * Translates tool intents into protocol-compliant requests, handles schemas, auth, retries, timeouts.
+  * Translates tool intents into protocol compliant requests, handles schemas, auth, retries, timeouts.
   * Enforces input/output validation and contracts.
 * **MCP Server** :
   * Exposes curated tools: `userprofile.get/update`, `comms.send`, `calendar.findSlots/schedule`, `meet.create`, `otp.send/verify`, `timezone.detect`, etc.
@@ -91,7 +91,7 @@
 
 ***
 
-### Where each capability sits
+### Capabilities
 
 * **Agentic Layer :** event handling, LLM slot-filling & validation, rules/eligibility, idempotency/retries, and **all domain events** (`userprofile.updated.v1`, `onboarding.blocked.v1`, `screening.meeting.scheduled.v1`, `onboarding.completed.v1`).
 * **MCP Client/Server (protocol & effects):** executes **tool intents** from Policy: `comms.send`, `userprofile.get/upsert`, `otp.send/verify`, `timezone.detect`, `calendar.findSlots/schedule`, `meet.create`.
@@ -101,7 +101,4 @@
 
 ### Failure/edge handling
 
-* **OTP not verified:** send guidance + retry window; after expiry → `onboarding.blocked.v1`.
-* **No overlapping slots:** queue the volunteer; re-attempt when interviewer capacity updates; notify via `comms.send("no_slots")`.
-* **Duplicate event/replay:** idempotency keys on `volunteerId` for profile, and `(volunteerId, meetingLink or slot)` for scheduling prevent duplicates.
-* **Comms/Calendar outages:** MCP Client retries with backoff and surfaces **policy-level** fail/compensate paths (e.g., fallback email only, or manual scheduling ticket).
+**will be added soon**
