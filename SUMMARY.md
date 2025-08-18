@@ -47,6 +47,7 @@
 * [Volunteer-Coordinator Agentic Orchestrator](serve-agentic-ai/volunteer-coordinator-agentic-orchestrator/README.md)
   * [Onboarding Agent](serve-agentic-ai/volunteer-coordinator-agentic-orchestrator/onboarding-agent.md)
   * [Screening Agent](serve-agentic-ai/volunteer-coordinator-agentic-orchestrator/screening-agent.md)
+  * [Fulfillment Agent](serve-agentic-ai/volunteer-coordinator-agentic-orchestrator/fulfillment-agent.md)
 
 ## For Adopters
 
