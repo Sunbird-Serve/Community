@@ -11,6 +11,14 @@ description: full end-to-end behaviour inside the SERVE Agentic-AI stack
 
 ***
 
+#### The Workflow
+
+<figure><img src="../../.gitbook/assets/Architecture - Agentic AI _ Mermaid Chart-2025-08-18-051240.png" alt=""><figcaption></figcaption></figure>
+
+#### Context & Memory Map
+
+<figure><img src="../../.gitbook/assets/Context_Memory Map - Onboarding Agent _ Mermaid Chart-2025-08-18-061918.png" alt=""><figcaption></figcaption></figure>
+
 #### Main Actors & Layers
 
 | Layer             | Who/What participates here                                                                                                               | objects                                                                                       |
