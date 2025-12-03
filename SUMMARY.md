@@ -44,6 +44,7 @@
 
 * [SERVE’s MCP-Powered Agentic AI Journey – From Click to Classroom](serve-agentic-ai/serves-mcp-powered-agentic-ai-journey-from-click-to-classroom.md)
 * [SERVE Agentic AI – High-Level Architecture](serve-agentic-ai/serve-agentic-ai-high-level-architecture.md)
+* [SERVE Volunteer Management Agentic AI (SIA)](serve-agentic-ai/serve-volunteer-management-agentic-ai-sia.md)
 * [Volunteer-Management Agentic AI](serve-agentic-ai/volunteer-management-agentic-ai/README.md)
   * [Orchestrator](serve-agentic-ai/volunteer-management-agentic-ai/orchestrator.md)
   * [Onboarding Agent](serve-agentic-ai/volunteer-management-agentic-ai/onboarding-agent.md)
