@@ -9,14 +9,31 @@ The scope of SIA includes all **volunteer-facing steps**: intent conversion, reg
 
 ### **1.1 Purpose**
 
-SIA (SERVE Intelligent Assistant) is a WhatsApp-first conversational agent designed to guide every volunteer from their first message to being nominated for a live class. Its core purpose is to remove friction, reduce drop-offs, standardize screening, and provide a warm, human-like experience—at scale—without requiring human coordinators for every volunteer.
+SIA enables a **frictionless, human-like volunteer journey** entirely within WhatsApp, guiding every volunteer from first interest to being matched with a real classroom. Its purpose is to remove uncertainty, provide clarity, and ensure each volunteer is ready and confident before entering a school environment.
 
 SIA enables:
 
-* Smooth onboarding (intent → interest → registration)
-* Safe, subtle screening (Aadhaar, voice notes, questionnaires)
-* Fast fulfilment (showing needs & nominating volunteers)
-* One continuous chat experience rather than forms or separate calls
+#### **✔ Smooth onboarding (intent → interest → registration → preferences)**
+
+Volunteers are welcomed naturally, understand what SERVE is, confirm comfort levels, and share their details in a conversational flow. Preferences such as subject, day, time, language, and mode are collected subtly and contextually, improving accuracy and reducing drop-offs.
+
+#### **✔ Safe, interactive, subtle screening**
+
+SIA conducts screening without making the volunteer feel judged:
+
+* Aadhaar verification for safety and credibility
+* A short interactive voice task (reading aloud, comprehension)
+* Light questions to gauge confidence, clarity, and communication
+* Mini-orientation to set expectations\
+  All of this feels like a friendly conversation instead of an interview.
+
+#### **✔ Fast, personalised fulfilment**
+
+Based on the volunteer’s preferences and screening outcome, SIA intelligently discovers relevant needs and presents them in WhatsApp. Volunteers can instantly match themselves to a class, confirm their choice, and get nominated — closing the loop within minutes.
+
+#### **✔ A single continuous chat experience (no forms, no portals, no calls)**
+
+Volunteers don’t switch apps, attend meetings, or fill long forms. Every step — onboarding, verification, interactive tasks, orientation, discovery of needs, and final nomination — happens in one smooth, uninterrupted WhatsApp journey.
 
 ### **1.2 Scope**
 
