@@ -72,7 +72,7 @@ SIA conducts a complete selection/screening process entirely inside WhatsApp:
 
 All steps feel natural, interactive, and respectful.
 
-#### **Fulfilment (Need Discovery → Need Matching → Nomination → Confirmation)**
+#### **✔Fulfilment (Need Discovery → Need Matching → Nomination → Confirmation)**
 
 SIA ensures that once a volunteer is recommended, they are quickly connected to a classroom:
 
@@ -97,7 +97,7 @@ SIA manages:
 
 A volunteer never feels like they are interacting with multiple systems — everything feels like one unified coordinator guiding them step by step.
 
-#### **What SIA Does&#x20;**_**Not**_**&#x20;Cover (Out of Scope)**
+#### **✔What SIA Does&#x20;**_**Not**_**&#x20;Cover (Out of Scope)**
 
 To keep boundaries clear:
 
