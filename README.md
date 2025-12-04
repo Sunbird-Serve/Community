@@ -6,6 +6,10 @@ Sunbird Serve building block can enable efficient volunteer interactions that ad
 
 It provides Reference Solution, Volunteering Registries, and Volunteer Service to enable Request, Assignment, Nominations and Management of Needs & Deliverables. It defines specs for Needs and Volunteers to enable interoperability.
 
+
+
+<figure><img src=".gitbook/assets/Sunbird Serve - Capabilities (6).png" alt=""><figcaption></figcaption></figure>
+
 ### What does Sunbird Serve offer?
 
 Sunbird Serve building block offers an opportunity to introduce a new paradigm of Volunteer to Volunteer interactions, followed by multiple actors coming together and leading to a societal network of volunteering systems.
@@ -19,4 +23,3 @@ Sunbird serve will contain the following Components:
 * **Serve Need-** contains capabilities around the Need that are required to be fulfilled, for a given taxonomy, that are discoverable, It also encompasses on plan and manage the corresponding need deliverables.&#x20;
 * **Volunteer Specifications** - To ensure appropriateness and to capture various attributes of volunteers in an extensible format.&#x20;
 * **Need Specifications** - To capture the defining attributes of a Need in a generic way, that allows to capture a broad range of domain.&#x20;
-
