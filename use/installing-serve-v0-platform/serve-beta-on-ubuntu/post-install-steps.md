@@ -19,4 +19,4 @@ uwsgi --touch-reload=/var/www/serve-beta/evd/reload_uwsgi.ini --close-on-exec -s
 SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
 ```
 
-\
+<br>

@@ -16,4 +16,4 @@ This document outlines the recommended version control and development workflow 
 6. **Release Process:**
    * The "adopter-name-mainbranch-V1" branch is considered the foundation for releases that are ready for deployment to production"
 
-\
+<br>

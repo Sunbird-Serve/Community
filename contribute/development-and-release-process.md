@@ -20,7 +20,7 @@ Design artifacts play a crucial role in visualizing the system architecture, def
 
 * Identify the task or feature to be implemented or the bug to be fixed.&#x20;
 * Create a new branch from the main development branch (e.g., "develop").&#x20;
-* Write code to implement the desired functionality or fix the bug following coding best practices and coding standards - [Click here](https://docs.google.com/document/d/1aoj6cSgQ5uziLqsvG4oGzh3bhNHh5khe4pk\_lGh10BU/edit).&#x20;
+* Write code to implement the desired functionality or fix the bug following coding best practices and coding standards - [Click here](https://docs.google.com/document/d/1aoj6cSgQ5uziLqsvG4oGzh3bhNHh5khe4pk_lGh10BU/edit).&#x20;
 * Test the code locally to ensure it functions as expected. e. Commit changes to the local branch with descriptive commit messages.
 
 **Code Review:**&#x20;
@@ -55,8 +55,7 @@ Design artifacts play a crucial role in visualizing the system architecture, def
 
 When a defect is identified during the release testing, the QA community will mark the status as "Failed Validation". The issue is then reviewed, and the status is changed to "In Development". The development team will repeat Step 2, which involves analyzing the defect and assigning it to a developer for resolution. This iterative process allows for thorough defect investigation and ensures that appropriate actions are taken to address the identified issues.
 
-\
-
+<br>
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -82,26 +81,22 @@ A release number 4.10.1.2 denotes, 4th Major Release, 10th Stable release,1st in
 
 #### Release Activities
 
-Below diagram will give a overview of the different release activities and their sequence\
-
+Below diagram will give a overview of the different release activities and their sequence<br>
 
 <figure><img src="https://lh4.googleusercontent.com/l_4b84PRB0e-etVMGRY5eLc9GRPfDL9xhmRZtBb3DGtNYi8tDn-jq0vh25mYZQhFzAhGp8eSUQRO5YiB88HRQy7ChuWsrXwnOfjbBWVdr1V8E5S8n_h90b7iQN7vSnSDStQgts1eGZ4_QmQgX_EW84I" alt=""><figcaption></figcaption></figure>
 
 Intermediate Release Activities :-
 
-\
-
+<br>
 
 <figure><img src="https://lh3.googleusercontent.com/cbz-4WHvZ9Ew3Wu0H4eFxsES8pAi-qERw0kRACx9B40PP4bOifJSOuZLIYR3ZIB0S0_2EinwK1joAgj0xjfK_sRDRTqT_kGR1FOBGd_FaJ8Xh6om-Snyj0slZxhdwuuncaPw1qd2YlT_I3d5juVstBo" alt=""><figcaption></figcaption></figure>
 
-\
-
+<br>
 
 Stable Release Activities :-
 
-\
-
+<br>
 
 <figure><img src="https://lh6.googleusercontent.com/YcBvxATARyzOCqHJIxetqLi69-av9nYt-mUsNrXvlQf6Rif-C7KXNmdHoaF-__HiPuWPpBNO0pYATsA0wxlpW5N9zGcS_pk1MLE0Y9ovHSzEpVIfsrdhLMyq7IG8khZ2PNedYaVfrP95Ny96QteE54E" alt=""><figcaption></figcaption></figure>
 
-\
+<br>

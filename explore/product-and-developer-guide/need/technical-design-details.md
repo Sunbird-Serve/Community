@@ -42,8 +42,7 @@ The microservice exposes a RESTful API that allows other components and services
 
 Need Registry, Need Type and Entity Registry are created in the postgres db of RC instance. The microservice also integrates with a dedicated database or a portion of the larger database system. It utilizes a database management system, such as MongoDB. The schema design is optimized to support the specific requirements of need types, plans, deliverables, and associated metadata.
 
-All the transactional data will be saved in the serve db. \
-
+All the transactional data will be saved in the serve db. <br>
 
 **Authentication and Authorization**
 

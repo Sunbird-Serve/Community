@@ -2,6 +2,8 @@
 
 ## **SIA (SERVE Intelligent Assistant)**
 
+<figure><img src="../.gitbook/assets/VM Agentic AI.drawio.png" alt=""><figcaption></figcaption></figure>
+
 ## **1. Purpose & Scope**
 
 ### **1.1 Purpose**
