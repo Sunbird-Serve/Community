@@ -1,6 +1,6 @@
-# SERVE Volunteer Management Agentic AI (SIA)
+# SERVE Volunteer Management Agentic AI - Orchestrator
 
-## **SIA (SERVE Intelligent Assistant)**
+
 
 <figure><img src="../.gitbook/assets/VM Agentic AI.drawio.png" alt=""><figcaption></figcaption></figure>
 
@@ -8,9 +8,9 @@
 
 ### **1.1 Purpose**
 
-SIA is a WhatsApp-first, human-like assistant that guides every volunteer from their first message all the way to being assigned for a live class. Its purpose is to simplify the entire volunteer journey—onboarding, selection, and fulfilment—by replacing forms, interviews, and manual coordination with one warm, conversational experience. SIA helps volunteers understand the program, checks their comfort and readiness, evaluates them subtly through structured interactions, and finally matches them to suitable class needs.
+Volunteer Management Orchestrator is a WhatsApp-first, human-like assistant that guides every volunteer from their first message all the way to being assigned for a live class. Its purpose is to simplify the entire volunteer journey—onboarding, selection, and fulfilment—by replacing forms, interviews, and manual coordination with one warm, conversational experience. It helps volunteers understand the program, checks their comfort and readiness, evaluates them subtly through structured interactions, and finally matches them to suitable class needs.
 
-SIA enables:
+The orchestrator enables:
 
 #### **✔ Smooth onboarding (intent → interest → registration → preferences)**
 
@@ -18,7 +18,7 @@ Volunteers are welcomed naturally, understand what SERVE is, confirm comfort lev
 
 #### **✔ Safe, interactive, subtle selection/screening**
 
-SIA conducts selection/screening without making the volunteer feel judged:
+It conducts selection/screening without making the volunteer feel judged:
 
 * Aadhaar verification for safety and credibility
 * A short interactive voice task (reading aloud, comprehension)
@@ -28,7 +28,7 @@ SIA conducts selection/screening without making the volunteer feel judged:
 
 #### **✔ Fast, personalised fulfilment**
 
-Based on the volunteer’s preferences and selection outcome, SIA intelligently discovers relevant needs and presents them in WhatsApp. Volunteers can instantly match themselves to a class, confirm their choice, and get nominated — closing the loop within minutes.
+Based on the volunteer’s preferences and selection outcome, the agent intelligently discovers relevant needs and presents them in WhatsApp. Volunteers can instantly match themselves to a class, confirm their choice, and get nominated — closing the loop within minutes.
 
 #### **✔ A single continuous chat experience (no forms, no portals, no calls)**
 
@@ -36,13 +36,13 @@ Volunteers don’t switch apps, attend meetings, or fill long forms. Every step 
 
 ### **1.2 Scope**
 
-The scope of SIA includes all **volunteer-facing steps**: intent conversion, registration, eligibility, selection, Aadhaar verification, audio-based language comfort checks, orientation, and nomination. It operates entirely within WhatsApp, ensuring clarity, speed, and scalability for thousands of volunteers without human bottlenecks.
+The scope of the orchestrator includes all **volunteer-facing steps**: intent conversion, registration, eligibility, selection, Aadhaar verification, audio-based language comfort checks, orientation, and nomination. It operates entirely within WhatsApp, ensuring clarity, speed, and scalability for thousands of volunteers without human bottlenecks.
 
-The scope of SIA includes:
+The scope of the Orchestrator includes:
 
 #### **✔** **Onboarding (Intent → Interest → Registration → Preferences)**
 
-SIA handles:&#x20;
+the agent handles:&#x20;
 
 * Welcoming the volunteer in a warm, non-intimidating manner
 * Explaining SERVE’s purpose, expectations, and commitment requirements
@@ -58,7 +58,7 @@ SIA handles:&#x20;
 
 #### **✔** **Selection (Verification → Interactive Tasks → Orientation → Recommendation)**
 
-SIA conducts a complete selection/screening process entirely inside WhatsApp:
+The agent conducts a complete selection/screening process entirely inside WhatsApp:
 
 * Conducting **safe Aadhaar verification** for identity assurance
 * Generating a **personalised welcome video** to establish trust
@@ -76,7 +76,7 @@ All steps feel natural, interactive, and respectful.
 
 #### **✔Fulfilment (Need Discovery → Need Matching → Nomination → Confirmation)**
 
-SIA ensures that once a volunteer is recommended, they are quickly connected to a classroom:
+The agent ensures that once a volunteer is recommended, they are quickly connected to a classroom:
 
 * Fetching open needs based on **their preferences, availability, and selection outcome**
 * Presenting suitable options as simple WhatsApp choices
@@ -88,7 +88,7 @@ This ensures that volunteers move from “interested” to “teaching” with z
 
 #### **✔** **Interaction & Journey Continuity Across All Three Stages**
 
-SIA manages:
+The Orchestrator manages:
 
 * Conversation memory
 * Context continuity
@@ -99,7 +99,7 @@ SIA manages:
 
 A volunteer never feels like they are interacting with multiple systems — everything feels like one unified coordinator guiding them step by step.
 
-#### **✔What SIA Does&#x20;**_**Not**_**&#x20;Cover (Out of Scope)**
+#### **✔What the Orchestrator Does&#x20;**_**Not**_**&#x20;Cover (Out of Scope)**
 
 To keep boundaries clear:
 
@@ -108,7 +108,7 @@ To keep boundaries clear:
 * Deliverable tracking and school-side updates
 * Volunteer long-term progress analytics (other systems handle this)
 
-SIA’s scope ends at **successful assignment**.
+The Orchestrator’s scope ends at **successful assignment**.
 
 ***
 
@@ -143,7 +143,7 @@ Never robotic, rushed, or authoritarian.
 
 ### **2.2 Persona**
 
-SIA’s persona is a **warm SERVE coordinator** who:
+The Orchestrator’s persona is a **warm SERVE coordinator** who:
 
 * speaks in short, friendly sentences
 * is patient and never interrupts the volunteer’s flow
@@ -184,9 +184,9 @@ Tone keywords:\
 
 ## **3. LLM Choice & Configuration**
 
-### **3.1 LLM Requirements (Specific to SIA)**
+### **3.1 LLM Requirements (Specific to** the Orchestrato&#x72;**)**
 
-#### **✔** **Recommended Model Class** The model powering SIA should:
+#### **✔** **Recommended Model Class** The model powering the Orchestrator should:
 
 * Support **reliable tool calling** (MCP / JSON-RPC style)
 * Handle **Indian languages and transliterated text** well
@@ -199,7 +199,7 @@ Model:
 * **Google Gemini (1.5 / latest)** – excellent multilingual & Indic language handling, competitive pricing in Google Cloud environments
 * **Llama / other open models with tool middleware** – for self-hosted / DPI-aligned deployments
 
-The _exact_ model choice can be tuned per deployment. The SIA design keeps the LLM abstracted behind an Agentic interface so that underlying models can be swapped without changing flows, tools, or orchestration.
+The _exact_ model choice can be tuned per deployment. The Orchestrator design keeps the LLM abstracted behind an Agentic interface so that underlying models can be swapped without changing flows, tools, or orchestration.
 
 #### **✔** **Configuration Settings (Precise & Practical)**
 
@@ -247,7 +247,7 @@ The _exact_ model choice can be tuned per deployment. The SIA design keeps the L
 
 ## **4. Tools & Integrations (MCP Layer)**
 
-SIA does not access databases directly.\
+The Orchestrator does not access databases directly.\
 **All actions occur through MCP tools**, ensuring safety
 
 #### &#x20;**✔Identity & Verification Tools**
@@ -347,17 +347,17 @@ Used across **all flows**.
 
 Purpose: Send lesson content, guidelines, instructions.
 
-These ensure SIA can deliver structured outputs beyond plain text.
+These ensure the Orchestrator can deliver structured outputs beyond plain text.
 
 ## **5. Memory Systems**
 
 #### **✔Conversation Memory (Short-term, Session-level)**
 
-This is the memory SIA uses to maintain context _within the ongoing WhatsApp conversation_.
+This is the memory the Orchestrator uses to maintain context _within the ongoing WhatsApp conversation_.
 
 #### **What it stores:**
 
-* The last question SIA asked
+* The last question the Orchestrator asked
 * The volunteer’s latest answer
 * Pending confirmations
 * Current state (onboarding, selection, fulfilment)
@@ -368,7 +368,7 @@ This is the memory SIA uses to maintain context _within the ongoing WhatsApp con
 * Prevents repeating questions
 * Keeps the conversation flowing naturally
 * Essential when volunteers reply late or skip steps
-* Allows SIA to resume mid-conversation
+* Allows the agent to resume mid-conversation
 * Keeps exchanges human-like and coherent
 
 #### **✔ Volunteer Memory (Long-term, Profile-level)**
@@ -406,7 +406,7 @@ This memory persists across sessions and is stored via MCP profile tools.
 
 #### **✔Knowledge Memory (Rules, FAQs, Policies)**
 
-This memory contains **program-level knowledge** SIA must follow consistently across states.
+This memory contains **program-level knowledge** the agent must follow consistently across states.
 
 #### **What it includes:**
 
@@ -421,7 +421,7 @@ This memory contains **program-level knowledge** SIA must follow consistently ac
 
 #### **Why it matters:**
 
-* Ensures SIA gives **correct and consistent information**
+* Ensures the agent gives **correct and consistent information**
 * Avoids hallucinations
 * Helps the LLM respond confidently about SERVE policies
 * Makes orientation clear and uniform
@@ -439,7 +439,7 @@ Used for richer, contextual question-answering _if needed later_.
 * Multi-language FAQ support
 * Fallback when the LLM needs external information
 
-#### **This layer is optional for SIA**
+#### **This layer is optional for** the Orchestrator
 
 and more relevant for the **Volunteer Assistant Agent** post-nomination.
 
@@ -457,7 +457,7 @@ This ensures compliance with privacy norms and maintains volunteer trust.
 
 ## **6. Orchestration Layer**
 
-The Orchestration Layer is the **brain behind SIA’s behaviour**.\
+The Orchestration Layer is the **brain behind the agent's behaviour**.\
 It ensures the LLM doesn’t operate freely, but instead follows **controlled, deterministic flows** for onboarding, selection, and fulfilment.
 
 This layer guarantees:
