@@ -46,6 +46,7 @@
 * [SERVE Agentic AI – High-Level Architecture](serve-agentic-ai/serve-agentic-ai-high-level-architecture.md)
 * [SERVE Volunteer Management Agentic AI - Orchestrator](serve-agentic-ai/serve-volunteer-management-agentic-ai-orchestrator.md)
 * [SERVE Volunteer Management Orchestrator - Design Thinking](serve-agentic-ai/serve-volunteer-management-orchestrator-design-thinking.md)
+* [Setup Guide](serve-agentic-ai/setup-guide.md)
 * [Volunteer-Management Agentic AI](serve-agentic-ai/volunteer-management-agentic-ai/README.md)
   * [Orchestrator](serve-agentic-ai/volunteer-management-agentic-ai/orchestrator.md)
   * [Onboarding Agent](serve-agentic-ai/volunteer-management-agentic-ai/onboarding-agent.md)
