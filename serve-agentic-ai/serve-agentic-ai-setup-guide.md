@@ -1,4 +1,4 @@
-# Setup Guide
+# Serve Agentic AI - Setup Guide
 
 #### **Prerequisites**
 
@@ -170,3 +170,113 @@ cd C:\Serve-Vriddhi\serve-agentic-dev-infra
 source .venv/Scripts/activate
 streamlit run app.py
 ```
+
+### 6) Database Setup
+
+#### Install PostgreSQL
+
+#### Windows
+
+1. Download PostgreSQL from:\
+   [https://www.postgresql.org/download/windows/](https://www.postgresql.org/download/windows/)
+2. Run the installer.
+3. During setup:
+   * Remember the **postgres superuser password**
+   * Keep default port: **5432**
+   * Install **pgAdmin** (recommended)
+
+#### Linux (Ubuntu)
+
+```bash
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+sudo systemctl start postgresql
+```
+
+#### Verify Postgres is running
+
+```bash
+psql --version
+```
+
+Then try connecting:
+
+#### Windows
+
+```bash
+psql -U postgres
+```
+
+#### Linux
+
+```bash
+sudo -u postgres psql
+```
+
+If you see the `postgres=#` prompt, Postgres is running.
+
+Exit with:
+
+```sql
+\q
+```
+
+#### Create database and user for SERVE
+
+Log in as the `postgres` superuser:
+
+```bash
+psql -U postgres
+```
+
+Run the following SQL:
+
+```sql
+-- create application user
+CREATE USER serve WITH PASSWORD 'yourpassword';
+
+-- create database
+CREATE DATABASE serve_agentic OWNER serve;
+
+-- grant privileges
+GRANT ALL PRIVILEGES ON DATABASE serve_agentic TO serve;
+```
+
+Exit:
+
+```sql
+\q
+```
+
+#### Connect as the SERVE user
+
+```bash
+psql -U serve -d serve_agentic
+```
+
+If this works, DB and user are set up correctly.
+
+#### Create required tables
+
+> Run the following inside `psql` connected to `serve_agentic`.
+>
+> ```
+> Download - https://github.com/Sunbird-Serve/serve-agentic-dev-infra/blob/main/serve_agent_session
+> Download - https://github.com/Sunbird-Serve/serve-agentic-dev-infra/blob/main/serve_agent_events
+>
+> psql -U serve_agentic_user -d serve_agentic -f path/to/serve_agent_sessions.sql
+> psql -U serve_agentic_user -d serve_agentic -f path/to/serve_agent_events.sql
+> ```
+
+#### Verify tables
+
+```sql
+\dt
+```
+
+You should see:
+
+* `serve_agent_sessions`
+* `serve_agent_events`
+
+#### Setup complete. Open Streamlit (browser) and start interacting with the agent locally :)
