@@ -60,6 +60,8 @@ Orchestrator - git clone [https://github.com/Sunbird-Serve/serve-vm-orchestrator
 
 Agents - git clone [https://github.com/Sunbird-Serve/serve-vm-agents.git](https://github.com/Sunbird-Serve/serve-vm-agents.git)
 
+Dev-Infra - git clone [https://github.com/Sunbird-Serve/serve-agentic-dev-infra.git](https://github.com/Sunbird-Serve/serve-agentic-dev-infra.git)
+
 #### 1) Create virtual environment (one-time)
 
 **Git Bash**
@@ -72,18 +74,31 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 deactivate
 
-Repeat for all the three services (MCP server, Orchestrator, Agents)
+Repeat for all the four services (MCP server, Orchestrator, Agents, dev-infra)
 ```
 
-#### 2) Create `.env` (one-time)
+### 2) MCP Server&#x20;
 
-```bash
-cp .env.example .env     # Git Bash
+create .env file in C:\Serve-Agentic\serve-agentic-mcp-service and paste the below
+
 ```
+# Broker
+KAFKA_BROKERS=localhost:19092
 
-Then edit `.env` with the values for your local stack.
+# Topics
+TOPIC_WA_OUT=serve.vm.whatsapp.out
+TOPIC_WA_IN=serve.vm.whatsapp.in
 
-### 3) MCP Server&#x20;
+# Service
+MCP_PORT=9000
+LLM_PROVIDER=claude
+CLAUDE_API_KEY=api_key_here
+CLAUDE_MODEL=model_here
+
+WHATSAPP_PHONE_NUMBER_ID=phone_number_id_here
+WHATSAPP_ACCESS_TOKEN=access_token_here
+VERIFY_TOKEN=token_here
+```
 
 ```bash
 cd C:\Serve-Agentic\serve-agentic-mcp-service
@@ -91,7 +106,17 @@ source .venv/Scripts/activate
 uvicorn app:app --app-dir src --port 9000
 ```
 
-### 4) Orchestrator
+### 3) Orchestrator
+
+create .env file in C:\Serve-Agentic\serve-vm-orchestrator and paste the below conf
+
+```
+KAFKA_BROKERS=localhost:19092
+TOPIC_INBOUND=serve.vm.inbound
+TOPIC_ONBOARDING=serve.vm.onboarding
+SERVICE_NAME=vm-orchestrator
+PORT=8000
+```
 
 ```bash
 cd C:\Serve-Agentic\serve-vm-orchestrator
@@ -100,7 +125,21 @@ export PYTHONPATH=src
 python -m app.main
 ```
 
-### 5) Agents Service
+### 4) Agents Service
+
+create .env file in C:\Serve-Agentic\serve-vm-agents and paste the below
+
+```
+AGENT_NAME=onboarding
+ONBOARDING_KAFKA_BROKERS=localhost:19092
+ONBOARDING_TOPIC_ONBOARDING=serve.vm.onboarding
+TOPIC_WA_IN=serve.vm.whatsapp.in
+TOPIC_WA_OUT=serve.vm.whatsapp.out
+ONBOARDING_GROUP_ID=vm-agent-onboarding
+ONBOARDING_MCP_BASE=http://localhost:8080
+ONBOARDING_PORT=8001
+DATABASE_URL=postgresql+psycopg://user:password@localhost:5433/serve_agentic
+```
 
 ```bash
 cd C:\Serve-Agentic\serve-vm-agents
@@ -108,7 +147,23 @@ source .venv/Scripts/activate
 uvicorn service.main:app --app-dir src --port 8001
 ```
 
-### 6) Streamlit Simulator (Local “Volunteer Chat UI”)
+### 5) Streamlit Simulator (Local “Volunteer Chat UI”)
+
+create .env in C:\Serve-Vriddhi\serve-agentic-dev-infra and paste the below
+
+```
+KAFKA_BROKERS=localhost:19092
+TOPIC_IN=serve.vm.whatsapp.in
+TOPIC_OUT=serve.vm.whatsapp.out
+
+WHATSAPP_PHONE_NUMBER_ID=phone_id_here
+WHATSAPP_TOKEN=wa_token_here
+VERIFY_TOKEN=verify_token_here
+
+GRAPH_BASE=https://graph.facebook.com/v21.0
+PORT=8088
+
+```
 
 ```bash
 cd C:\Serve-Vriddhi\serve-agentic-dev-infra
