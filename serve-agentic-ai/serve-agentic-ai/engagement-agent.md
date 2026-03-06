@@ -1,16 +1,26 @@
 # Engagement Agent
 
+#### Engagement Agent MVP
+
+```
+Engagement Agent
+   │
+   ├── Activity A1
+   │   Active Volunteer Continuity & Reassignment (Priority)
+   │
+   └── Activity A2
+       Recommended Volunteer Activation
+```
+
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 The **Engagement Agent** is designed as an activity driven layer that manages volunteer engagement through structured workflows. When certain events occur in the SERVE system (such as assignment completion or campaign start), the orchestrator invokes the Engagement Agent with the relevant context. Inside the agent, an **Activity Router** evaluates the trigger, volunteer status, priority rules, and cooldown conditions to decide which engagement **Activity** should run. The selected activity is then created as an instance in an **Activity Queue**, which tracks its lifecycle (pending, running, waiting for user response, completed, etc.). An **Activity Executor** processes items from the queue, interacts with the volunteer through the messaging channel, invokes required system tools (such as fetching needs or handover to another agent), and records telemetry.&#x20;
 
-## Activity A1 - Continuity & Reassignment Activity
+#### Activity A1 - Continuity & Reassignment Activity
 
 ### Activity Name
 
 **Active Volunteer Continuity & Reassignment**
-
-***
 
 #### Bucket - Active Volunteers - Not Assigned
 
@@ -78,7 +88,7 @@ Handoff to Fulfilment Agent with context
 
 
 
-## Activity A2 — Activation from Recommended Pool
+#### Activity A2 — Activation from Recommended Pool
 
 Activity Name **Recommended Volunteer - Activation**
 
@@ -161,17 +171,7 @@ Handoff volunteer context to Fulfilment Agent
 Fulfilment Agent identifies suitable needs and proceeds with nomination / assignment flow
 ```
 
-#### Final Structure for Engagement Agent (MVP)
 
-```
-Engagement Agent
-   │
-   ├── Activity A1
-   │   Active Volunteer Continuity & Reassignment (Priority)
-   │
-   └── Activity A2
-       Recommended Volunteer Activation
-```
 
 
 
