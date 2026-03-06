@@ -47,12 +47,13 @@
 * [SERVE Volunteer Management Agentic AI - Orchestrator](serve-agentic-ai/serve-volunteer-management-agentic-ai-orchestrator.md)
 * [SERVE Volunteer Management Orchestrator - Design Thinking](serve-agentic-ai/serve-volunteer-management-orchestrator-design-thinking.md)
 * [Serve Agentic AI - Setup Guide](serve-agentic-ai/serve-agentic-ai-setup-guide.md)
-* [Volunteer-Management Agentic AI](serve-agentic-ai/volunteer-management-agentic-ai/README.md)
-  * [Orchestrator](serve-agentic-ai/volunteer-management-agentic-ai/orchestrator.md)
-  * [Onboarding Agent](serve-agentic-ai/volunteer-management-agentic-ai/onboarding-agent.md)
-  * [Screening Agent](serve-agentic-ai/volunteer-management-agentic-ai/screening-agent.md)
-  * [Fulfillment Agent](serve-agentic-ai/volunteer-management-agentic-ai/fulfillment-agent.md)
-  * [Engagement Agent](serve-agentic-ai/volunteer-management-agentic-ai/engagement-agent.md)
+* [Serve Agentic AI](serve-agentic-ai/serve-agentic-ai/README.md)
+  * [Orchestrator](serve-agentic-ai/serve-agentic-ai/orchestrator.md)
+  * [Onboarding Agent](serve-agentic-ai/serve-agentic-ai/onboarding-agent.md)
+  * [Screening Agent](serve-agentic-ai/serve-agentic-ai/screening-agent.md)
+  * [Fulfillment Agent](serve-agentic-ai/serve-agentic-ai/fulfillment-agent.md)
+  * [Engagement Agent](serve-agentic-ai/serve-agentic-ai/engagement-agent.md)
+  * [Emergent Layer](serve-agentic-ai/serve-agentic-ai/emergent-layer.md)
 
 ## For Adopters
 
