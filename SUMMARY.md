@@ -52,6 +52,7 @@
   * [Onboarding Agent](serve-agentic-ai/volunteer-management-agentic-ai/onboarding-agent.md)
   * [Screening Agent](serve-agentic-ai/volunteer-management-agentic-ai/screening-agent.md)
   * [Fulfillment Agent](serve-agentic-ai/volunteer-management-agentic-ai/fulfillment-agent.md)
+  * [Engagement Agent](serve-agentic-ai/volunteer-management-agentic-ai/engagement-agent.md)
 
 ## For Adopters
 
