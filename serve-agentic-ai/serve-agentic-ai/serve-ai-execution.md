@@ -1,4 +1,4 @@
-# Emergent - Execution
+# SERVE AI - Execution
 
 ```
 +----------------------------------------------------------------------------------+
@@ -112,23 +112,38 @@
 +----------------------------------------------------------------------------------+
 ```
 
+**Orchestrator**&#x20;
+
+**Goal:** Coordinate the lifecycle of interactions across the Serve-AI system by identifying the correct workflow, selecting the right active agent, preserving context, enforcing valid stage transitions, managing handoffs, and ensuring each interaction progresses toward the correct operational outcome.
+
+**Persona:** Multi-persona(new volunteer, onboarded volunteer, recommended / inactive volunteer, need coordinator, system-triggered events, scheduled reminders / nudges), channel-agnostic(channel inputs from web or WhatsApp).  Coordination focused, not conversational
+
+**Data:** session, workflow, stage, active agent, status, linked entities(volunteer\_id, coordinator\_id, need\_id, assignment\_id), context summary
+
+**Guardrails:** no business reasoning, no invalid transitions, no direct conversational logic - This will evolve
+
+**Handoff Logic:** validate and execute agent/stage transitions safely -&#x20;
+
+* agent-to-agent handoff validation
+* session pause/resume transitions
+* escalation to human/ops routing
+* system-triggered workflow activation
+
+**MCP Tools:** session, workflow validation, context retrieval, escalation, telemetry
+
+**Memory & Telemetry:** memory, routing/state/handoff/session events
+
 **Onboarding Agent**
 
-Goal - Guide a volunteer through initial onboarding in a conversational way, collect required baseline details, build trust, and complete onboarding so the volunteer can move to the next stage.
+Goal - Discover the intent, orient them with the available nature of needs, have them sign up for the purpose behind the needs. The purpose of the needs here is enabling equitable access to quality education.&#x20;
 
-User details
+discover their capabilities(around skills, educational qualification, work and volunteer experiences and language proficiency) to volunteer for a need and their mandatory perquisites which are legal adult and willing to give time as a volunteer without pay.&#x20;
 
-* Volunteer
-* First-time user
-* May be curious, hesitant, busy, or only partially committed
-* May respond in short, informal, typo-filled language
-* May pause and return later
+User details - Men and Women who are working professionals, students, senior citizens or home makers. belong to age group of 18 to 75
 
 Guardrails - Do not mark onboarding complete unless mandatory fields are captured, Do not invent or assume volunteer details, Do not repeat already confirmed questions, Do not overwhelm with too many questions in one turn, Do not continue endlessly if user clearly wants to pause, Do not promise assignment or selection at this stage, Keep responses concise and warm
 
-About Eligibility? Any highlevel workflow? what data to be collected? MCP Tools required, telemetry events?
-
-Handoff Logic - Handoff to **Selection Agent** when onboarding is complete, Pause if user says later / busy / not now, Handoff to human if policy confusion, complaint, or unsupported scenario arises
+MCP Tools required - Firebase for auth, serve\_user&#x20;
 
 **Selection Agent**
 
