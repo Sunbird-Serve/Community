@@ -116,10 +116,11 @@ nCoordinator → Need → Fulfillment → Delivery
 
 **Handoff Logic:** validate and execute agent/stage transitions safely -&#x20;
 
-* agent-to-agent handoff validation
-* session pause/resume transitions
-* escalation to human/ops routing
-* system-triggered workflow activation
+* agent-to-agent transitions
+* resume/re-entry transitions
+* temporary support invocations
+* escalation to human/ops
+* system-triggered workflow activations
 
 **MCP Tools:** session, workflow validation, context retrieval, escalation, telemetry, persona selection
 
