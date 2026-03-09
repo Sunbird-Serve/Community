@@ -24,7 +24,7 @@ Match recommended volunteers to appropriate needs by evaluating volunteer capabi
 * Escalate when no compatible match exists
 * Do not promise assignment if confirmation is still pending
 
-### Tools
+### MCP Tools
 
 * Session tools
 * Volunteer profile registry
@@ -34,7 +34,12 @@ Match recommended volunteers to appropriate needs by evaluating volunteer capabi
 * Nomination tools
 * Confirmation tools
 
-***
+**MCP Capabilities:**
+
+* fetch open needs relevant to a volunteer
+* fetch recommended volunteers relevant to a need
+* assemble volunteer + need match context
+* show current nomination/assignment state of a need
 
 ### Data
 
