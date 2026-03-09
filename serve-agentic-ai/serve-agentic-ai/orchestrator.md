@@ -1,100 +1,126 @@
 # Orchestrator
 
-### Objectives
+**Goal:** Coordinate the lifecycle of interactions across the Serve-AI system by identifying the correct workflow, selecting the right active agent, preserving context, enforcing valid stage transitions, managing handoffs, and ensuring each interaction progresses toward the correct operational outcome.
 
-**Objectives/Goals:**
+```
+Channels [Web UI, Whatsapp, Mobile App]
+   ↓
+Channel Adapter [Normalize]
+   ↓
+Orchestrator Discovery
+[Resolve Persona + Session State + Intent]
+   ↓
+Determine which agent should own this interaction
+   ↓
+Route to Agent
+```
 
-1. Govern the full volunteer lifecycle (registered → onboarded → screened → assigned).
-2. Route events to the correct Agent Policy (Onboarding, Screening, Fulfillment).
-3. Maintain volunteer journey state with retries, idempotency, and escalation paths.
-4. Enforce sequencing rules and policy guardrails.
-5. Emit telemetry and cross-domain events (`need.assigned`, `volunteer.state.updated`).
-6. Provide continuity of context & memory across all agents.
+```
++----------------------------------------------------------------------------------+
+|                                   CHANNELS                                       |
+|----------------------------------------------------------------------------------|
+|  Web UI / WhatsApp / Scheduler / Mobile App                                      |
++-----------------------------------+----------------------------------------------+
+                                    |
+                                    v
++----------------------------------------------------------------------------------+
+|                               CHANNEL ADAPTER                                    |
+|----------------------------------------------------------------------------------|
+|  Normalize incoming input into common format                                     |
+|  - actor id                                                                       |
+|  - channel                                                                        |
+|  - trigger type                                                                   |
+|  - payload / message                                                              |
++-----------------------------------+----------------------------------------------+
+                                    |
+                                    v
++----------------------------------------------------------------------------------+
+|                           ORCHESTRATOR DISCOVERY                                 |
+|----------------------------------------------------------------------------------|
+|  Resolve Persona  ↔  Resolve Session State  ↔  Resolve Intent                    |
+|                                                                                  |
+|  Persona: Volunteer / Coordinator / Ops / System                                 |
+|  Session State: Active / Paused / No session                                     |
+|  Intent: What does the actor want now?                                           |
+|                                                                                  |
+|  Output: Which agent owns this persona + session state + intent                  |
++-----------------------------------+----------------------------------------------+
+                                    |
+                                    v
++----------------------------------------------------------------------------------+
+|                                AGENT ROUTING                                     |
+|----------------------------------------------------------------------------------|
+|  Route to the appropriate agent                                                  |
+|  - Primary agent (Onboarding, Selection, Fulfillment, Need Agent, Delivery 
+Assistant) |
+|  - Cross-cutting support agent (Engagement Agent, Helpline Agent)                |
++----------------------------------------------------------------------------------+
+```
 
-***
+Volunteer Flow
 
-### Responsibilities & Interfaces
+```
+New Volunteer → Onboarding → Selection → Fulfillment → Delivery
+                     |            |            |
+                     |            |            |
+                     +------------+------------+
+                                  |
+                              Engagement
+                                  ↑
+                                  |
+     Recommended but not utilised / Inactive Volunteer
+           |                          |
+           |                          |
+           |                          +---- Re-entry to Onboarding / Selection / Fulfillment
+           |
+           +---- Re-entry to Fulfillment
+           
+     Returning Volunteer
+        ↓
+Resolve current stage / intent
+        ↓
+Re-enter appropriate node
+(Onboarding / Selection / Fulfillment / Delivery / Engagement)
+```
 
-**Primary responsibilities:**
+**Entry mapping:**
 
-* Event ingestion & dispatch to agents.
-* State machine for volunteer journey.
-* Guardrails: retries, SLAs, error handling, human escalation.
-* Apply policy rules before transitions.
-* Emit audit and telemetry events for observability.
+| Volunteer Type               | Entry Agent                                       |
+| ---------------------------- | ------------------------------------------------- |
+| New Volunteer                | Onboarding                                        |
+| Returning Volunteer          | Resolve stage → appropriate node                  |
+| Recommended but not utilised | Engagement → Fulfillment                          |
+| Inactive Volunteer           | Engagement → Onboarding / Selection / Fulfillment |
 
-**Inputs:**
+**Need Coordinator Flow**
 
-* `volunteer.registered.v1` (from Volunteering Service)
-* `onboarding.completed.v1` (from Onboarding Agent)
-* `screening.completed.v1` (from Screening Agent)
-* `fulfillment.completed.v1` (from Fulfillment Agent)
+```
+nCoordinator → Need → Fulfillment → Delivery
+                        |            |
+                        |            |
+                        +------------+
+                             |
+                         Delivery
+                             ↑
+                             |
+            nCoordinator / Session Updates
+                             |
+                             +---- Re-entry to Need / Fulfillment
+```
 
-**Outputs (events):**
+**Persona:** Multi-persona(new volunteer, onboarded volunteer, recommended / inactive volunteer, need coordinator, system-triggered events, scheduled reminders / nudges), channel-agnostic(channel inputs from web or WhatsApp).  Coordination focused, not conversational
 
-* `onboarding.started.v1`, `screening.started.v1`, `fulfillment.started.v1`
-* `volunteer.state.updated.v1`, `need.assigned.v1`
-* Escalations: `onboarding.blocked.v1`, `screening.failed.v1`, `fulfillment.escalated.v1`
+**Data:** session, workflow(multi workflow), stage, active agent, status, linked entities(volunteer\_id, coordinator\_id, need\_id, assignment\_id), context summary
 
-**Downstream dependency:**
+**Guardrails:** no business reasoning, no invalid transitions, no direct conversational logic - This will evolve
 
-* Agents depend on Orchestrator for state context & domain events.
-* Need-Coordinator Orchestrator consumes `need.assigned.v1`.
+**Handoff Logic:** validate and execute agent/stage transitions safely -&#x20;
 
-***
+* agent-to-agent handoff validation
+* session pause/resume transitions
+* escalation to human/ops routing
+* system-triggered workflow activation
 
-### Architecture with MCP
+**MCP Tools:** session, workflow validation, context retrieval, escalation, telemetry, persona selection
 
-**1) Agentic Layer (Orchestrator Core)**
-
-* Components: Event Consumer, State Machine, Agent Router, Rule Engine, Retry/Idempotency Manager.
-* Owns: Routing, transitions, escalation, sequencing, telemetry.
-* Input: Domain events.
-* Output: Domain events, Agent triggers.
-* Does NOT: Call external APIs directly.
-
-**2) MCP Layer (Protocol & Tool Invocation)**
-
-* Orchestrator itself doesn’t invoke tools.
-* Instead, delegates to Agents, which raise tool intents.
-* MCP Client/Server manage schemas, retries, and API connectors.
-
-**3) Context & Memory**
-
-* Context Store: volunteer state, correlation ids, timestamps.
-* Memory Map:
-  * Short-term = run context (e.g., retry attempts, OTP tries).
-  * Long-term = volunteer journey (registered → assigned).
-* Orchestrator ensures continuity across agents.
-
-***
-
-### Detailed Walk-through (Orchestrator View)
-
-| Phase & Action                                            | Assistant Agent  | MCP Tool Calls                                | Key Decisions / Errors                                                                      |
-| --------------------------------------------------------- | ---------------- | --------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| 1. Registration event (`volunteer.registered.v1`) arrives | —                | —                                             | Orchestrator sets volunteer state = NEW                                                     |
-| 2. Trigger Onboarding                                     | OnboardingAgent  | comms.send (welcome)                          | Retry policy (2 × 24h), escalation after 3rd failure                                        |
-| 3. Transition → Screening                                 | ScreeningAgent   | calendar.schedule, meet.create                | No-show retried once; second miss → escalate                                                |
-| 4. Screening outcome                                      | ScreeningAgent   | LLM scoring, profile update                   | Decision: recommend / hold / reject                                                         |
-| 5. Transition → Fulfillment                               | FulfillmentAgent | needDiscovery, fulfillment.assign             | If no fit → backlog report                                                                  |
-| 6. Assignment complete                                    | FulfillmentAgent | fulfillment.assign, volunteering.updateStatus | Orchestrator marks state = ASSIGNED, emit `need.assigned.v1`                                |
-| 7. Telemetry                                              | —                | —                                             | Emit telemetry at every state (`welcome_sent`, `screening.scheduled`, `assignment_success`) |
-
-***
-
-### Capabilities
-
-**Agentic Layer:**
-
-* Event handling, routing, sequencing, retries/idempotency, escalation, telemetry.
-* Governs state transitions across all 3 agents.
-
-**MCP Client/Server:**
-
-* Orchestrator does not directly call tools, but depends on MCP contracts.
-* Guarantees schema validation, retries, error handling for agents’ tool intents.
-
-**Services:**
-
-* Consumed indirectly via agents (Volunteering API, Comms, Calendar, GMeet, Firebase OTP, NeedService, FulfillService).
+**Memory & Telemetry:** memory, routing/state/handoff/session events

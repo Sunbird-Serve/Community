@@ -112,26 +112,9 @@
 +----------------------------------------------------------------------------------+
 ```
 
-**Orchestrator**&#x20;
 
-**Goal:** Coordinate the lifecycle of interactions across the Serve-AI system by identifying the correct workflow, selecting the right active agent, preserving context, enforcing valid stage transitions, managing handoffs, and ensuring each interaction progresses toward the correct operational outcome.
 
-**Persona:** Multi-persona(new volunteer, onboarded volunteer, recommended / inactive volunteer, need coordinator, system-triggered events, scheduled reminders / nudges), channel-agnostic(channel inputs from web or WhatsApp).  Coordination focused, not conversational
 
-**Data:** session, workflow, stage, active agent, status, linked entities(volunteer\_id, coordinator\_id, need\_id, assignment\_id), context summary
-
-**Guardrails:** no business reasoning, no invalid transitions, no direct conversational logic - This will evolve
-
-**Handoff Logic:** validate and execute agent/stage transitions safely -&#x20;
-
-* agent-to-agent handoff validation
-* session pause/resume transitions
-* escalation to human/ops routing
-* system-triggered workflow activation
-
-**MCP Tools:** session, workflow validation, context retrieval, escalation, telemetry
-
-**Memory & Telemetry:** memory, routing/state/handoff/session events
 
 **Onboarding Agent**
 
@@ -143,7 +126,7 @@ User details - Men and Women who are working professionals, students, senior cit
 
 Guardrails - Do not mark onboarding complete unless mandatory fields are captured, Do not invent or assume volunteer details, Do not repeat already confirmed questions, Do not overwhelm with too many questions in one turn, Do not continue endlessly if user clearly wants to pause, Do not promise assignment or selection at this stage, Keep responses concise and warm
 
-MCP Tools required - Firebase for auth, serve\_user&#x20;
+MCP Tools required - Session tools (for fetching, creating and pausing the sessions), Firebase for auth, serve user registry, user profile registry, memory tools
 
 **Selection Agent**
 
@@ -157,7 +140,7 @@ Guardrails - Do not show scoring or internal rubric logic directly, Do not rejec
 
 Handoff Logic - Handoff to Fulfillment Agent  if recommended.&#x20;
 
-MCP Tools, Telemetry events?&#x20;
+MCP Tools - Session tools (for fetching, creating and pausing the sessions), serve user registry, user profile registry, memory tools.&#x20;
 
 **Fulfillment Agent**
 
@@ -165,8 +148,53 @@ Goal - Assist all the recommended volunteers to nominate a need.. Match the need
 
 User - Volunteer who are recommended. This agent would assist the need coordinator also?&#x20;
 
+MCP Tools - Serve Need and Nomination tools
+
 **Engagement Agent** - [Link](engagement-agent.md)
 
 **Need Agent** - [Link](need-agent.md)
 
 **Delivery Assistant Agent** - [Link ](delivery-support-agent.md)
+
+```
+Input arrives
+    ↓
+Identify actor
+    ↓
+Check active / paused / linked journeys
+    ↓
+Classify intent
+    ↓
+Map intent to agent
+
+Examples:
+volunteer + new interest                -> Onboarding
+volunteer + paused evaluation           -> Selection
+volunteer + today session question      -> Delivery Assistant
+volunteer + inactive / later            -> Engagement
+coordinator + new need                  -> Need
+coordinator + session logistics         -> Delivery Assistant
+system + reminder event                 -> Delivery Assistant
+ops + manual fulfillment action         -> Fulfillment
+help / FAQ from anywhere                -> Helpline
+```
+
+```
+1. Who is the actor?
+   - volunteer
+   - coordinator
+   - ops
+   - system
+
+2. Is there an active or recent session/journey?
+
+3. What is the intent of this message/event?
+   - onboarding
+   - need creation
+   - session info
+   - delivery support
+   - engagement
+   - help/question
+
+4. Which agent owns that intent in current context?
+```
