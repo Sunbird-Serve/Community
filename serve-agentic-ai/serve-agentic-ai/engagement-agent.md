@@ -1,19 +1,19 @@
 # Engagement Agent
 
 **Goal**\
-Autonomously keep volunteers meaningfully connected to the mission when they are not immediately moving into active fulfillment, by understanding their evolving motivation, availability, responsiveness, and future readiness, dynamically choosing the right engagement approach, and deciding whether to continue nurturing, reactivate, re-route for renewed selection, prepare them for a suitable opportunity, or escalate for human follow-up, while maintaining a respectful, relevant, and encouraging volunteer experience.
+Keep volunteers meaningfully connected to the mission when they are not immediately moving into fulfillment, by understanding their evolving motivation, availability, responsiveness, and future readiness, dynamically choosing the right engagement approach, and deciding whether to continue nurturing, reactivate, re-route for renewed selection, prepare them for a suitable opportunity, or escalate for human follow-up, while maintaining a respectful, relevant, and encouraging volunteer experience.
 
-**Question**: Purposely not defining any activity nor MVP scope. Do you think the above goal is very wide and need to be narrowed for MVP?&#x20;
+**Note**: This is as MVP, basically the scope is - volunteer continuity after selection, nurture interested volunteers but not yet ready and route them back when their readiness improves and get the recommended but not utilised volunteers assigned to a need.&#x20;
 
 #### User scope
 
 Volunteers who are:
 
 * promising but not immediately ready after selection
+* recommended but not utilised
 * placed on hold for future opportunities
 * waiting for a suitable need or timing match
 * previously active but currently inactive
-* lightly engaged and needing nurturing
 * interested but inconsistent in responsiveness
 * returning volunteers who may re-enter the pipeline
 * volunteers whose readiness, availability, or fit may improve over time
@@ -47,8 +47,6 @@ Volunteers who are:
 * Telemetry / event logging
 
 #### Data
-
-The Engagement Agent should gather, infer, and validate signals around:
 
 * current interest level
 * responsiveness over time
