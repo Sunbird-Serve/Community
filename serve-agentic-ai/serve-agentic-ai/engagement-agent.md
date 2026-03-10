@@ -9,7 +9,7 @@ Keep volunteers meaningfully connected to the mission when they are not immediat
 
 Volunteers who are:
 
-* promising but not immediately ready after selection
+* interested but not immediately ready after selection
 * recommended but not utilised
 * placed on hold for future opportunities
 * waiting for a suitable need or timing match
