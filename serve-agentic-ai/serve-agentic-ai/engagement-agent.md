@@ -1,177 +1,116 @@
 # Engagement Agent
 
-#### Engagement Agent MVP
+**Goal**\
+Autonomously keep volunteers meaningfully connected to the mission when they are not immediately moving into active fulfillment, by understanding their evolving motivation, availability, responsiveness, and future readiness, dynamically choosing the right engagement approach, and deciding whether to continue nurturing, reactivate, re-route for renewed selection, prepare them for a suitable opportunity, or escalate for human follow-up, while maintaining a respectful, relevant, and encouraging volunteer experience.
 
-```
-Engagement Agent
-   │
-   ├── Activity A1
-   │   Active Volunteer Continuity & Reassignment (Priority)
-   │
-   └── Activity A2
-       Recommended Volunteer Activation
-```
+**Question**: Purposely not defining any activity nor MVP scope. Do you think the above goal is very wide and need to be narrowed for MVP?&#x20;
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+#### User scope
 
-The **Engagement Agent** is designed as an activity driven layer that manages volunteer engagement through structured workflows. When certain events occur in the SERVE system (such as assignment completion or campaign start), the orchestrator invokes the Engagement Agent with the relevant context. Inside the agent, an **Activity Router** evaluates the trigger, volunteer status, priority rules, and cooldown conditions to decide which engagement **Activity** should run. The selected activity is then created as an instance in an **Activity Queue**, which tracks its lifecycle (pending, running, waiting for user response, completed, etc.). An **Activity Executor** processes items from the queue, interacts with the volunteer through the messaging channel, invokes required system tools (such as fetching needs or handover to another agent), and records telemetry.&#x20;
+Volunteers who are:
 
-#### Activity A1 - Continuity & Reassignment Activity
+* promising but not immediately ready after selection
+* placed on hold for future opportunities
+* waiting for a suitable need or timing match
+* previously active but currently inactive
+* lightly engaged and needing nurturing
+* interested but inconsistent in responsiveness
+* returning volunteers who may re-enter the pipeline
+* volunteers whose readiness, availability, or fit may improve over time
 
-### Activity Name
+#### Guardrails
 
-**Active Volunteer Continuity & Reassignment**
+* Do not spam or over-contact the volunteer.
+* Do not promise assignment, placement, or immediate opportunity unless confirmed by downstream systems.
+* Do not repeatedly push engagement if the volunteer is unresponsive or asks for space.
+* Do not invent motivation, readiness, availability, or interest.
+* Do not expose internal scoring, prioritization, or hidden routing logic.
+* Do not re-run full selection unless the defined trigger for re-selection is met.
+* Keep outreach relevant, warm, concise, and non-intrusive.
+* Respect pause, defer, and opt-out signals immediately.
+* Escalate when the case is sensitive, ambiguous, or requires human judgment.
+* Do not continue engagement endlessly without a meaningful next-step decision.
 
-#### Bucket - Active Volunteers - Not Assigned
+#### Tools
 
-Trigger:
+* Session tools
+  * fetch session
+  * create / resume / pause / close session
+* Volunteer profile registry
+* Onboarding summary retrieval
+* Selection summary retrieval
+* Engagement memory tools
+* Opportunity / need awareness feed
+* Volunteer status update tool
+* Notification / outreach channel tool
+* Handoff event tool
+* Telemetry / event logging
 
-* Need Fulfilled
+#### Data
 
-```
-Volunteer taught Grade 6 Maths
-Need fulfilled
-Volunteer not assigned
-→ Engagement Agent triggers continuity activity
-```
+The Engagement Agent should gather, infer, and validate signals around:
 
-### Eligibility Filter
+* current interest level
+* responsiveness over time
+* willingness to stay connected
+* evolving availability
+* readiness shift since last interaction
+* continued mission alignment
+* reasons for pause, hesitation, or inactivity
+* preferred engagement type
+* preferred frequency / tolerance for follow-up
+* new skills, experiences, or context changes
+* suitability for re-selection
+* suitability for current or upcoming needs
+* opt-out, defer, or dormancy signals
 
-Volunteer must satisfy:
+Possible engagement outcomes:
 
-```
-volunteer_status = active
-current_assignment = none
-not opted_out
-last_assignment_end > 7 days
-```
+* continue nurturing
+* re-activate now
+* send back for renewed selection
+* route toward opportunity readiness
+* pause outreach
+* opt-out / disengaged
+* human review
 
-### Frequency Rules / Cooldown
+#### Decision / outcome logic
 
-To prevent over-messaging:
+* **Continue nurturing**: volunteer remains positively engaged, but is not yet ready for re-selection or fulfillment.
+* **Re-activate now**: volunteer shows renewed readiness, responsiveness, and timing fit.
+* **Renewed selection**: volunteer appears ready, but readiness or fit must be re-evaluated before downstream movement.
+* **Opportunity readiness**: volunteer appears suitable for current/upcoming needs and should move toward the next stage.
+* **Pause outreach**: volunteer asks to reconnect later, shows temporary unavailability, or signals low current capacity.
+* **Opt-out / disengaged**: volunteer clearly declines further engagement or remains persistently unresponsive beyond policy thresholds.
+* **Human review**: sensitive, exceptional, contradictory, or relationship-sensitive cases.
 
-```
-max 1 continuity outreach every 30 days
-max 2 reminders per activity
-```
+#### Handoff logic
 
-If volunteer declines:
+* Re-engaged and ready for evaluation → **Selection Agent**
+* Clearly suitable and already validated for an opportunity pathway → **Fulfillment Agent** or orchestrator-controlled downstream route
+* Volunteer asks informational or support questions → **Helpline Agent** → return to Engagement
+* Volunteer asks to continue later → pause session, resume Engagement later
+* Sensitive or exceptional case → **Human / Ops review**
+* Volunteer opts out → close
 
-```
-pause outreach for 60 days
-```
+### MCP capabilities: purpose
 
-### Workflow Steps
-
-```
-Trigger: need fulfilled
-        ↓
-Orchestrator invokes Engagement Agent
-        ↓
-Activity Router selects
-        ↓
-Executor sends appreciation + continuity check
-        ↓
-Volunteer response?
-   ├── Not now → ask for when to be reminded -> pause flow → complete
-   ├── Stop → opt-out → complete
-   └── Yes
-         ↓
-Ask: same school and same batch?
-   ├── Yes → handoff to Fulfilment Agent with context
-   └── No
-         ↓
-Collect preferred days and times
-         ↓
-Handoff to Fulfilment Agent with context
-```
-
-
-
-#### Activity A2 — Activation from Recommended Pool
-
-Activity Name **Recommended Volunteer - Activation**
-
-Bucket - Volunteers who were **recommended but never utilised**.
-
-Definition example:
-
-```
-recommended = true
-no nomination
-no assignment
-no session history
-not opted out
-```
-
-### Trigger Event
-
-This activity is **campaign-driven**.
-
-Typical triggers:
-
-```
-VOLUNTEER_SELECTION_CAMPAIGN_COMPLETED
-POST_LONG_VACATION
-```
-
-Example:
-
-```
-Large recommended pool created after selection
-→ Engagement Agent activates
-```
-
-### Eligibility Filter
-
-Volunteer must satisfy:
-
-```
-recommended = true
-not nominated
-not assigned
-not opted_out
-```
-
-Optional:
-
-```
-last_contact > 14 days
-```
-
-***
-
-### Frequency Rules / Cooldown
-
-```
-max 1 outreach per volunteer per 30 days
-max 2 attempts per campaign
-```
-
-Stop if volunteer opts out.
-
-### Workflow Steps
-
-```
-Trigger: campaign end / post-vacation / recommended pool activation
-        ↓
-Orchestrator invokes Engagement Agent
-        ↓
-Activity Router selects
-        ↓
-Executor sends activation check (opt-in message)
-        ↓
-Volunteer response?
-   ├── Not now → ask when to remind → pause flow → complete
-   ├── Stop → opt-out → complete
-   └── Yes
-         ↓
-Handoff volunteer context to Fulfilment Agent
-         ↓
-Fulfilment Agent identifies suitable needs and proceeds with nomination / assignment flow
-```
-
-
-
-
+* `engagement.resume_context`: Retrieve the latest engagement session, prior summaries, volunteer status, and memory so the agent can continue with continuity and relevance.
+* `engagement.start_session`: Create a new engagement session for a volunteer entering a nurture, hold, or reactivation journey.
+* `engagement.advance_state`: Progress the engagement flow through valid state transitions in a controlled and traceable way.
+* `engagement.read_profile`: Fetch the volunteer’s profile and current system status for context-aware engagement.
+* `engagement.read_onboarding_summary`: Retrieve onboarding context relevant to how the volunteer was initially profiled and oriented.
+* `engagement.read_selection_summary`: Retrieve the prior selection outcome, readiness summary, and rationale to guide future engagement decisions.
+* `engagement.extract_engagement_signals`: Convert free-form volunteer responses into structured signals such as interest, responsiveness, availability, hesitation, readiness shift, and opt-out intent.
+* `engagement.get_missing_signals`: Identify what critical engagement evidence is still missing before deciding the next route.
+* `engagement.evaluate_reactivation_readiness`: Assess whether the volunteer appears ready to be re-activated into selection or opportunity flow.
+* `engagement.evaluate_engagement_outcome`: Determine whether the right next outcome is nurture, re-activate, re-select, pause, opt-out, or human review.
+* `engagement.save_confirmed_signals`: Persist confirmed engagement signals and updated volunteer context without assumptions.
+* `engagement.pause_session`: Save progress and mark the engagement journey paused when the volunteer wants to reconnect later.
+* `engagement.update_volunteer_status`: Update the volunteer’s engagement-related status based on the decided outcome.
+* `engagement.prepare_selection_handoff`: Build a structured handoff payload for volunteers who should return to selection.
+* `engagement.prepare_fulfillment_handoff`: Build a structured handoff payload for volunteers who are ready to move toward opportunity fulfillment.
+* `engagement.emit_handoff_event`: Trigger the downstream workflow once the engagement decision is finalized.
+* `engagement.write_engagement_summary`: Generate and store a concise summary of the latest engagement signals, route decision, and rationale.
+* `engagement.log_event`: Capture telemetry and audit events such as outreach attempts, responses, pauses, reactivation signals, routing decisions, and opt-out markers.
 

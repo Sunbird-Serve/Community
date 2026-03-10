@@ -54,7 +54,7 @@
   * [Fulfillment Agent](serve-agentic-ai/serve-agentic-ai/fulfillment-agent.md)
   * [Engagement Agent](serve-agentic-ai/serve-agentic-ai/engagement-agent.md)
   * [Need Agent](serve-agentic-ai/serve-agentic-ai/need-agent.md)
-  * [Delivery Support Agent](serve-agentic-ai/serve-agentic-ai/delivery-support-agent.md)
+  * [Delivery Assistant](serve-agentic-ai/serve-agentic-ai/delivery-assistant.md)
   * [SERVE AI - Execution](serve-agentic-ai/serve-agentic-ai/serve-ai-execution.md)
 
 ## For Adopters
