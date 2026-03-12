@@ -125,3 +125,7 @@ nCoordinator → Need → Fulfillment → Delivery
 **MCP Tools:** session, workflow validation, context retrieval, escalation, telemetry, persona selection
 
 **Memory & Telemetry:** memory, routing/state/handoff/session events
+
+
+
+* Core 8-step flow: resume/create session → save user message → route to agent → invoke agent → validate state transition → save response → handle handoffs → return response

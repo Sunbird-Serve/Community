@@ -25,4 +25,5 @@ discover their capabilities(around skills, educational qualification, work and v
 * `onboarding.emit_handoff_event`: Emit a standard downstream event to trigger the next workflow once onboarding is completed.
 * `onboarding.log_event`: Capture onboarding telemetry and audit events such as transitions, confirmations, pauses, completion, and errors.
 
-<br>
+\
+init → intent\_discovery → purpose\_orientation → eligibility\_confirmation → capability\_discovery → profile\_confirmation → onboarding\_complete
