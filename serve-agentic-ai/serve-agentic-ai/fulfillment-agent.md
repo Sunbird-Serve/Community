@@ -7,13 +7,24 @@ Match recommended volunteers to appropriate needs by evaluating volunteer capabi
 ### User scope
 
 * Recommended volunteers coming from the Selection Agent
+* Volunteers coming from Engagement Agent who confirmed continuation post need fulfilment
 * Returning volunteers ready for assignment
 * Need Coordinators with approved needs
-* Needs that may be:
-  * newly created
-  * partially fulfilled or backfilled
-  * awaiting volunteer nomination
-  * awaiting confirmation
+*   Needs that may be:
+
+    * newly created
+    * partially fulfilled or backfilled
+    * awaiting volunteer nomination
+    * awaiting confirmation
+
+
+
+Entry triggers:
+
+• Recommended volunteer coming from Selection Agent\
+• Returning volunteer ready for assignment\
+• Volunteer coming from Engagement Agent after confirming continuation post fulfillment of previous need.&#x20;\
+• Need coordinator requests fulfillment for an open need
 
 ### Guardrails
 
@@ -40,6 +51,7 @@ Match recommended volunteers to appropriate needs by evaluating volunteer capabi
 * fetch recommended volunteers relevant to a need
 * assemble volunteer + need match context
 * show current nomination/assignment state of a need
+* evaluate compatibility between volunteer signals and need requirements
 
 ### Data
 
@@ -77,14 +89,19 @@ Possible fulfillment outcomes:
 
 ### Handoff logic - For Orchestrator
 
-* **Successful assignment confirmed** → Delivery Assistant Agent
-* **Volunteer nominated but awaiting confirmation** → remain within Fulfillment
+* **Volunteer nominated** → awaiting confirmation → remain within Fulfillment
+* **Volunteer confirmed and assigned** → Delivery Assistant Agent
 * **Volunteer declines assignment** → re-match within Fulfillment
-* **No suitable need currently available** → Engagement Agent
+* **No suitable need currently available** → route volunteer to Engagement Agent  \
+  for follow-up / retention / later re-matching
 * **Need cannot be fulfilled due to constraints** → Human / Ops escalation
 * **Volunteer availability changed** → re-evaluate matching within Fulfillment
 * **Operational clarification required** → Helpline Agent → return to Fulfillment
 
 ### Memory / telemetry
 
-match reasoning, assignment lifecycle events
+match reasoning\
+nomination events\
+assignment lifecycle events\
+re-match attempts\
+escalation events
