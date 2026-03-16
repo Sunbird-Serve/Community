@@ -112,3 +112,52 @@ Possible engagement outcomes:
 * `engagement.write_engagement_summary`: Generate and store a concise summary of the latest engagement signals, route decision, and rationale.
 * `engagement.log_event`: Capture telemetry and audit events such as outreach attempts, responses, pauses, reactivation signals, routing decisions, and opt-out markers.
 
+#### Engagement Agent - V1 Slice
+
+```
+Active Volunteer
+      ↓
+Academic Year Transition
+      ↓
+Volunteer may become "Not Utilised"
+      ↓
+Engagement Agent reaches out
+      ↓
+Check: Does the volunteer want to continue?
+      ↓
+ ┌───────────────┬────────────────────┐
+ │               │                    │
+ │ NO            │ YES                │
+ │               │                    │
+ ↓               ↓
+Close / mark     Capture preference
+as not               • Same school?
+continuing           • Same time slot?
+with reason          • Open to alternatives?
+hand off to human            ↓
+                     Handover to Fulfillment Agent
+                             ↓
+                     Fulfillment checks for new need
+                             ↓
+                ┌───────────────┬─────────────────┐
+                │               │                 │
+                │ Match found   │ No match yet    │
+                │               │                 │
+                ↓               ↓
+        Assign volunteer     Keep pending /
+        to new need          follow-up later
+                ↓
+        Volunteer continues
+        in new academic year
+```
+
+#### Decision Table
+
+| Volunteer                  | Engagement outcome     | Next step                           |
+| -------------------------- | ---------------------- | ----------------------------------- |
+| Same school and slot       | continuation confirmed | handoff to fulfillment              |
+| Same school, flexible slot | continuation confirmed | handoff to fulfillment              |
+| Flexible school, same slot | continuation confirmed | handoff to fulfillment              |
+| Fully flexible             | continuation confirmed | handoff to fulfillment              |
+| Not sure / later           | deferred               | follow-up later                     |
+| No                         | declined               | close engagement, hand off to human |
