@@ -49,6 +49,7 @@
 * [Serve Agentic AI - Setup Guide](serve-agentic-ai/serve-agentic-ai-setup-guide.md)
 * [Serve Agentic AI](serve-agentic-ai/serve-agentic-ai/README.md)
   * [Orchestrator](serve-agentic-ai/serve-agentic-ai/orchestrator.md)
+  * [MCP Server](serve-agentic-ai/serve-agentic-ai/mcp-server.md)
   * [Onboarding Agent](serve-agentic-ai/serve-agentic-ai/onboarding-agent.md)
   * [Selection Agent](serve-agentic-ai/serve-agentic-ai/selection-agent.md)
   * [Fulfillment Agent](serve-agentic-ai/serve-agentic-ai/fulfillment-agent.md)
