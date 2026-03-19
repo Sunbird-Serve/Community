@@ -130,7 +130,7 @@ nCoordinator → Need → Fulfillment → Delivery
 
 Core 8-step flow: resume/create session → save user message → route to agent → invoke agent → validate state transition → save response → handle handoffs → return response
 
-#### The Big Picture: What Files Do What
+#### Serve Orchestrator Implemented
 
 ```
 serve-orchestrator/
