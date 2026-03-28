@@ -17,6 +17,54 @@ Outcomes
 * rejected / not approved
 * human review
 
+```
+Coordinator initiates
+        ↓
+[UI: Ask for phone number first]
+[WhatsApp: phone number from channel automatically]
+        ↓
+Resolve phone number against Serve Registry
+        ├─── LINKED / TRUSTED ─────────────────────────────────┐
+        │    Load need coordinator profile                     │
+        │    Load linked entity(s)                             │
+        │    Fetch previous need context                       │
+        │                                                      │
+        └─── NOT LINKED / NO MATCH ────────────────────────────│
+                    ↓                                          │
+             Try UDISE / school name search                    │
+                    ├─── Existing School found                 │
+                    │    Map coordinator → school              │
+                    │    Fetch previous need context ──────────│
+                    │                                          │
+                    └─── New School / Entity                   │
+                         Capture: name, location, UDISE        │
+                         Create entity in Serve Database       │
+                         Map coordinator → new school ─────────┘
+                                                               │
+                                    ┌──────────────────────────┘
+                                    ↓
+                         EXISTING SCHOOL: Show previous need
+                         "Last year you had English for Grades 6-8.
+                          Is this continuing? Any changes?"
+                         Pre-fill draft with previous data
+                         
+                         NEW SCHOOL: Capture fresh need
+                                    ↓
+                         Capture: subjects / grades / student count
+                                  time slots / start date / duration
+                                    ↓
+                         Validate + Confirm with coordinator
+                                    ↓
+                         Save as PENDING_APPROVAL (human reviews)
+                                    ↓
+                    ┌───────────────┴───────────────────┐
+                 Approved            Refinement        Paused / Rejected / Escalate
+                    ↓                    ↓
+          Fulfillment Handoff    Back to coordinator
+```
+
+INITIATED → CAPTURING\_PHONE → RESOLVING\_COORDINATOR → RESOLVING\_SCHOOL → CONFIRMING\_IDENTITY → DRAFTING\_NEED → PENDING\_APPROVAL → SUBMITTED
+
 #### User scope
 
 Users involved in the need lifecycle, including:
