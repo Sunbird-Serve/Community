@@ -6,6 +6,7 @@
 * [STARTER PACK FOR ADOPTERS](explore/starter-pack-for-adopters.md)
 * [STARTER PACK FOR CONTRIBUTORS](explore/starter-pack-for-contributors.md)
 * [CAPABILITIES](explore/capabilities/README.md)
+  * [Agency Management](explore/capabilities/agency-management.md)
   * [Volunteer Management](capabilities/supply.md)
   * [Need Management](capabilities/demand.md)
   * [Discovery and Fulfill](capabilities/discovery.md)
