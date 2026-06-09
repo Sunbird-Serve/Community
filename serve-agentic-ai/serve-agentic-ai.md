@@ -1,8 +1,6 @@
-# SERVE Volunteer Management Agentic AI - Orchestrator
+# SERVE Agentic AI
 
-
-
-<figure><img src="../.gitbook/assets/VM Agentic AI.drawio.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/tech-arch.png" alt=""><figcaption></figcaption></figure>
 
 ## **1. Purpose & Scope**
 
