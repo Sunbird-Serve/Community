@@ -71,6 +71,7 @@
 
 ## Contribute
 
+* [Opportunity Board](contribute/opportunity-board.md)
 * [Starter Pack](contribute/starter-pack.md)
 * [Installing Serve-Vriddhi](contribute/installing-serve-vriddhi/README.md)
   * [SERVE-Vriddhi Frontend](contribute/installing-serve-vriddhi/serve-vriddhi-frontend.md)
