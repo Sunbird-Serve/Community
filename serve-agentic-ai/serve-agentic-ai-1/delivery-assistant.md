@@ -1254,13 +1254,13 @@ Capture telemetry and audit events such as:
 
 ***
 
-## First POC Scope
+## First Phase
 
-The first Delivery Assistant POC should implement one complete operational loop:
+The first Delivery Assistant phase should implement one complete operational loop:
 
 ### Post-handshake
 
-* retrieve the matched volunteer and need
+* retrieve the assigned volunteer and need
 * introduce the assignment
 * confirm volunteer acknowledgement
 * confirm coordinator acknowledgement where available
@@ -1281,7 +1281,7 @@ The first Delivery Assistant POC should implement one complete operational loop:
 * escalate repeated non-response or missed sessions
 * update session and delivery progress
 
-### POC success indicators
+### Phase success indicators
 
 * percentage of scheduled sessions reminded
 * reminder delivery rate
