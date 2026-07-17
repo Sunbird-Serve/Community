@@ -1,8 +1,10 @@
 # Onboarding Agent
 
-**Goal** - Discover the intent, orient them with the available nature of needs, have them sign up for the purpose behind the needs. The purpose of the needs here is enabling equitable access to quality education.&#x20;
+**Goal** - Discover a person’s intent to volunteer, orient them to the nature of available needs, and help them sign up for the larger purpose behind those needs, enabling equitable access to quality education.
 
-discover their capabilities(around skills, educational qualification, work and volunteer experiences and language proficiency) to volunteer for a need and their mandatory perquisites which are legal adult and willing to give time as a volunteer without pay.&#x20;
+Understand their capabilities to volunteer for a need, including their skills, educational qualifications, work and volunteering experience, and language proficiency. Confirm the mandatory prerequisites that they are a legal adult and are willing to contribute their time voluntarily without financial compensation.
+
+Convert eligible and interested individuals into registered volunteers on SERVE.
 
 **User details** - Men and Women who are working professionals, students, senior citizens or home makers. belong to age group of 18 to 75
 
