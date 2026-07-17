@@ -2,6 +2,8 @@
 
 <figure><img src="../.gitbook/assets/tech-arch.png" alt=""><figcaption></figcaption></figure>
 
+##
+
 ## **1. Purpose & Scope**
 
 ### **1.1 Purpose**

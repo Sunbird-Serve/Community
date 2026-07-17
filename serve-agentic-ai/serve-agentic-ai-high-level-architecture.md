@@ -2,7 +2,7 @@
 
 Sunbird SERVE’s Agentic AI architecture combines persona focused intelligence with a tool-execution backbone. User prompts first reach dedicated “orchestrator” AIs (for Need-, Volunteer-coordinators and Volunteers) that understand intent, manage state‐machines and call specialised helper agents. Every real world action then flows through an MCP client/server pair that validates schema-based tool calls before touching SERVE micro-services, messaging, calendar or content systems.
 
-<figure><img src="../.gitbook/assets/AI Agent - POC-Agentic AI.drawio (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/ChatGPT Image Jul 17, 2026, 03_02_30 PM.png" alt=""><figcaption></figcaption></figure>
 
 **UI Layer**
 
