@@ -24,7 +24,7 @@ _**Actions Performed by Various Personas for Demand Capability:**_
 
 #### Entity Onboarding and Need-Raising Workflow
 
-<figure><img src="../.gitbook/assets/Entity Onboard.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/EntityOnboard.png" alt=""><figcaption></figcaption></figure>
 
 Schools and colleges are preloaded in the SERVE registry using the authorised government entity list. From the adopter's website, a prospective coordinator selects **Onboard School/College** and completes a simple activation form.
 
