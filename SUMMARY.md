@@ -40,6 +40,7 @@
   * [Telemetry Events](explore/product-and-developer-guide/telemetry-events.md)
 * [NDEAR Compliance](explore/ndear-compliance.md)
 * [Digital Public Good (DPG) Principles](explore/digital-public-good-dpg-principles.md)
+* [The SERVE Philosophy](explore/the-serve-philosophy.md)
 
 ## SERVE Agentic AI
 

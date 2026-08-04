@@ -12,7 +12,7 @@ _Single entry point for every persona_
 * Sends raw user prompts (text, button payloads, events) to the Agentic tier.
 
 **Agentic AI Layer**\
-&#xNAN;_&#x50;ersona-specific orchestrators plus their helper agents_
+_&#x50;ersona-specific orchestrators plus their helper agents_
 
 | Orchestrator (≤ 1 per persona)                                                          | Assistant agents it commands                                     | Typical responsibility                                                                                              |
 | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
