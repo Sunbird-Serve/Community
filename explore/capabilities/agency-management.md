@@ -158,3 +158,44 @@ Once the Volunteer Agency and its Volunteers are ready, Discovery and Nomination
 ***
 
 **Agency Management is the trust and operating layer of SERVE – it brings organisations in, establishes responsibility and enables their teams to manage Needs or Volunteers.**
+
+### Agency Management Backlog
+
+The required APIs and schemas are already available, the pending work is primarily to implement the corresponding UI flows for Agency Management.
+
+#### Common / Platform-level
+
+<table><thead><tr><th width="117.66668701171875">Priority</th><th width="267">Backlog Item</th><th>Description</th></tr></thead><tbody><tr><td>P1</td><td><strong>Agency Self Registration</strong></td><td>Allow an authorised representative to register an Agency instead of only Serve Admin creating it</td></tr><tr><td>P1</td><td><strong>Agency Attestation</strong></td><td>Serve Admin reviews and attests/activates a registered Agency</td></tr><tr><td>P1</td><td><strong>Admin Assignment</strong></td><td>Serve Admin can assign the initial nAdmin/vAdmin to an Agency</td></tr><tr><td>P1</td><td><strong>Admin Self Registration</strong></td><td>Admin can register through an Agency-specific invite/registration flow</td></tr><tr><td>P2</td><td><strong>Agency Profile Management</strong></td><td>Agency Admin can update permitted Agency profile details</td></tr><tr><td>P2</td><td><strong>Agency Status Management</strong></td><td>Active / Inactive / Suspended or equivalent basic lifecycle</td></tr><tr><td>P2</td><td><strong>Role &#x26; Agency Association</strong></td><td>Clearly maintain which user has which role under which Agency</td></tr><tr><td>P3</td><td><strong>Audit Trail</strong></td><td>Track who created, attested, assigned or changed Agency roles</td></tr></tbody></table>
+
+***
+
+## Volunteer Agency
+
+#### Already available
+
+* Serve Admin creates Volunteer Agency
+* Serve Admin assigns vAdmin
+* vAdmin can view Agency
+* vAdmin can share Volunteer registration link
+* vAdmin can view Volunteers and their details
+* vCoordinator can view Agency
+* vCoordinator can share Volunteer registration link
+* vCoordinator can view Volunteers and their details
+
+#### Pending backlog
+
+<table><thead><tr><th width="134.3333740234375">Priority</th><th>Backlog Item</th><th>Description</th></tr></thead><tbody><tr><td><strong>P1</strong></td><td><strong>vAdmin Self Registration</strong></td><td>Allow vAdmin to register through an Agency-specific registration/invite flow</td></tr><tr><td><strong>P1</strong></td><td><strong>Assign vCoordinator</strong></td><td>vAdmin can assign a registered user as vCoordinator</td></tr><tr><td><strong>P1</strong></td><td><strong>vCoordinator Registration Link</strong></td><td>Generate/share Agency-specific registration link for Volunteer Coordinators</td></tr><tr><td><strong>P1</strong></td><td><strong>vCoordinator Self Registration</strong></td><td>Coordinator registers and becomes available for assignment to the Agency</td></tr><tr><td><strong>P1</strong></td><td><strong>View Coordinators</strong></td><td>vAdmin can see all vCoordinators mapped to the Agency</td></tr><tr><td><strong>P2</strong></td><td><strong>Manage Coordinators</strong></td><td>Activate/deactivate/remove a Coordinator association</td></tr><tr><td><strong>P2</strong></td><td><strong>Volunteer Onboarding Status</strong></td><td>Distinguish Registered / Onboarded / Active or equivalent</td></tr><tr><td><strong>P2</strong></td><td><strong>Recommend Volunteer</strong></td><td>vAdmin/vCoordinator can mark eligible Volunteers as <strong>Recommended</strong></td></tr><tr><td><strong>P2</strong></td><td><strong>Recommended Volunteer View</strong></td><td>Filter/view Volunteers who are recommended and ready for fulfilment</td></tr><tr><td><strong>P2</strong></td><td><strong>Volunteer Profile Management</strong></td><td>View/update allowed operational details of Volunteers</td></tr><tr><td><strong>P3</strong></td><td><strong>Bulk Volunteer Management</strong></td><td>Bulk recommend, activate, deactivate or manage Volunteers where useful</td></tr></tbody></table>
+
+## Need Agency
+
+#### Already available
+
+* Serve Admin creates Need Agency
+* Serve Admin assigns nAdmin
+* nAdmin can view Agency
+* nAdmin can assign nCoordinator, onboard Entity and map entity to nCoordinators
+* nCoordinator can view Agency
+
+#### Pending backlog
+
+<table><thead><tr><th width="155">Priority</th><th>Backlog Item</th><th>Description</th></tr></thead><tbody><tr><td><strong>P1</strong></td><td><strong>Need Agency Self Registration</strong></td><td>Allow authorised representative to register a Need Agency</td></tr><tr><td><strong>P1</strong></td><td><strong>nAdmin Self Registration</strong></td><td>nAdmin registers through Agency-specific registration/invite</td></tr><tr><td><strong>P1</strong></td><td><strong>nCoordinator Registration Link</strong></td><td>Agency-specific invite/registration link for nCoordinators</td></tr><tr><td><strong>P1</strong></td><td><strong>nCoordinator Self Registration</strong></td><td>Coordinator registers and becomes available for Agency assignment</td></tr><tr><td><strong>P2</strong></td><td><strong>Manage Coordinators</strong></td><td>Activate/deactivate/remove Coordinator association</td></tr><tr><td><strong>P2</strong></td><td><strong>Agency Profile Management</strong></td><td>nAdmin can update operational Agency information</td></tr></tbody></table>
