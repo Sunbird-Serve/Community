@@ -4,6 +4,8 @@ Agency Management defines **how organisations come into SERVE, how they are trus
 
 An Agency represents the organisation through which Needs or Volunteers are managed.
 
+<figure><img src="../../.gitbook/assets/ChatGPT Image Aug 20, 2026, 11_37_26 AM.png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ### 1. Agency Types
@@ -162,9 +164,3 @@ Agency Management should always make five things clear:
 ***
 
 **Agency Management is the trust and operating layer of SERVE – it brings organisations in, establishes responsibility and enables their teams to manage Needs or Volunteers.**
-
-
-
-
-
-<figure><img src="../../.gitbook/assets/mermaid-diagram (2).png" alt=""><figcaption></figcaption></figure>
