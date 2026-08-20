@@ -21,13 +21,7 @@ A real-world organisation may participate as a **Need Agency, Volunteer Agency, 
 
 ### 2. Key Personas
 
-| Persona                                  | Responsibility                                                       |
-| ---------------------------------------- | -------------------------------------------------------------------- |
-| **Serve Admin**                          | Attests Agencies and enables trusted participation                   |
-| **Need Agency Admin (nAdmin)**           | Manages the Need Agency, adds Need Coordinators and authorises Needs |
-| **Need Coordinator (nCoordinator)**      | Onboards institutions, raises Needs and coordinates fulfilment       |
-| **Volunteer Agency Admin (vAdmin)**      | Manages the Volunteer Agency and adds Volunteer Coordinators         |
-| **Volunteer Coordinator (vCoordinator)** | Onboards/manages Volunteers and supports nominations                 |
+<table><thead><tr><th width="292">Persona</th><th>Responsibility</th></tr></thead><tbody><tr><td><strong>Serve Admin</strong></td><td>Attests Agencies and enables trusted participation</td></tr><tr><td><strong>Need Agency Admin (nAdmin)</strong></td><td>Manages the Need Agency, adds Need Coordinators and authorises Needs</td></tr><tr><td><strong>Need Coordinator (nCoordinator)</strong></td><td>Onboards institutions, raises Needs and coordinates fulfilment</td></tr><tr><td><strong>Volunteer Agency Admin (vAdmin)</strong></td><td>Manages the Volunteer Agency and adds Volunteer Coordinators</td></tr><tr><td><strong>Volunteer Coordinator (vCoordinator)</strong></td><td>Onboards/manages Volunteers and supports nominations</td></tr></tbody></table>
 
 ***
 
