@@ -49,7 +49,7 @@ AGENCY ADMIN ADDS / ASSIGNS COORDINATOR
 AGENCY STARTS OPERATING
 ```
 
-The same basic flow applies to both Need and Volunteer Agencies.
+An Agency may be registered by an authorised representative or created by Serve Admin. Actors register into SERVE first and are then assigned responsibilities within an Agency. The same basic flow applies to both Need and Volunteer Agencies.
 
 ***
 
@@ -87,23 +87,27 @@ The same basic flow applies to both Need and Volunteer Agencies.
                          │
                       vAdmin
                          │
-              ADD / ASSIGN COORDINATORS
+              ADD / ASSIGN vCoordinators
                          │
                    vCoordinators
                          │
+              SHARE REGISTRATION LINK
+                         │
+                 VOLUNTEERS REGISTER
+                         │
                ONBOARD VOLUNTEERS
                          │
-                 MANAGE VOLUNTEERS
+                MANAGE VOLUNTEERS
                          │
-                 DISCOVER NEEDS
-                         │
-                NOMINATE VOLUNTEERS
+                ATTEST VOLUNTEERS
 ```
 
-| Actor            | Key Actions                                                       |
-| ---------------- | ----------------------------------------------------------------- |
-| **vAdmin**       | Manage Agency profile and add Volunteer Coordinators              |
-| **vCoordinator** | Onboard/manage Volunteers, discover Needs and nominate Volunteers |
+| Actor            | Key Actions                                                                                                   |
+| ---------------- | ------------------------------------------------------------------------------------------------------------- |
+| **vAdmin**       | View/manage Agency, add or assign vCoordinators, share Volunteer registration link and view/manage Volunteers |
+| **vCoordinator** | View Agency, share Volunteer registration link, onboard/manage Volunteers and attest Volunteers               |
+
+Once the Volunteer Agency and its Volunteers are ready, Discovery and Nomination are handled as part of the Discovery & Matching capability.
 
 ***
 
@@ -117,8 +121,6 @@ The same basic flow applies to both Need and Volunteer Agencies.
 | **ASSIGN / ADD** | Associate a person with an Agency and give responsibility      |
 | **ONBOARD**      | Make an institution, Volunteer or participant ready to operate |
 | **MANAGE**       | Maintain the Agency, people and ongoing operations             |
-
-
 
 **REGISTER** = create identity\
 **ATTEST** = establish trust\
@@ -150,8 +152,6 @@ The same basic flow applies to both Need and Volunteer Agencies.
 ***
 
 ### 8. What Agency Management should ensure
-
-Agency Management should always make five things clear:
 
 | Question                        | What SERVE should know       |
 | ------------------------------- | ---------------------------- |
