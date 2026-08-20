@@ -6,6 +6,8 @@ description: Personas, Core Verbs and Lifecycles
 
 SERVE is built around a simple idea: **different personas perform a set of core actions to move a need from intent to delivery and impact.**
 
+<figure><img src="../../.gitbook/assets/ChatGPT Image Aug 20, 2026, 11_26_34 AM.png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ### 1. Key Personas
@@ -24,8 +26,6 @@ SERVE is built around a simple idea: **different personas perform a set of core 
 | **Delivery**               | **PLAN, DELIVER, TRACK, COMPLETE**                       | Execute and complete the contribution                                   |
 | **Acknowledgement**        | **RATE, REVIEW, CREDIT, ISSUE**                          | Capture feedback and recognise contribution                             |
 | **Promotion**              | **SHARE, ENGAGE, PUBLISH**                               | Make Needs, profiles, credentials and impact visible to the ecosystem   |
-
-#### Three verbs to keep clearly separate
 
 * **ATTEST** – confirm that an Agency, Need, Actors or claim is genuine
 * **AUTHORISE** – allow a person or action to proceed
