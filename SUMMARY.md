@@ -109,6 +109,7 @@
 
 ## Community
 
+* [Serve Community Platform Solution Architecture](community/serve-community-platform-solution-architecture.md)
 * [Discussions](community/discussions.md)
 * [Source Code (Beta Version)](https://github.com/Sunbird-Serve/serve-beta.git)
 * [Issue Tracker](https://project-sunbird.atlassian.net/jira/software/c/projects/SV/boards/113/backlog?selectedIssue=SV-34\&issueLimit=100)
