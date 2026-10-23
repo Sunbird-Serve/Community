@@ -109,6 +109,7 @@
 
 ## Community
 
+* [SERVE community hosting approaches](community/serve-community-hosting-approaches.md)
 * [Serve Community Platform Solution Architecture](community/serve-community-platform-solution-architecture.md)
 * [Discussions](community/discussions.md)
 * [Source Code (Beta Version)](https://github.com/Sunbird-Serve/serve-beta.git)
