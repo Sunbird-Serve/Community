@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # SERVE - Roadmap
 
 #### **Phase 1: Foundation & MVP Features (Release 1.x) - Vriddhi**
