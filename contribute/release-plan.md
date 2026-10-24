@@ -1,30 +1,56 @@
 # Release Plan
 
-### Vriddhi Release - Milestone 1
+Serve’s releases represent successive platform milestones. Version tags in the official repositories identify the corresponding code baselines.
 
-| Capabilities          | Persona                                                           | Changes                                                                                                                                     | Release - Label              |
-| --------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
-| Need Management       | nCoordinator                                                      | <p>Logs in</p><p>View Needs</p><p>Raise Needs</p>                                                                                           | release-need-1.0.0.0         |
-| Need Management       | nCoordinator                                                      | <p>View Approved needs</p><p>View unapproved needs</p>                                                                                      | release-need-1.1.0.0         |
-| Need Management       | nCoordinator                                                      | View Need Types                                                                                                                             | release-need-1.2.0.0         |
-| Need Management       | nCoordinator                                                      | Receiving Notification (email)                                                                                                              | release-need-2.1.0.0         |
-| Volunteer Management  | <p>vCoordinator </p><p></p><p></p><p>Volunteer</p>                | <p>Login </p><p></p><p>Registration and Authentication</p>                                                                                  | release-volunteering-1.0.0.0 |
-| Volunteer Management  | vCoordinator                                                      | view registered volunteers                                                                                                                  | release-volunteering-1.2.0.0 |
-| Volunteer Management  | vCoordinator                                                      | <p>Recommend Volunteers</p><p>Receiving Notification (emails)</p>                                                                           | release-volunteering-2.1.0.0 |
-| Volunteer Management  | <p>Volunteer </p><p></p><p>System</p>                             | <p>Edit Profile </p><p></p><p>Update Volunteer Hours</p>                                                                                    | release-volunteering-2.2.0.0 |
-| Discovery and Fulfill | <p>Volunteer </p><p></p><p></p>                                   | <p>Explore Need Type</p><p>View Needs</p><p>View Need details</p>                                                                           | release-need-1.2.0.0         |
-| Discovery and Fulfill | <p>Volunteer</p><p></p><p>nCoordinator</p>                        | <p>Nominate Need View Nominations</p><p>Approve Nominations</p>                                                                             | release-fulfill-1.2.0.0      |
-| Need Delivery         | <p>Volunteer, nCoordinator</p><p></p><p>System</p><p></p>         | <p>View Need Plan</p><p></p><p></p><p>Generate Deliverables</p>                                                                             | release-need-1.2.0.0         |
-| Need Delivery         | nCoordinator                                                      | Track Need Deliverable                                                                                                                      | release-need-2.1.0.0         |
-| Need Delivery         | <p>Volunteer  </p><p></p><p></p><p></p><p></p><p>nCoordinator</p> | <p>Deliver Need</p><p>Update the Deliverable status</p><p>Update details of need deliverable</p><p></p><p>Add Deliverable Links (Input)</p> | release-need-2.2.0.0         |
+| Release           | Version               | Status           | Focus                                                                  |
+| ----------------- | --------------------- | ---------------- | ---------------------------------------------------------------------- |
+| **Serve Vriddhi** | **v1.0.0**            | Historical MVP   | Establish the core volunteering journey                                |
+| **Serve Sangam**  | **v2.0.0**            | Current baseline | Enable agency-based participation and Keycloak authentication          |
+| **Serve Vishwas** | **v3.0.0 - proposed** | Under planning   | Strengthen trust, consent, commitment and contribution acknowledgement |
+| **Serve Sampark** | **To be determined**  | Future direction | Connect volunteering platforms through the Volunteering Fabric         |
 
-### Vriddhi Release - Milestone 2
+### Serve Vriddhi - Growth
 
-| Capabilities         | Persona                                                                                                                | Changes                                                                                                                                                                           | Release - Label              |
-| -------------------- | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
-| Need Management      | <p></p><p>nCoordinator</p><p></p><p>nAdmin </p><p></p><p></p><p>Serve Admin</p>                                        | <p>Edit Need Details</p><p></p><p>Logs in</p><p>View Needs</p><p>View Entitites</p><p></p><p>Create Need Agency</p>                                                               | release-need-3.1.0.0         |
-| Need Management      | <p>nAdmin   </p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p>Serve Admin </p><p> </p><p></p><p>nCoordinator</p> | <p>Approve Needs</p><p>Add and Register Entity</p><p>Assign nCoordinators</p><p></p><p>Assign nAdmin to Agency</p><p>Add Entity and Assign Entity</p><p></p><p>Onboard Entity</p> | release-need-3.2.0.0         |
-| Volunteer Management | <p></p><p>Serve Admin</p><p></p>                                                                                       | vAdd Agency                                                                                                                                                                       | release-volunteering-3.1.0.0 |
-| Volunteer Management | <p>Serve Admin  </p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p>vAdmin</p>                                     | <p>Assign vAdmin to Agency</p><p></p><p>Logs in</p><p>View Volunteers and vCoordinators Registered within the Agency</p><p>Assign vCoordinators to the Agency</p>                 | release-volunteering-3.2.0.0 |
-| Need Delivery        | <p></p><p>nAdmin</p>                                                                                                   | Track Need Deliverables                                                                                                                                                           | release-need-3.1.0.0         |
-| Need Delivery        | <p>Volunteer  </p><p></p><p></p><p></p><p></p><p>nCoordinator</p>                                                      | <p>Requests for a Reschedule or Additional Deliverable</p><p></p><p></p><p>Reschedules or Adds the Deliverables</p>                                                               | pending                      |
+The first MVP established need creation, volunteer registration and onboarding, opportunity discovery, nomination review, delivery planning and contribution tracking.
+
+Vriddhi is retained as a historical code baseline.&#x20;
+
+### Serve Sangam - Coming Together
+
+Sangam establishes the agency-enabled platform baseline, with Keycloak authentication, agency management and role- and agency-based participation.
+
+It brings together the UI, Need, Volunteering and Fulfilment services. Deployments require compatible component versions, database schema and configuration.
+
+### Serve Vishwas - Trust
+
+Vishwas takes Serve beyond the MVP towards a configurable platform for different volunteering contexts, strengthening the journey from onboarding and discovery through commitment, delivery and acknowledgement.
+
+Planned areas of work include:
+
+* **Configurable volunteering:** Need Types that drive taxonomy, deliverable types, eligibility, volunteer preparation and completion criteria.
+* **Participation and trust:** Clear registration, authorisation and assignment flows, volunteer claims, attestation and consent.
+* **Discovery and commitment:** Need-side volunteer discovery and invitations, explicit volunteer confirmation and readiness checks.
+* **Delivery and continuity:** Agreed schedule changes, volunteer withdrawal, replacement, completion verification and accurate fulfilment tracking.
+* **Acknowledgement and engagement:** Contribution time, credentials, feedback, sharing and access to the community.
+* **Platform readiness:** Review of service responsibilities, APIs and data structures, supported by testing, deployment guidance and versioned database changes.
+
+These areas define the milestone’s direction. Detailed scope, sequencing and delivery dates will be agreed through the Product Backlog.
+
+### Serve Sampark - Connection
+
+Sampark is the proposed milestone for Volunteering Fabric and network participation.
+
+Its direction includes discovery across participating platforms, exchange of volunteering requests and outcomes, and protocol-based interoperability supported by defined trust and consent arrangements.
+
+Version, scope and delivery dates will be established following a scoped interoperability pilot.
+
+### Release References
+
+Component release notes and tags are maintained in the official repositories:
+
+* [Serve UI](https://github.com/Sunbird-Serve/sunbird-serve-ui/releases)
+* [Need](https://github.com/Sunbird-Serve/sunbird-serve-need/releases)
+* [Volunteering](https://github.com/Sunbird-Serve/sunbird-serve-volunteering/releases)
+* [Fulfilment](https://github.com/Sunbird-Serve/sunbird-serve-fulfill/releases)
+
+Detailed capabilities, gaps and priorities are maintained on the **Product Backlog** page. Earlier documentation labels are historical delivery identifiers and have been superseded by this release convention.
