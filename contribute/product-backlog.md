@@ -2,16 +2,15 @@
 
 This page captures Serve’s capability assessment and proposed improvements. The [Release Plan](https://serve.sunbird.org/contribute/release-plan) describes the platform milestones.
 
-**Serve Vishwas** is the proposed next milestone. The items below define its planning backlog; final inclusion and sequencing depend on prioritisation, dependencies and implementation assessment.
+**Serve Vishwas** is the proposed next milestone. The items below define its planning backlog, final inclusion and sequencing depend on prioritisation, dependencies and implementation assessment.
 
 Current support reflects the assessment discussions and requires validation where noted.
 
 ### 1. Agency and Participant Onboarding
 
-| Capability                                            | Current support                                                                                                                  | Planned improvement / decision                                                                                                  |
+| **Agency registration and attestation**               | Serve Admin creates agencies through UI/API, agencies become active immediately                                                  | Enable organisation-initiated registration where needed. Define explicit attestation, including agencies created by Serve Admin |
 | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| **Agency registration and attestation**               | Serve Admin creates agencies through UI/API; agencies become active immediately                                                  | Enable organisation-initiated registration where needed. Define explicit attestation, including agencies created by Serve Admin |
-| **Agency admin onboarding**                           | Serve Admin creates Need and Volunteer Admins through UI/API                                                                     | Retain controlled creation; assess additional registration/invitation paths and make agency authorisation explicit              |
+| **Agency admin onboarding**                           | Serve Admin creates Need and Volunteer Admins through UI/API                                                                     | Retain controlled creation, assess additional registration/invitation paths and make agency authorisation explicit              |
 | **Need Coordinator registration and assignment**      | Admin creation, separate registration form and school-application entry paths exist                                              | Establish consistent agency/entity assignment and authority across entry paths; verify Need Admin assignment support            |
 | **Volunteer Coordinator registration and assignment** | Serve Admin creates coordinators through UI/API                                                                                  | Verify Volunteer Admin assignment support and assess self-registration or invitation requirements                               |
 | **Entity onboarding**                                 | School application includes admin attestation and automatic coordinator registration                                             | Clarify registration, approval and coordinator-assignment responsibilities                                                      |
@@ -20,9 +19,8 @@ Current support reflects the assessment discussions and requires validation wher
 
 ### 2. Claims, Readiness and Consent
 
-| Capability                    | Current support                                                                         | Planned improvement / decision                                                                     |
-| ----------------------------- | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
 | **Volunteer selection**       | Coordinator conducts a discussion and marks Recommended, OnHold or Inactive             | Record the assessment basis and clarify what each outcome establishes                              |
+| ----------------------------- | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
 | **Claim attestation**         | Skills and languages are assessed, but individual outcomes and notes cannot be recorded | Record claim-level outcomes, assessor, date and relevant notes/evidence                            |
 | **Need-specific preparation** | No preparation flow driven by Need Type                                                 | Configure applicable volunteer preparation and track completion                                    |
 | **Readiness at confirmation** | No restriction based on selection outcome                                               | Permit confirmation only for volunteers marked Recommended; apply relevant need-specific checks    |
@@ -30,9 +28,8 @@ Current support reflects the assessment discussions and requires validation wher
 
 ### 3. Need Types, Definition and Publication
 
-| Capability                             | Current support                                                        | Planned improvement / decision                                                                                   |
+| **Need Type management**               | Online Teaching is configured directly in DB, create/update APIs exist | Provide authorised configuration management and validate API/schema support                                      |
 | -------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **Need Type management**               | Online Teaching is configured directly in DB; create/update APIs exist | Provide authorised configuration management and validate API/schema support                                      |
 | **Need Type application**              | Configuration associations exist but are not automatically applied     | Apply taxonomy, deliverable type, volunteer preparation, eligibility and completion/evidence criteria            |
 | **Need definition**                    | Captures name, type, entity, dates, days and time slot                 | Derive need name from taxonomy and apply type-specific information and defaults                                  |
 | **Eligibility requirements**           | Removed from UI to simplify coordinator entry; schema/API need review  | Establish requirements through configuration, with simple need-level entry or overrides                          |
@@ -42,9 +39,8 @@ Current support reflects the assessment discussions and requires validation wher
 
 ### 4. Discovery, Nomination and Commitment
 
-| Capability                             | Current support                                                          | Planned improvement / decision                                                             |
-| -------------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
 | **Opportunity discovery**              | Public discovery supports days, time and other need details              | Retain public access and extend relevant taxonomy-based discovery                          |
+| -------------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
 | **Volunteer nomination**               | Logged-in volunteers nominate with one action                            | Retain simple nomination; assess partial participation and clarification requirements      |
 | **Nomination review**                  | Need Coordinator accepts/rejects and can record a rejection reason       | Retain review responsibility and validate outcome notifications                            |
 | **Volunteer confirmation**             | Acceptance notifies the volunteer and automatically finalises assignment | Add explicit volunteer confirmation and Recommended-status check                           |
@@ -53,9 +49,8 @@ Current support reflects the assessment discussions and requires validation wher
 
 ### 5. Delivery, Changes and Continuity
 
-| Capability                   | Current support                                                                                                                       | Planned improvement / decision                                                                              |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | **Delivery-plan generation** | Sessions generated automatically from need dates, days and time slot                                                                  | Generate after explicit volunteer confirmation                                                              |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | **Session management**       | Add, cancel and reschedule actions exist; rescheduling needs more testing                                                             | Validate behaviour and define permissions and consequences                                                  |
 | **Rescheduling agreement**   | Changes do not require agreement from the other side                                                                                  | Establish proposed-change and accept/decline handling, with retained history                                |
 | **Additional work**          | Sessions can be added; mutual agreement is not established                                                                            | Obtain agreement before extending commitments and generating additional delivery records                    |
@@ -98,15 +93,13 @@ Restructuring decisions follow implementation assessment. Capabilities are not a
 
 These items were previously recorded as ongoing or open. Their current status must be confirmed before release allocation.
 
-| Item                                | Previous status       | Reference                                                                |
-| ----------------------------------- | --------------------- | ------------------------------------------------------------------------ |
-| Agency short-code generation        | In Progress           | [Platform project](https://github.com/orgs/Sunbird-Serve/projects/15)    |
-| Need Admin analytics                | In Progress           | [Platform project](https://github.com/orgs/Sunbird-Serve/projects/15)    |
-| Notification enhancements           | Open for Contribution | [Platform project](https://github.com/orgs/Sunbird-Serve/projects/15)    |
-| Telemetry integration               | In Progress           | [Telemetry project](https://github.com/orgs/Sunbird-Serve/projects/16)   |
-| Serve-X interoperability experiment | In Progress           | [Provider repository](https://github.com/Sunbird-Serve/serve-x-provider) |
+| Item                         | Previous status       | Reference                                                             |
+| ---------------------------- | --------------------- | --------------------------------------------------------------------- |
+| Agency short-code generation | Completed             | [Platform project](https://github.com/orgs/Sunbird-Serve/projects/15) |
+| Need Admin analytics         | In Progress           | [Platform project](https://github.com/orgs/Sunbird-Serve/projects/15) |
+| Notification enhancements    | Open for Contribution | [Platform project](https://github.com/orgs/Sunbird-Serve/projects/15) |
 
-### 9. Future Direction — Serve Sampark
+### 9. Future Direction - Serve Sampark
 
 Sampark focuses on Volunteering Fabric and network participation.
 
@@ -149,5 +142,5 @@ Original tracking references include:
 * [Need authorisation and entity mapping](https://github.com/orgs/Sunbird-Serve/projects/23)
 * [Coordinator entity onboarding](https://github.com/orgs/Sunbird-Serve/projects/25)
 
-Earlier labels such as `release_4.1.0.0` are historical delivery identifiers. Official platform versions are now defined through repository tags and release notes.
+
 
