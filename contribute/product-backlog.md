@@ -6,6 +6,8 @@ This page captures Serve’s capability assessment and proposed improvements. Th
 
 Current support reflects the assessment discussions and requires validation where noted.
 
+<table><thead><tr><th width="216">Priority</th><th width="215">Focus</th><th>Scope</th></tr></thead><tbody><tr><td><strong>Phase 1 - Reliable participation and delivery</strong></td><td>Make the existing journey dependable</td><td>Notifications; volunteer drop, backfill and replacement; agency registration and attestation; admin registration and authorisation; discovery, nomination and explicit commitment; delivery changes, tracking and closure</td></tr><tr><td><strong>Phase 2 - Configuration and trust</strong></td><td>Support reusable requirements and trusted participation</td><td>Need and Need Type configuration; consent; claims and attestation; credentialing</td></tr><tr><td><strong>Phase 3 - Recognition and reach</strong></td><td>Encourage continued participation</td><td>Broader acknowledgement, ratings/review, promotion, sharing, usage publication and community engagement</td></tr></tbody></table>
+
 ### 1. Agency and Participant Onboarding
 
 | **Agency registration and attestation**               | Serve Admin creates agencies through UI/API, agencies become active immediately                                                  | Enable organisation-initiated registration where needed. Define explicit attestation, including agencies created by Serve Admin |
