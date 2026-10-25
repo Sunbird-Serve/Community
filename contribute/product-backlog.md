@@ -10,8 +10,9 @@ Current support reflects the assessment discussions and requires validation wher
 
 ### 1. Agency and Participant Onboarding
 
-| **Agency registration and attestation**               | Serve Admin creates agencies through UI/API, agencies become active immediately                                                  | Enable organisation-initiated registration where needed. Define explicit attestation, including agencies created by Serve Admin |
+| **Capability**                                        | **Current support**                                                                                                              | **Planned improvement / decision**                                                                                              |
 | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| **Agency registration and attestation**               | Serve Admin creates agencies through UI/API, agencies become active immediately                                                  | Enable organisation-initiated registration where needed. Define explicit attestation, including agencies created by Serve Admin |
 | **Agency admin onboarding**                           | Serve Admin creates Need and Volunteer Admins through UI/API                                                                     | Retain controlled creation, assess additional registration/invitation paths and make agency authorisation explicit              |
 | **Need Coordinator registration and assignment**      | Admin creation, separate registration form and school-application entry paths exist                                              | Establish consistent agency/entity assignment and authority across entry paths; verify Need Admin assignment support            |
 | **Volunteer Coordinator registration and assignment** | Serve Admin creates coordinators through UI/API                                                                                  | Verify Volunteer Admin assignment support and assess self-registration or invitation requirements                               |
@@ -21,8 +22,9 @@ Current support reflects the assessment discussions and requires validation wher
 
 ### 2. Claims, Readiness and Consent
 
-| **Volunteer selection**       | Coordinator conducts a discussion and marks Recommended, OnHold or Inactive             | Record the assessment basis and clarify what each outcome establishes                              |
+| Capability                    | Current support                                                                         | Planned improvement / decision                                                                     |
 | ----------------------------- | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| **Volunteer selection**       | Coordinator conducts a discussion and marks Recommended, OnHold or Inactive             | Record the assessment basis and clarify what each outcome establishes                              |
 | **Claim attestation**         | Skills and languages are assessed, but individual outcomes and notes cannot be recorded | Record claim-level outcomes, assessor, date and relevant notes/evidence                            |
 | **Need-specific preparation** | No preparation flow driven by Need Type                                                 | Configure applicable volunteer preparation and track completion                                    |
 | **Readiness at confirmation** | No restriction based on selection outcome                                               | Permit confirmation only for volunteers marked Recommended; apply relevant need-specific checks    |
@@ -30,8 +32,9 @@ Current support reflects the assessment discussions and requires validation wher
 
 ### 3. Need Types, Definition and Publication
 
-| **Need Type management**               | Online Teaching is configured directly in DB, create/update APIs exist | Provide authorised configuration management and validate API/schema support                                      |
+| Capability                             | Current support                                                        | Planned improvement / decision                                                                                   |
 | -------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **Need Type management**               | Online Teaching is configured directly in DB, create/update APIs exist | Provide authorised configuration management and validate API/schema support                                      |
 | **Need Type application**              | Configuration associations exist but are not automatically applied     | Apply taxonomy, deliverable type, volunteer preparation, eligibility and completion/evidence criteria            |
 | **Need definition**                    | Captures name, type, entity, dates, days and time slot                 | Derive need name from taxonomy and apply type-specific information and defaults                                  |
 | **Eligibility requirements**           | Removed from UI to simplify coordinator entry; schema/API need review  | Establish requirements through configuration, with simple need-level entry or overrides                          |
@@ -41,8 +44,9 @@ Current support reflects the assessment discussions and requires validation wher
 
 ### 4. Discovery, Nomination and Commitment
 
-| **Opportunity discovery**              | Public discovery supports days, time and other need details              | Retain public access and extend relevant taxonomy-based discovery                          |
+| Capability                             | Current support                                                          | Planned improvement / decision                                                             |
 | -------------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| **Opportunity discovery**              | Public discovery supports days, time and other need details              | Retain public access and extend relevant taxonomy-based discovery                          |
 | **Volunteer nomination**               | Logged-in volunteers nominate with one action                            | Retain simple nomination; assess partial participation and clarification requirements      |
 | **Nomination review**                  | Need Coordinator accepts/rejects and can record a rejection reason       | Retain review responsibility and validate outcome notifications                            |
 | **Volunteer confirmation**             | Acceptance notifies the volunteer and automatically finalises assignment | Add explicit volunteer confirmation and Recommended-status check                           |
@@ -51,8 +55,9 @@ Current support reflects the assessment discussions and requires validation wher
 
 ### 5. Delivery, Changes and Continuity
 
-| **Delivery-plan generation** | Sessions generated automatically from need dates, days and time slot                                                                  | Generate after explicit volunteer confirmation                                                              |
+| Capability                   | Current support                                                                                                                       | Planned improvement / decision                                                                              |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Delivery-plan generation** | Sessions generated automatically from need dates, days and time slot                                                                  | Generate after explicit volunteer confirmation                                                              |
 | **Session management**       | Add, cancel and reschedule actions exist; rescheduling needs more testing                                                             | Validate behaviour and define permissions and consequences                                                  |
 | **Rescheduling agreement**   | Changes do not require agreement from the other side                                                                                  | Establish proposed-change and accept/decline handling, with retained history                                |
 | **Additional work**          | Sessions can be added; mutual agreement is not established                                                                            | Obtain agreement before extending commitments and generating additional delivery records                    |
@@ -64,7 +69,7 @@ Current support reflects the assessment discussions and requires validation wher
 
 ### 6. Acknowledgement, Feedback and Sharing
 
-| Capability                   | Current support                         | Planned improvement / decision                                                                |
+| **Capability**               | **Current support**                     | **Planned improvement / decision**                                                            |
 | ---------------------------- | --------------------------------------- | --------------------------------------------------------------------------------------------- |
 | **Volunteer time**           | One hour credited per completed session | Adopt an agreed duration basis and support relevant contribution types                        |
 | **Contribution credentials** | Not implemented                         | Define issuer, eligible claims, content, issuance, correction and verification                |
