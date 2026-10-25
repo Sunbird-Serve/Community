@@ -2,12 +2,7 @@
 
 Serve’s releases represent successive platform milestones. Version tags in the official repositories identify the corresponding code baselines.
 
-| Release           | Version               | Status           | Focus                                                                  |
-| ----------------- | --------------------- | ---------------- | ---------------------------------------------------------------------- |
-| **Serve Vriddhi** | **v1.0.0**            | Historical MVP   | Establish the core volunteering journey                                |
-| **Serve Sangam**  | **v2.0.0**            | Current baseline | Enable agency-based participation and Keycloak authentication          |
-| **Serve Vishwas** | **v3.0.0 - proposed** | Under planning   | Strengthen trust, consent, commitment and contribution acknowledgement |
-| **Serve Sampark** | **To be determined**  | Future direction | Connect volunteering platforms through the Volunteering Fabric         |
+<table data-header-hidden><thead><tr><th width="161"></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>Release</td><td>Version</td><td>Status</td><td>Focus</td></tr><tr><td><strong>Serve Vriddhi</strong></td><td><a href="https://github.com/Sunbird-Serve/sunbird-serve-need/releases/tag/v1.0.0"><strong>v1.0.0</strong></a></td><td>Historical MVP</td><td>Establish the core volunteering journey</td></tr><tr><td><strong>Serve Sangam</strong></td><td><a href="https://github.com/Sunbird-Serve/sunbird-serve-need/releases/tag/v2.0.0"><strong>v2.0.0</strong></a></td><td>Current baseline</td><td>Enable agency-based participation and Keycloak authentication</td></tr><tr><td><strong>Serve Vishwas</strong></td><td><strong>v3.0.0 - proposed</strong></td><td>Under planning</td><td>Strengthen trust, consent, commitment and contribution acknowledgement</td></tr><tr><td><strong>Serve Sampark</strong></td><td><strong>To be determined</strong></td><td>Future direction</td><td>Connect volunteering platforms through the Volunteering Fabric</td></tr></tbody></table>
 
 ### Serve Vriddhi - Growth
 
