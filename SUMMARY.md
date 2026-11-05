@@ -72,7 +72,7 @@
 
 ## Contribute
 
-* [Opportunity Board](contribute/opportunity-board.md)
+* [Serveans - Roadmap & Progress](contribute/serveans-roadmap-and-progress.md)
 * [Starter Pack](contribute/starter-pack.md)
 * [Installing Serve-Vriddhi](contribute/installing-serve-vriddhi/README.md)
   * [SERVE-Vriddhi Frontend](contribute/installing-serve-vriddhi/serve-vriddhi-frontend.md)
@@ -81,7 +81,6 @@
 * [Development & Release Process](contribute/development-and-release-process.md)
 * [Release Plan](contribute/release-plan.md)
 * [Product Backlog and Roadmap](contribute/product-backlog.md)
-* [SERVE - Roadmap](contribute/serve-roadmap.md)
 * [Issues](contribute/issues.md)
 
 ## Use
