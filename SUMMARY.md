@@ -3,7 +3,6 @@
 ## Explore
 
 * [OVERVIEW](README.md)
-* [STARTER PACK FOR ADOPTERS](explore/starter-pack-for-adopters.md)
 * [STARTER PACK FOR CONTRIBUTORS](explore/starter-pack-for-contributors.md)
 * [SERVE CAPABILITIES](explore/capabilities/README.md)
   * [Agency Management](explore/capabilities/agency-management.md)
@@ -72,6 +71,7 @@
 
 ## Contribute
 
+* [Serve - One Ecosystem, Many Streams](contribute/serve-one-ecosystem-many-streams.md)
 * [Serveans - Roadmap & Progress](contribute/serveans-roadmap-and-progress.md)
 * [Starter Pack](contribute/starter-pack.md)
 * [Installing Serve-Vriddhi](contribute/installing-serve-vriddhi/README.md)
