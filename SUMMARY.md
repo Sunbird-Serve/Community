@@ -14,6 +14,7 @@
   * [Core Verbs](explore/capabilities/core-verbs.md)
 * [ARCHITECTURE](explore/architecture/README.md)
   * [Solution Architecture](explore/architecture/solution-architecture.md)
+  * [Solution Architecture - Vishwas Enhancements](explore/architecture/solution-architecture-vishwas-enhancements.md)
   * [Technical Architecture](architecture/technical-architecture.md)
   * [Key Technical Aspects](explore/architecture/key-technical-aspects.md)
   * [Workflow](explore/architecture/workflow.md)
