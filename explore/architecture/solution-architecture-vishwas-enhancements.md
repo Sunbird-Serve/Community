@@ -6,7 +6,7 @@ The Serve Solution Architecture has been enhanced to incorporate **Vishwas, the 
 
 The existing microservice architecture remains unchanged, with additional capabilities introduced within the respective building blocks.
 
-#### **1. Serve – Reference Solution**
+#### **1. Serve - Reference Solution**
 
 **Volunteer Credential Wallet**
 
@@ -20,7 +20,7 @@ A digital wallet that enables volunteers to hold, view, manage and share their v
 
 Volunteers can selectively present relevant credentials to other organisations, enabling portability of trust across volunteering networks.
 
-#### **2. Serve RC – Registry and Credential Infrastructure**
+#### **2. Serve RC - Registry and Credential Infrastructure**
 
 Serve RC is extended to support the foundational data and credential infrastructure required for Vishwas.
 
@@ -34,11 +34,11 @@ Serve RC is extended to support the foundational data and credential infrastruct
 
 The credential infrastructure is proposed to leverage Sunbird RC, subject to validation of its supported capabilities and standards.
 
-#### **3. Serve Volunteering – Trust Management**
+#### **3. Serve Volunteering (Existing Microservice) - Trust Management**
 
 Serve Volunteering manages the business workflows associated with establishing and maintaining trust.
 
-| Building block       | Description                                                                                                                            |
+| **Component**        | **Description**                                                                                                                        |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | Consent Management   | Manages consent requests, permissions, withdrawal and information-sharing policies.                                                    |
 | Claims & Attestation | Enables volunteers to make claims about their identity, skills and experience, and authorised organisations to assess and attest them. |
@@ -46,11 +46,11 @@ Serve Volunteering manages the business workflows associated with establishing a
 
 Credentialing is designed as a **generic, schema-driven capability**, allowing new credential types to be introduced without significant changes to the underlying application.
 
-#### **4. Serve Hub – Verification and Integration**
+#### **4. Serve Hub - Verification and Integration**
 
 Serve Hub acts as the integration layer connecting Serve with external systems, verification providers and volunteering networks.
 
-| Building block                 | Description                                                                                                                                                           |
+| **Components**                 | **Description**                                                                                                                                                       |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Agency Access                  | Enables organisations with their own applications and data to access Serve capabilities through standardised interfaces.                                              |
 | Identity & Agency Verification | Integrates with trusted external verification sources, such as Aadhaar-based identity verification and NGO Darpan, subject to applicable permissions and regulations. |
